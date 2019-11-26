@@ -41,7 +41,110 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+<style>
+	.dot {
+		width: 4px;
+		height: 4px;
+		background-color: #444444;
+		-webkit-border-radius: 50%;
+		-khtml-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		-webkit-transition: all 0.3s ease 0s;
+		-khtml-transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -2px;
+		margin-top: -2px;
+	}
 
+	.more .dot:before {
+		content: "";
+		left: -8px;
+		width: 4px;
+		height: 4px;
+		background: #444444;
+		-webkit-border-radius: 50%;
+		-khtml-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		-webkit-transition: all 0.3s ease 0s;
+		-khtml-transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		position: absolute;
+		top: 50%;
+		margin-top: -2px;
+	}
+	.more .dot:after {
+		left: 8px;
+		content: "";
+		width: 4px;
+		height: 4px;
+		background: #444444;
+		-webkit-border-radius: 50%;
+		-khtml-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		-webkit-transition: all 0.3s ease 0s;
+		-khtml-transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		position: absolute;
+		top: 50%;
+		margin-top: -2px;
+	}
+
+	.more{
+		vertical-align: middle;
+		padding: 24px!important;
+	}
+
+	.nav-stacked{
+		margin-left: 40px;
+	}
+	.nav-stacked li{
+		width: 178px;
+		margin-right: 0;
+		margin-bottom: 20px;
+		line-height: 26px;
+		float: none;
+		position: relative;
+		list-style: none;
+		list-style-position: unset;
+
+		display: inline-block;
+	}
+	.subcate{
+		min-height: 272px;
+	}
+	.subcate ul{
+		padding: 0px;
+	}
+	.subcate ul li{
+		margin-bottom: 0px;
+		padding: 0px;
+		float: left;
+	}
+	.tab-text-title{
+		font-weight: bolder;
+	}
+</style>
 </head>
 	
 <body>
@@ -159,7 +262,7 @@
 
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
 							<ul class="nav navbar-nav">
-								<li class="dropdown active">
+								<!--li class="dropdown active">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" role="menu">
 										<li class="active"><a href="index.html">Home 1</a></li>
@@ -168,226 +271,662 @@
 										<li><a href="index-4.html">Home 4</a></li>
 										<li><a href="index-5.html">Home 5</a></li>
 									</ul>
+								</li-->
+								<li>
+									<a href="category-style2.html">Thời sự</a>
 								</li>
-
+								<li>
+									<a href="category-style2.html">Pháp luật</a>
+								</li>
+								<li>
+									<a href="category-style2.html">Thế giới</a>
+								</li>
+								<li>
+									<a href="category-style2.html">Xuất bản</a>
+								</li>
+								<li>
+									<a href="category-style2.html">Kinh doanh</a>
+								</li>
+								<li>
+									<a href="category-style2.html">Công nghệ</a>
+								</li>
+								<li>
+									<a href="category-style2.html">Thể thao</a>
+								</li>
+								<li>
+									<a href="category-style2.html">Giải trí</a>
+								</li>
+								<li>
+									<a href="category-style2.html">Thời trang</a>
+								</li>
+								<li>
+									<a href="category-style2.html">Đời sống</a>
+								</li>
 								<li class="dropdown mega-dropdown">
-									<a href="category-style1.html" class="dropdown-toggle" >Lifestyle <i class="fa fa-angle-down"></i></a>
+									<a href="category-style1.html" class="dropdown-toggle more" >
+										<span class="dot dot1"></span>
+										<span class="dot dot2"></span>
+										<span class="dot dot3"></span>
+										<!--i class="fa fa-angle-down"></i-->
+									</a>
 									<div class="dropdown-menu mega-menu-content hidden-xs hidden-sm clearfix">
-										<div class="menu-tab">
-											<ul class="nav nav-tabs nav-stacked col-md-2" data-toggle="tab-hover">
+
+										<!--div class="menu-tab"-->
+											<ul class="nav nav-tabs nav-stacked col-md-12" data-toggle="tab-hover">
 											  	<li class="active">
 											  		<a class="animated fadeIn" href="#tab-A" data-toggle="tab">
 											  			<span class="tab-head">
-															<span class="tab-text-title">Health</span>					
+															<span class="tab-text-title">Thời sự</span>
 														</span>
 											  		</a>
+
+														<div class="subcate">
+															<ul>
+																<li>
+																	<a href="category-style2.html">Chính trị</a>
+																</li>
+																<li>
+																	<a href="category-style2.html">Giao thông</a>
+																</li>
+																<li>
+																	<a href="category-style2.html">Đô thị</a>
+																</li>
+															</ul>
+														</div>
+
 											  	</li>
 											  	<li>
 												  	<a class="animated fadeIn" href="#tab-B" data-toggle="tab">
 												  		<span class="tab-head">
-															<span class="tab-text-title">Travel</span>					
+															<span class="tab-text-title">Pháp luật</span>
 														</span>
 												  	</a>
+													<div class="subcate">
+														<ul>
+															<li>
+																<a href="category-style2.html">Pháp đình</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Vụ án</a>
+															</li>
+
+
+
+														</ul>
+													</div>
 												</li>
 											 	<li>
 												  	<a class="animated fadeIn" href="#tab-C" data-toggle="tab">
 												  		<span class="tab-head">
-															<span class="tab-text-title">Food</span>					
+															<span class="tab-text-title">Thế giới</span>
 														</span>
 												  	</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Quân sự</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Tư liệu</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Phân tích</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Người Việt 4 phương</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Chuyện lạ</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+												  	<a class="animated fadeIn" href="#tab-C" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Xuất bản</span>
+														</span>
+												  	</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Tin tức xuất bản</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Sách hay</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Tác giả</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+												  	<a class="animated fadeIn" href="#tab-C" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Kinh doanh</span>
+														</span>
+												  	</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Bất động sản</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Hàng không</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Tài chính</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Tiêu dùng</a>
+															</li>
+
+
+															<li>
+																<a href="/doanh-nhan.html">Doanh nhân</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html" style="color:#E4BC6F">Đầu tư du lịch</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-C" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Công nghệ</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Mobile</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Internet</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">eSports</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">#Reno2Series</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-C" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Thể thao</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Bóng đá Việt Nam</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Bóng đá Anh</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Võ thuật</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Hậu trường</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">SEA Games 30</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-C" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Xe</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Ôtô</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Xe máy</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Đánh giá</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Xe thể thao</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-C" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Giải trí</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Sao Việt</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Sao Châu Á</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Sao Hollywood</a>
+															</li>
+
+
+
+														</ul>
+													</div>
 												</li>
 												<li>
 												  	<a class="animated fadeIn" href="#tab-D" data-toggle="tab">
 												  		<span class="tab-head">
-															<span class="tab-text-title">Architecture</span>					
+															<span class="tab-text-title">Âm nhạc</span>
 														</span>
 												  	</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Nhạc Việt</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Nhạc Hàn</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Nhạc Âu Mỹ</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">#ZingChart</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-D" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Thời trang</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Phim chiếu rạp</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Phim truyền hình</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Game Show</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-D" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Đời sống</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Xu hướng</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Giới trẻ</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Sống đẹp</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Sự kiện</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-D" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Giáo dục</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Thời trang sao</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Mặc đẹp</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Làm đẹp</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Trang sức</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">#AVIFW2019</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-D" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Sức khỏe</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Xu hướng</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Giới trẻ</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Sống đẹp</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Sự kiện</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-D" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Du lịch</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Tuyển sinh 2019</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Tư vấn</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html"> Du học</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Học Tiếng Anh</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-D" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Ẩm thực</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">Địa điểm ăn uống</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Món ngon</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+												</li>
+												<li>
+													<a class="animated fadeIn" href="#tab-D" data-toggle="tab">
+												  		<span class="tab-head">
+															<span class="tab-text-title">Nhịp sống</span>
+														</span>
+													</a>
+													<div class="subcate">
+														<ul>
+
+
+
+
+
+
+															<li>
+																<a href="category-style2.html">TTDN</a>
+															</li>
+
+
+															<li>
+																<a href="category-style2.html">Cười</a>
+															</li>
+
+
+
+														</ul>
+													</div>
 												</li>
 											</ul>
 
-											<div class="tab-content col-md-10">
-										      <div class="tab-pane active animated fadeIn" id="tab-A">
-										      	<div class="row">
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/health1.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Health</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">That wearable on your wrist could soon track your…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 1 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/health2.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Health</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Can't shed those Gym? The problem might be in your…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 2 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/health3.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Health</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Deleting fears from the brain means you might neve…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 3 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/health4.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Health</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Smart packs parking sensor tech and beeps when col…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 4 end -->
-										      	</div><!-- Post block row end -->
-										      </div><!-- Tab pane 1 end -->
 
-									        <div class="tab-pane animated fadeIn" id="tab-B">
-									            <div class="row">
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/travel1.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Travel</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">That wearable on your wrist could soon track your…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 1 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/travel2.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Travel</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Can't shed those Gym? The problem might be in your…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 2 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/travel3.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Travel</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Deleting fears from the brain means you might neve…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 3 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/travel4.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Travel</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Smart packs parking sensor tech and beeps when col…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 4 end -->
-										      	</div><!-- Post block row end -->
-
-									        </div><!-- Tab pane 2 end -->
-
-									        <div class="tab-pane animated fadeIn" id="tab-C">
-									            <div class="row">
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/food1.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Food</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">That wearable on your wrist could soon track your…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 1 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/food2.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Food</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Can't shed those Gym? The problem might be in your…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 2 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/food3.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Food</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Deleting fears from the brain means you might neve…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 3 end -->
-										      		<div class="col-md-3">
-											      		<div class="post-block-style clearfix">
-																<div class="post-thumb">
-																	<a href="#"><img class="img-responsive" src="images/news/lifestyle/food4.jpg" alt="" /></a>
-																</div>
-																<a class="post-cat" href="#">Food</a>
-																<div class="post-content">
-														 			<h2 class="post-title title-small">
-														 				<a href="#">Smart packs parking sensor tech and beeps when col…</a>
-														 			</h2>
-													 			</div><!-- Post content end -->
-															</div><!-- Post Block style end -->
-										      		</div><!-- Col 4 end -->
-										      	</div><!-- Post block row end -->
-									        </div><!-- Tab pane 3 end -->
-
-											</div><!-- tab content -->
-										</div><!-- Menu tab end -->
+										<!--/div--><!-- Menu tab end -->
 									</div><!-- Mega menu end -->
 								</li><!-- Tab menu end -->
 
-								<li>
-									<a href="category-style2.html">Technology</a>
-								</li>
 
-								<li class="dropdown mega-dropdown">
+
+								<!--li class="dropdown mega-dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Video <i class="fa fa-angle-down"></i></a>
 									<div class="dropdown-menu mega-menu-content hidden-xs hidden-sm clearfix">
 										<div class="mega-menu-content-inner">
@@ -401,14 +940,14 @@
 										                  	<i class="fa fa-play"></i>
 										               	</div>
 										            	</a>
-													   </div><!-- Post thumb end -->
+													   </div>
 														<div class="post-content">
 												 			<h2 class="post-title title-small">
 												 				<a href="#">Netcix cuts out the chill with an integrated...</a>
 												 			</h2>
-											 			</div><!-- Post content end -->
-													</div><!-- Post Block style end -->
-								      		</div><!-- Col 1 end -->
+											 			</div>
+													</div>
+								      		</div>
 
 								      		<div class="col-md-3">
 									      		<div class="post-block-style clearfix">
@@ -419,14 +958,14 @@
 														      	<i class="fa fa-play"></i>
 														   	</div>
 															</a>
-														</div><!-- Post thumb end -->
+														</div>
 														<div class="post-content">
 												 			<h2 class="post-title title-small">
 												 				<a href="#">Netcix cuts out the chill with an integrated...</a>
 												 			</h2>
-											 			</div><!-- Post content end -->
-													</div><!-- Post Block style end -->
-								      		</div><!-- Col 2 end -->
+											 			</div>
+													</div>
+								      		</div>
 
 								      		<div class="col-md-3">
 									      		<div class="post-block-style clearfix">
@@ -437,14 +976,14 @@
 														      	<i class="fa fa-play"></i>
 														   	</div>
 															</a>
-														</div><!-- Post thumb end -->
+														</div>
 														<div class="post-content">
 												 			<h2 class="post-title title-small">
 												 				<a href="#">TG G6 will have dual 13-megapixel cameras...</a>
 												 			</h2>
-											 			</div><!-- Post content end -->
-													</div><!-- Post Block style end -->
-								      		</div><!-- Col 3 end -->
+											 			</div>
+													</div>
+								      		</div>
 								      		<div class="col-md-3">
 									      		<div class="post-block-style clearfix">
 														<div class="post-thumb">
@@ -454,25 +993,24 @@
 														      	<i class="fa fa-play"></i>
 														   	</div>
 															</a>
-														</div><!-- Post thumb end -->
+														</div>
 														<div class="post-content">
 												 			<h2 class="post-title title-small">
 												 				<a href="#">Netcix cuts out the chill with an integrated...</a>
 												 			</h2>
-											 			</div><!-- Post content end -->
-													</div><!-- Post Block style end -->
-								      		</div><!-- Col 4 end -->
-								      	</div><!-- Post block row end -->
+											 			</div>
+													</div>
+								      		</div>
+								      	</div>
 										</div> 
 										
-									</div><!-- Mega menu content end -->
-								</li><!-- Video menu end -->
-
-								<li>
+									</div>
+								</li-->
+								<!--li>
 									<a href="category-style4.html">Travel</a>
-								</li>
+								</li-->
 
-								<li class="dropdown">
+								<!--li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" role="menu">
 										<li class="dropdown-submenu">
@@ -517,8 +1055,8 @@
 												<li><a href="contact.html">Contact</a></li>
 											</ul>
 										</li>
-									</ul><!-- End dropdown -->
-								</li><!-- Features menu end -->
+									</ul>
+								</li-->
 
 
 							</ul><!--/ Nav ul end -->
