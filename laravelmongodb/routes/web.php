@@ -19,3 +19,9 @@ Route::get('/', function () {
 
 Route::resource('category','CategoryController');
 
+//Route::resource('category/{id}', 'CategoryController@getcategory', ['parameters' => ['{id}' => 'not_id']]);
+
+//Route::resource('category/cat/{slug}','CategoryController@getcategory');
+
+
+Route::get('category/show/{slug}', 'CategoryController@getcategory');
