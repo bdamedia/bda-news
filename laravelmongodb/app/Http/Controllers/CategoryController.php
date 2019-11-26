@@ -20,6 +20,11 @@ class CategoryController extends Controller
         //    ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
+    public function getcategory($slug){
+        $id = $slug;
+        $results = Category::where('slug',$slug)->get();
+        return $results;
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -49,7 +54,8 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        //
+        $results = compact('category');
+        return $results;
     }
 
     /**
