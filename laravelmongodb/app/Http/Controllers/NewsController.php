@@ -38,7 +38,6 @@ class NewsController extends Controller
         $category = Category::all();
         $post = json_decode($results,true);
         $data['post'] = $post[0];
-        print_r($post[0]);
         $data['cat_name'] = collect($cat1)->first()->name;
         $data['menus'] = $category;
         return view('single-post')->with($data);

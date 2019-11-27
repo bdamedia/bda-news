@@ -28,7 +28,7 @@
 								<span class="post-author">
 									By <a href="#">John Doe</a>
 								</span>
-                            <span class="post-date"><i class="fa fa-clock-o"></i>{{ print_r(date('d/m/Y', strtotime($post['date']['$date']['$numberLong']))) }} March 14, 2017</span>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>{{ print_r(date('d/m/Y', strtotime($post['date']['$date']['$numberLong']))) ?? '' }} March 14, 2017</span>
                             <span class="post-hits"><i class="fa fa-eye"></i> 21</span>
                             <span class="post-comment"><i class="fa fa-comments-o"></i>
 								<a href="#" class="comments-link"><span>01</span></a></span>
@@ -37,7 +37,7 @@
 
                     <div class="post-content-area">
                         <div class="post-media post-featured-image">
-                            <a href="{{ $post['images'][0] }}" class="gallery-popup"><img src="{{ $post['images'][0] }}" class="img-responsive" alt=""></a>
+                            <a href="{{ $post['images'][0] }}" class="gallery-popup"><img src="{{ $post['images'][0] ?? '' }}" class="img-responsive" alt=""></a>
                         </div>
                         <div class="entry-content">
                             @foreach ($post['content'] as $content)
@@ -197,7 +197,7 @@
                 </div><!-- Related posts end -->
 
                 <!-- Post comment start -->
-                <div id="comments" class="comments-area block">
+                <!--div id="comments" class="comments-area block">
                     <h3 class="block-title"><span>03 Comments</span></h3>
 
                     <ul class="comments-list">
@@ -215,7 +215,7 @@
                                         <a class="comment-reply" href="#">Reply</a>
                                     </div>
                                 </div>
-                            </div><!-- Comments end -->
+                            </div>
 
                             <ul class="comments-reply">
                                 <li>
@@ -232,9 +232,9 @@
                                                 <a class="comment-reply" href="#">Reply</a>
                                             </div>
                                         </div>
-                                    </div><!-- Comments end -->
+                                    </div>
                                 </li>
-                            </ul><!-- comments-reply end -->
+                            </ul>
                             <div class="comment last">
                                 <img class="comment-avatar pull-left" alt="" src="images/news/user1.png">
                                 <div class="comment-body">
@@ -248,12 +248,12 @@
                                         <a class="comment-reply" href="#">Reply</a>
                                     </div>
                                 </div>
-                            </div><!-- Comments end -->
-                        </li><!-- Comments-list li end -->
-                    </ul><!-- Comments-list ul end -->
-                </div><!-- Post comment end -->
+                            </div>
+                        </li>
+                    </ul>
+                </div-->
 
-                <div class="comments-form">
+                <!--div class="comments-form">
                     <h3 class="title-normal">Leave a comment</h3>
 
                     <form role="form">
@@ -262,13 +262,13 @@
                                 <div class="form-group">
                                     <textarea class="form-control required-field" id="message" placeholder="Your Comment" rows="10" required></textarea>
                                 </div>
-                            </div><!-- Col end -->
+                            </div>
 
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <input class="form-control" name="name" id="name" placeholder="Your Name" type="text" required>
                                 </div>
-                            </div><!-- Col end -->
+                            </div>
 
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -281,12 +281,12 @@
                                     <input class="form-control" placeholder="Your Website" type="text" required>
                                 </div>
                             </div>
-                        </div><!-- Form row end -->
+                        </div>
                         <div class="clearfix">
                             <button class="comments-btn btn btn-primary" type="submit">Post Comment</button>
                         </div>
-                    </form><!-- Form end -->
-                </div><!-- Comments form end -->
+                    </form>
+                </div-->
 
             </div><!-- Content Col end -->
 
