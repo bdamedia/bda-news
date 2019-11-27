@@ -238,7 +238,7 @@
                 <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="{{ URL::asset('images/logos/logo.png') }}" alt="">
+                            <img src="{{ URL::asset('images/logos/logo.svg') }}" alt="">
                         </a>
                     </div>
                 </div><!-- logo col end -->

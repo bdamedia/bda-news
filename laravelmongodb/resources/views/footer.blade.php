@@ -147,7 +147,7 @@
                 <div class="col-md-12">
                     <div class="footer-info-content">
                         <div class="footer-logo">
-                            <img class="img-responsive" src="{{ URL::asset('images/logos/footer-logo.png') }}" alt="" />
+                            <img class="img-responsive" src="{{ URL::asset('images/logos/logo.svg') }}" alt="" />
                         </div>
                         <p>News247 Worldwide is a popular online newsportal and going source for technical and digital content for its influential audience around the globe. You can reach us via email or phone.</p>
                         <p class="footer-info-phone"><i class="fa fa-phone"></i> +(785) 238-4131</p>
