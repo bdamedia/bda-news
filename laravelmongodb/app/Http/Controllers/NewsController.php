@@ -2,11 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\news;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
+
+    /**
+     * Instantiate a new UserController instance.
+     */
+   /* public function __construct($cat_slug=null,$slug=null)
+    {
+        $data['cat'] = Category::where('slug',$slug)->get();
+        print_r($data);
+    }*/
+
     /**
      * Display a listing of the resource.
      *
@@ -18,17 +29,34 @@ class NewsController extends Controller
         return $news;
     }
 
-    public function getnews($slug){
+    public function getnews($cat_slug,$slug){
+
+        $cat1 = Category::where('slug',$cat_slug)->get();
+        $data['brand'] = 'Bda News';
+        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
         $results = News::where('slug',$slug)->get();
-        $data['post'] = $results;
+        $category = Category::all();
+        $post = json_decode($results,true);
+        $data['post'] = $post[0];
+        print_r($post[0]);
+        $data['cat_name'] = collect($cat1)->first()->name;
+        $data['menus'] = $category;
         return view('single-post')->with($data);
-        //return $results;
     }
 
-    public function getnewsbycategory($id){
+    public function getnewsbycategory($slug){
 
-        $results = News::where('category',$id)->get();
-        return $results;
+        $cat = Category::where('slug',$slug)->get();
+        $cat_id = collect($cat)->first()->id; // no error
+        $results = News::where('category',$cat_id)->simplePaginate(10);
+        $category = Category::all();
+        $data['brand'] = 'Bda News';
+        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
+        $data['menus'] = $category;
+        $data['category_posts'] = $results;
+        $data['cat_slug'] = $slug;
+        $data['cat_name'] = collect($cat)->first()->name;
+        return view('category-posts')->with($data);
 
     }
     /**

@@ -24,7 +24,7 @@ class IndexController extends Controller
         $data['variablethree'] = 'The value of variable three.';
 
         $data['footer'] = 'Trademark, Copyright, and all that Jazz';
-        $data['menu'] = $category;
+        $data['menus'] = $category;
 
         return view('index')->with($data);
     }

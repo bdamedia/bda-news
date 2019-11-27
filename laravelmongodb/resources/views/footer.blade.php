@@ -10,7 +10,7 @@
                                 <div class="post-block-style post-float clearfix">
                                     <div class="post-thumb">
                                         <a href="#">
-                                            <img class="img-responsive" src="images/news/lifestyle/health2.jpg" alt="" />
+                                            <img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health2.jpg') }}" alt="" />
                                         </a>
                                     </div><!-- Post thumb end -->
 
@@ -29,7 +29,7 @@
                                 <div class="post-block-style post-float clearfix">
                                     <div class="post-thumb">
                                         <a href="#">
-                                            <img class="img-responsive" src="images/news/lifestyle/health3.jpg" alt="" />
+                                            <img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health3.jpg') }}" alt="" />
                                         </a>
                                     </div><!-- Post thumb end -->
 
@@ -48,7 +48,7 @@
                                 <div class="post-block-style post-float clearfix">
                                     <div class="post-thumb">
                                         <a href="#">
-                                            <img class="img-responsive" src="images/news/lifestyle/health4.jpg" alt="" />
+                                            <img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health4.jpg') }}" alt="" />
                                         </a>
                                     </div><!-- Post thumb end -->
 
@@ -125,15 +125,15 @@
                 <div class="col-md-3 col-sm-12 footer-widget">
                     <h3 class="widget-title">Post Gallery</h3>
                     <div class="gallery-widget">
-                        <a href="#"><img class="img-responsive" src="images/news/lifestyle/health1.jpg" alt="" /></a>
-                        <a href="#"><img class="img-responsive" src="images/news/lifestyle/food3.jpg" alt="" /></a>
-                        <a href="#"><img class="img-responsive" src="images/news/lifestyle/travel4.jpg" alt="" /></a>
-                        <a href="#"><img class="img-responsive" src="images/news/lifestyle/architecture1.jpg" alt="" /></a>
-                        <a href="#"><img class="img-responsive" src="images/news/tech/gadget1.jpg" alt="" /></a>
-                        <a href="#"><img class="img-responsive" src="images/news/tech/gadget2.jpg" alt="" /></a>
-                        <a href="#"><img class="img-responsive" src="images/news/tech/game2.jpg" alt="" /></a>
-                        <a href="#"><img class="img-responsive" src="images/news/tech/robot5.jpg" alt="" /></a>
-                        <a href="#"><img class="img-responsive" src="images/news/lifestyle/travel5.jpg" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health1.jpg') }}" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/food3.jpg') }}" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel4.jpg') }}" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/architecture1.jpg') }}" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/tech/gadget1.jpg') }}" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/tech/gadget2.jpg') }}" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/tech/game2.jpg') }}" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/tech/robot5.jpg') }}" alt="" /></a>
+                        <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel5.jpg') }}" alt="" /></a>
                     </div>
                 </div><!-- Col end -->
 
@@ -147,7 +147,7 @@
                 <div class="col-md-12">
                     <div class="footer-info-content">
                         <div class="footer-logo">
-                            <img class="img-responsive" src="images/logos/footer-logo.png" alt="" />
+                            <img class="img-responsive" src="{{ URL::asset('images/logos/footer-logo.png') }}" alt="" />
                         </div>
                         <p>News247 Worldwide is a popular online newsportal and going source for technical and digital content for its influential audience around the globe. You can reach us via email or phone.</p>
                         <p class="footer-info-phone"><i class="fa fa-phone"></i> +(785) 238-4131</p>
@@ -227,23 +227,23 @@
 ================================================== -->
 
 <!-- initialize jQuery Library -->
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
 <!-- Bootstrap jQuery -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 <!-- Owl Carousel -->
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/owl.carousel.min.js') }}"></script>
 <!-- Counter -->
-<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery.counterup.min.js') }}"></script>
 <!-- Waypoints -->
-<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/waypoints.min.js') }}"></script>
 <!-- Color box -->
-<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/jquery.colorbox.js') }}"></script>
 <!-- Smoothscroll -->
-<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/smoothscroll.js') }}"></script>
 
 
 <!-- Template custom -->
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/custom.js') }}"></script>
 
 </div><!-- Body inner end -->
 </body>

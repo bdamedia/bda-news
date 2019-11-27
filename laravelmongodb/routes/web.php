@@ -18,6 +18,8 @@
 });*/
 Route::get('/', 'IndexController@index');
 Route::resource('category','CategoryController');
+Route::get('{slug}','NewsController@getnewsbycategory');
+Route::get('{cat_slug}/{slug}', 'NewsController@getnews');
 Route::resource('news','NewsController');
 
 
@@ -26,6 +28,6 @@ Route::resource('news','NewsController');
 //Route::resource('category/cat/{slug}','CategoryController@getcategory');
 
 
-Route::get('category/show/{slug}', 'CategoryController@getcategory');
+//Route::get('category/show/{slug}', 'CategoryController@getcategory');
 Route::get('news/show/{slug}', 'NewsController@getnews');
-Route::get('news/category/{id}', 'NewsController@getnewsbycategory');
+//Route::get('news/category/{id}', 'NewsController@getnewsbycategory');
