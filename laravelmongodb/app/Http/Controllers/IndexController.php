@@ -34,7 +34,7 @@ class IndexController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function  aboutus() {
+    public function  aboutus($slug) {
         $category = Category::all();
         $data['brand'] = 'Bda News';
         $data['navsearch'] = 'Search Now!';
@@ -43,7 +43,7 @@ class IndexController extends Controller
         $data['variablethree'] = 'The value of variable three.';
         $data['footer'] = 'Trademark, Copyright, and all that Jazz';
         $data['menus'] = $category;
-        return view('aboutus')->with($data);
+        return view($slug)->with($data);
     }
 
     /**

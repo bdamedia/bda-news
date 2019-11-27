@@ -120,7 +120,7 @@
                                     <div class="post-block-style post-float clearfix">
                                         <div class="post-thumb">
                                             <a href="#">
-                                                <img class="img-responsive" src="images/news/tech/gadget3.jpg" alt="" />
+                                                <img class="img-responsive" src="{{ URL::asset('images/news/tech/gadget3.jpg') }}" alt="" />
                                             </a>
                                             <a class="post-cat" href="#">Gadgets</a>
                                         </div><!-- Post thumb end -->
@@ -140,7 +140,7 @@
                                     <div class="post-block-style post-float clearfix">
                                         <div class="post-thumb">
                                             <a href="#">
-                                                <img class="img-responsive" src="images/news/lifestyle/travel5.jpg" alt="" />
+                                                <img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel5.jpg') }}" alt="" />
                                             </a>
                                             <a class="post-cat" href="#">Travel</a>
                                         </div><!-- Post thumb end -->
@@ -160,7 +160,7 @@
                                     <div class="post-block-style post-float clearfix">
                                         <div class="post-thumb">
                                             <a href="#">
-                                                <img class="img-responsive" src="images/news/tech/robot5.jpg" alt="" />
+                                                <img class="img-responsive" src="{{ URL::asset('images/news/tech/robot5.jpg') }}" alt="" />
                                             </a>
                                             <a class="post-cat" href="#">Robotics</a>
                                         </div><!-- Post thumb end -->
@@ -180,7 +180,7 @@
                                     <div class="post-block-style post-float clearfix">
                                         <div class="post-thumb">
                                             <a href="#">
-                                                <img class="img-responsive" src="images/news/lifestyle/food1.jpg" alt="" />
+                                                <img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/food1.jpg') }}" alt="" />
                                             </a>
                                             <a class="post-cat" href="#">Food</a>
                                         </div><!-- Post thumb end -->
@@ -202,7 +202,7 @@
                     </div><!-- Popular news widget end -->
 
                     <div class="widget text-center">
-                        <img class="banner img-responsive" src="images/banner-ads/ad-sidebar.png" alt="" />
+                        <img class="banner img-responsive" src="{{ URL::asset('images/banner-ads/ad-sidebar.png') }}" alt="" />
                     </div><!-- Sidebar Ad end -->
 
                     <div class="widget m-bottom-0">
