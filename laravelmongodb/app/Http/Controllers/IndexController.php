@@ -30,6 +30,74 @@ class IndexController extends Controller
     }
 
     /**
+     * Show the form for aboutus a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function  aboutus() {
+        $category = Category::all();
+        $data['brand'] = 'Bda News';
+        $data['navsearch'] = 'Search Now!';
+        $data['variableone'] = 'The value of variable one.';
+        $data['variabletwo'] = 'The value of variable two.';
+        $data['variablethree'] = 'The value of variable three.';
+        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
+        $data['menus'] = $category;
+        return view('aboutus')->with($data);
+    }
+
+    /**
+     * Show the form for writeus a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function  writeus() {
+        $category = Category::all();
+        $data['brand'] = 'Bda News';
+        $data['navsearch'] = 'Search Now!';
+        $data['variableone'] = 'The value of variable one.';
+        $data['variabletwo'] = 'The value of variable two.';
+        $data['variablethree'] = 'The value of variable three.';
+        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
+        $data['menus'] = $category;
+        return view('writeus')->with($data);
+    }
+
+    /**
+     * Show the form for advertise a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function  advertise() {
+        $category = Category::all();
+        $data['brand'] = 'Bda News';
+        $data['navsearch'] = 'Search Now!';
+        $data['variableone'] = 'The value of variable one.';
+        $data['variabletwo'] = 'The value of variable two.';
+        $data['variablethree'] = 'The value of variable three.';
+        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
+        $data['menus'] = $category;
+        return view('advertise')->with($data);
+    }
+
+    /**
+     * Show the form for contact a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function  contact() {
+        $category = Category::all();
+        $data['brand'] = 'Bda News';
+        $data['navsearch'] = 'Search Now!';
+        $data['variableone'] = 'The value of variable one.';
+        $data['variabletwo'] = 'The value of variable two.';
+        $data['variablethree'] = 'The value of variable three.';
+        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
+        $data['menus'] = $category;
+        return view('contact')->with($data);
+    }
+
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response

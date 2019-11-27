@@ -196,10 +196,10 @@
                         <i class="fa fa-calendar-check-o"></i>May 29, 2017
                     </div>
                     <ul class="unstyled top-nav">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Write for Us</a></li>
-                        <li><a href="#">Advertise</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/top/page/aboutus">About</a></li>
+                        <li><a href="/top/page/writeus">Write for Us</a></li>
+                        <li><a href="/top/page/advertise">Advertise</a></li>
+                        <li><a href="/top/page/contact">Contact</a></li>
                     </ul>
                 </div><!--/ Top bar left end -->
 

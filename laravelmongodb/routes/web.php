@@ -22,6 +22,11 @@ Route::get('{slug}','NewsController@getnewsbycategory');
 Route::get('{cat_slug}/{slug}', 'NewsController@getnews');
 Route::resource('news','NewsController');
 
+// top four pages
+Route::get('top/page/aboutus/', 'IndexController@aboutus');
+Route::get('top/page/writeus/', 'IndexController@writeus');
+Route::get('top/page/advertise/', 'IndexController@advertise');
+Route::get('top/page/contact/', 'IndexController@contact');
 
 //Route::resource('category/{id}', 'CategoryController@getcategory', ['parameters' => ['{id}' => 'not_id']]);
 
