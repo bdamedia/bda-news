@@ -20,13 +20,16 @@ class NewsController extends Controller
 
     public function getnews($slug){
         $results = News::where('slug',$slug)->get();
-        return $results;
+        $data['post'] = $results;
+        return view('single-post')->with($data);
+        //return $results;
     }
 
     public function getnewsbycategory($id){
 
         $results = News::where('category',$id)->get();
         return $results;
+
     }
     /**
      * Show the form for creating a new resource.

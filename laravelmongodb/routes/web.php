@@ -11,11 +11,13 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
 	// $connection = new Mongo();
 	// print_r($connection);
     return view('welcome');
 });
+*/
+Route::get('/{category}/{slug}', 'NewsController@getnews');
 
 Route::resource('category','CategoryController');
 Route::resource('news','NewsController');
