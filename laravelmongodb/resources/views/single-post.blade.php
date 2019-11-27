@@ -100,7 +100,7 @@
 
                 <div class="author-box">
                     <div class="author-img pull-left">
-                        <img src="images/news/author.png" alt="">
+                        <img src="{{ URL::asset('images/news/author.png') }}"  alt="">
                     </div>
                     <div class="author-info">
                         <h3>Razon Khan</h3>
@@ -124,7 +124,7 @@
                         <div class="item">
                             <div class="post-block-style clearfix">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="img-responsive" src="images/news/lifestyle/travel5.jpg" alt="" /></a>
+                                    <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel5.jpg') }}" alt="" /></a>
                                 </div>
                                 <a class="post-cat" href="#">Health</a>
                                 <div class="post-content">
@@ -142,7 +142,7 @@
                         <div class="item">
                             <div class="post-block-style clearfix">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="img-responsive" src="images/news/lifestyle/health5.jpg" alt="" /></a>
+                                    <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health5.jpg') }}" alt="" /></a>
                                 </div>
                                 <a class="post-cat" href="#">Health</a>
                                 <div class="post-content">
@@ -160,7 +160,7 @@
                         <div class="item">
                             <div class="post-block-style clearfix">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="img-responsive" src="images/news/lifestyle/travel3.jpg" alt="" /></a>
+                                    <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel3.jpg') }}" alt="" /></a>
                                 </div>
                                 <a class="post-cat" href="#">Travel</a>
                                 <div class="post-content">
@@ -178,7 +178,7 @@
                         <div class="item">
                             <div class="post-block-style clearfix">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="img-responsive" src="images/news/lifestyle/travel4.jpg" alt="" /></a>
+                                    <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel4.jpg') }}" alt="" /></a>
                                 </div>
                                 <a class="post-cat" href="#">Travel</a>
                                 <div class="post-content">
