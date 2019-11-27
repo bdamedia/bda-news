@@ -38,7 +38,7 @@
                                             <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
                                         </a>
                                     </div>
-                                    <a class="post-cat" href="#">{{ $cat_name }}</a>
+                                    <a class="post-cat" href="# ">{{ $cat_name }}</a>
                                     <div class="post-content">
                                         <h2 class="post-title title-large">
                                             <a href="{{ $cat_slug }}/{{ $post->slug }}">{{ $post->title }}</a>
