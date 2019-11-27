@@ -47,14 +47,14 @@ class NewsController extends Controller
 
         $cat = Category::where('slug',$slug)->get();
         $cat_id = collect($cat)->first()->id; // no error
-        $results = News::where('category',$cat_id)->simplePaginate(10);
         $category = Category::all();
         $data['brand'] = 'Bda News';
         $data['footer'] = 'Trademark, Copyright, and all that Jazz';
         $data['menus'] = $category;
-        $data['category_posts'] = $results;
         $data['cat_slug'] = $slug;
         $data['cat_name'] = collect($cat)->first()->name;
+        $results = News::where('category',$cat_id)->paginate(10);
+        $data['category_posts'] = $results;
         return view('category-posts')->with($data);
 
     }
