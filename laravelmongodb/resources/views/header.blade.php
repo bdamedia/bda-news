@@ -197,17 +197,17 @@
                         <i class="fa fa-calendar-check-o"></i>May 29, 2017
                     </div>
                     <ul class="unstyled top-nav">
-                        <li><a href="/top/page/aboutus">About</a></li>
-                        <li><a href="/top/page/writeus">Write for Us</a></li>
-                        <li><a href="/top/page/advertise">Advertise</a></li>
-                        <li><a href="/top/page/contact">Contact</a></li>
+                        <li><a href="/top/page/aboutus">About us</a></li>
+                        <li><a href="/top/page/writeus">Policy</a></li>
+                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li>
+                        <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li>
                     </ul>
                 </div><!--/ Top bar left end -->
 
                 <div class="col-md-4 col-sm-4 col-xs-12 top-social text-right">
                     <ul class="unstyled">
                         <li>
-                            <a title="Facebook" href="https://facebook.com/" target="_blank">
+                            <a title="Facebook" href="https://facebook.com/5Vietnam247" target="_blank">
                                 <span class="social-icon"><i class="fa fa-facebook"></i></span>
                             </a>
                             <a title="Twitter" href="https://twitter.com/" target="_blank">
