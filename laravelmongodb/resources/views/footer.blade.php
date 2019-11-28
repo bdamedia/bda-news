@@ -154,31 +154,31 @@
                         <p class="footer-info-email"><i class="fa fa-envelope-o"></i> editor@news247.com</p>
                         <ul class="unstyled footer-social">
                             <li>
-                                <a title="Rss" href="#">
+                                <a title="Rss" href="https://fontawesome.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-rss"></i></span>
                                 </a>
-                                <a title="Facebook" href="#">
+                                <a title="Facebook" href="https://facebook.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-facebook"></i></span>
                                 </a>
-                                <a title="Twitter" href="#">
+                                <a title="Twitter" href="https://twitter.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-twitter"></i></span>
                                 </a>
-                                <a title="Google+" href="#">
+                                <a title="Google+" href="https://aboutme.google.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-google-plus"></i></span>
                                 </a>
-                                <a title="Linkdin" href="#">
+                                <a title="Linkdin" href="https://linkedin.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-linkedin"></i></span>
                                 </a>
-                                <a title="Skype" href="#">
+                                <a title="Skype" href="https://skype.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-skype"></i></span>
                                 </a>
-                                <a title="Skype" href="#">
+                                <a title="Dribbble" href="https://dribbble.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-dribbble"></i></span>
                                 </a>
-                                <a title="Skype" href="#">
+                                <a title="Pinterest" href="https://pinterest.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-pinterest"></i></span>
                                 </a>
-                                <a title="Skype" href="#">
+                                <a title="Instagram" href="https://instagram.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-instagram"></i></span>
                                 </a>
                             </li>
