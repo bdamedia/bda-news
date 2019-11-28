@@ -46,7 +46,7 @@
 
 				</div><!-- Widget end -->
 
-				<h3>Contact Form</h3>
+				<!-- <h3>Contact Form</h3>
 	    			<form id="contact-form" action="contact-form.php" method="post" role="form">
 	    				<div class="error-container"></div>
 						<div class="row">
@@ -78,7 +78,7 @@
 						<div class="text-right"><br>
 							<button class="btn btn-primary solid blank" type="submit">Send Message</button> 
 						</div>
-					</form>
+					</form> -->
 				</div><!-- Content Col end -->
 				@include('sidebar')
 			</div><!-- Row end -->

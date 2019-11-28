@@ -47,7 +47,7 @@
 				</div><!-- Widget end -->
 
 				<h3>Contact Form</h3>
-	    			<form id="contact-form" action="contact-form.php" method="post" role="form">
+	    			<form id="contact-form" action="sendEmailReminder" method="post" role="form">
 	    				<div class="error-container"></div>
 						<div class="row">
 							<div class="col-md-4">
