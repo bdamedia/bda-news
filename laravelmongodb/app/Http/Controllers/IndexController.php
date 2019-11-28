@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Mail;
 use App\Category;
 use App\index;
 use Illuminate\Http\Request;
@@ -115,7 +116,19 @@ class IndexController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $subject = $request->input('subject');
+        //print_r($request->input('message'));
+
+        /*Mail::raw($subject, function($message)
+        {
+            $message->from('kuldeep.raj@dba_media', 'BDA');
+            $message->to("kuldeep.raj@dba_media")->cc("kuldeep.raj@dba_media");
+        });*/
+
+        $data['message'] = 'Thanks for sharing some information';
+        return  view('message')->with($data);
     }
 
     /**
