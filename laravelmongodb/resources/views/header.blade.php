@@ -196,32 +196,32 @@
                         <i class="fa fa-calendar-check-o"></i>May 29, 2017
                     </div>
                     <ul class="unstyled top-nav">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Write for Us</a></li>
-                        <li><a href="#">Advertise</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/top/page/aboutus">About</a></li>
+                        <li><a href="/top/page/writeus">Write for Us</a></li>
+                        <li><a href="/top/page/advertise">Advertise</a></li>
+                        <li><a href="/top/page/contact">Contact</a></li>
                     </ul>
                 </div><!--/ Top bar left end -->
 
                 <div class="col-md-4 col-sm-4 col-xs-12 top-social text-right">
                     <ul class="unstyled">
                         <li>
-                            <a title="Facebook" href="#">
+                            <a title="Facebook" href="https://facebook.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-facebook"></i></span>
                             </a>
-                            <a title="Twitter" href="#">
+                            <a title="Twitter" href="https://twitter.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-twitter"></i></span>
                             </a>
-                            <a title="Google+" href="#">
+                            <a title="Google+" href="https://aboutme.google.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-google-plus"></i></span>
                             </a>
-                            <a title="Linkdin" href="#">
+                            <a title="Linkdin" href="https://linkedin.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-linkedin"></i></span>
                             </a>
-                            <a title="Rss" href="#">
+                            <a title="Rss" href="https://fontawesome.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-rss"></i></span>
                             </a>
-                            <a title="Skype" href="#">
+                            <a title="Skype" href="https://skype.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-skype"></i></span>
                             </a>
                         </li>
