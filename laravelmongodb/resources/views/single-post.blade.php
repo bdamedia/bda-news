@@ -22,7 +22,7 @@
                     <div class="post-title-area">
                         <a class="post-cat" href="#">Health</a>
                         <h2 class="post-title">
-                            {{ $post['title'] }}
+                            {{ $post['title'] ?? '' }}
                         </h2>
                         <div class="post-meta">
 								<span class="post-author">
@@ -37,11 +37,11 @@
 
                     <div class="post-content-area">
                         <div class="post-media post-featured-image">
-                            <a href="{{ $post['images'][0] }}" class="gallery-popup"><img src="{{ $post['images'][0] ?? '' }}" class="img-responsive" alt=""></a>
+                            <a href="{{ $post['images'][0] ?? '' }}" class="gallery-popup"><img src="{{ $post['images'][0] ?? '' }}" class="img-responsive" alt=""></a>
                         </div>
                         <div class="entry-content">
                             @foreach ($post['content'] as $content)
-                               <p> {{ $content }} </p>
+                               <p> {{ $content ?? '' }} </p>
                             @endforeach
                         </div><!-- Entery content end -->
 
@@ -289,7 +289,7 @@
                 </div-->
 
             </div><!-- Content Col end -->
-            
+
             @include('sidebar')
         </div><!-- Row end -->
     </div><!-- Container end -->
