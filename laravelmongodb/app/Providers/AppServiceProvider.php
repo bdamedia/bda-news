@@ -43,7 +43,7 @@ class AppServiceProvider extends ServiceProvider
         }else{
             $cat_slug = 'thoi-su';
         }
-
+        $cat_slug  = "thoi-su";
         $catresult = Category::where('slug',$cat_slug)->get();
         $cat_name = collect($catresult)->first()->name; // no error
         $cat_id = collect($catresult)->first()->id; // no error
