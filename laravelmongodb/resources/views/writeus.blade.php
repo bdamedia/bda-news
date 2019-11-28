@@ -6,7 +6,7 @@
 					<ol class="breadcrumb">
      					<li><a href="#">Home</a></li>
      					<li><a href="#">Features</a></li>
-     					<li>Write Us</li>
+     					<li>Policy</li>
      				</ol>
 				</div><!-- Col end -->
 			</div><!-- Row end -->
@@ -18,7 +18,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-				<h3>Write Us</h3>
+				<h3>Policy</h3>
 				<p>Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted</p>
 
 				<div class="widget contact-info">

@@ -6,7 +6,7 @@
 					<ol class="breadcrumb">
      					<li><a href="#">Home</a></li>
      					<li><a href="#">Features</a></li>
-     					<li>Advertise</li>
+     					<li>LH Quảng cáo</li>
      				</ol>
 				</div><!-- Col end -->
 			</div><!-- Row end -->
@@ -18,7 +18,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-				<h3>Advertise</h3>
+				<h3>LH Quảng cáo</h3>
 				<p>Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted</p>
 
 				<div class="widget contact-info">
@@ -46,7 +46,7 @@
 
 				</div><!-- Widget end -->
 
-				<h3>Contact Form</h3>
+					<!-- <h3>Contact Form</h3>
 	    			<form id="contact-form" action="contact-form.php" method="post" role="form">
 	    				<div class="error-container"></div>
 						<div class="row">
@@ -78,7 +78,7 @@
 						<div class="text-right"><br>
 							<button class="btn btn-primary solid blank" type="submit">Send Message</button> 
 						</div>
-					</form>
+					</form> -->
 
 
 

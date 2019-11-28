@@ -149,15 +149,19 @@
                         <div class="footer-logo">
                             <img class="img-responsive" src="{{ URL::asset('images/logos/logo.svg') }}" alt="" />
                         </div>
-                        <p>News247 Worldwide is a popular online newsportal and going source for technical and digital content for its influential audience around the globe. You can reach us via email or phone.</p>
-                        <p class="footer-info-phone"><i class="fa fa-phone"></i> +(785) 238-4131</p>
-                        <p class="footer-info-email"><i class="fa fa-envelope-o"></i> editor@news247.com</p>
+                        <p>Báo điện tử 5Vietnam - Một chuyên trang của BDA Media Network.
+Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puerto Rico.</p>
+                        <p class="footer-info-phone"><i class="fa fa-phone"></i>Email : news@5vietnam.com</p>
+                        <p class="footer-info-email"><i class="fa fa-envelope-o"></i>Liên hệ quảng cáo : ads@5vietnam.com</p>
+
+                        <!-- <p class="footer-info-phone"><i class="fa fa-phone"></i> +(785) 238-4131</p>
+                        <p class="footer-info-email"><i class="fa fa-envelope-o"></i> editor@news247.com</p> -->
                         <ul class="unstyled footer-social">
                             <li>
                                 <a title="Rss" href="https://fontawesome.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-rss"></i></span>
                                 </a>
-                                <a title="Facebook" href="https://facebook.com/" target="_blank">
+                                <a title="Facebook" href="https://www.facebook.com/5Vietnam247" target="_blank">
                                     <span class="social-icon"><i class="fa fa-facebook"></i></span>
                                 </a>
                                 <a title="Twitter" href="https://twitter.com/" target="_blank">
@@ -196,7 +200,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <div class="copyright-info">
-                    <span>Copyright © 2017 News247 All Rights Reserved. Designed By Tripples</span>
+                    <span>Copyright © 2017 5Vietnam All Rights Reserved</span>
                 </div>
             </div>
 
