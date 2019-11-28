@@ -27,7 +27,7 @@
 				<div class="post-content">
 		 			<a class="post-cat" href="#">{{ $data['category_name'] }}</a>
 		 			<h2 class="post-title title-small">
-                        <a href="/{{ $cat_slug }}/{{ $post->slug }}">{{ $post->title }}</a>
+                        <a href="/{{ $data['cat_slug'] }}/{{ $post->slug }}">{{ $post->title }}</a>
 		 			</h2>
 		 			<div class="post-meta">
 		 				<span class="post-date">{{ $post->date->toDateTime()->format('M d, Y') }}</span>
@@ -51,7 +51,7 @@
 
                                 <div class="post-content">
                                     <h2 class="post-title title-small">
-                                        <a href="/{{ $cat_slug }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                        <a href="/{{ $data['cat_slug'] }}/{{ $post->slug }}">{{ $post->title }}</a>
                                     </h2>
                                     <div class="post-meta">
                                         <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
