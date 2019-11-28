@@ -33,7 +33,12 @@ class AppServiceProvider extends ServiceProvider
         $category = Category::all();
         $data['menus'] = $category;
         $cat_slug = array_values(array_filter(explode('/',$request->getRequestUri())));
-        $catresult = Category::where('slug',$cat_slug[0])->get();
+        if($cat_slug[0]){
+            $cat_slug = $cat_slug;
+        }else{
+            $cat_slug = 'thoi-su';
+        }
+        $catresult = Category::where('slug',$cat_slug)->get();
         $cat_name = collect($catresult)->first()->name; // no error
         $cat_id = collect($catresult)->first()->id; // no error
         $randomPosts = News::where('category',$cat_id)->skip(15)->take(5)->get();
