@@ -16,107 +16,50 @@
 		<div class="widget color-default">
 			<h3 class="block-title"><span>Popular News</span></h3>
 
+            @foreach ($data['popular_posts'] as $post)
 			<div class="post-overaly-style clearfix">
 				<div class="post-thumb">
-					<a href="#">
-						<img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health4.jpg')}}" alt="" />
+					<a href="{{ $post->thumb_url }}">
+						<img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
 					</a>
 				</div>
-				
+
 				<div class="post-content">
-		 			<a class="post-cat" href="#">Health</a>
+		 			<a class="post-cat" href="#">{{ $data['category_name'] }}</a>
 		 			<h2 class="post-title title-small">
-		 				<a href="#">Smart packs parking sensor tech and beeps when col…</a>
+                        <a href="/{{ $cat_slug }}/{{ $post->slug }}">{{ $post->title }}</a>
 		 			</h2>
 		 			<div class="post-meta">
-		 				<span class="post-date">Feb 06, 2017</span>
+		 				<span class="post-date">{{ $post->date->toDateTime()->format('M d, Y') }}</span>
 		 			</div>
 	 			</div><!-- Post content end -->
 			</div><!-- Post Overaly Article end -->
-
+            @endforeach
 
 			<div class="list-post-block">
 				<ul class="list-post">
-					<li class="clearfix">
-						<div class="post-block-style post-float clearfix">
-							<div class="post-thumb">
-								<a href="#">
-									<img class="img-responsive" src="{{ URL::asset('images/news/tech/gadget3.jpg')}}" alt="" />
-								</a>
-								<a class="post-cat" href="#">Gadgets</a>
-							</div><!-- Post thumb end -->
 
-							<div class="post-content">
-					 			<h2 class="post-title title-small">
-					 				<a href="#">Panasonic's new Sumix CH7 an ultra portable filmmaker's drea…</a>
-					 			</h2>
-					 			<div class="post-meta">
-					 				<span class="post-date">Mar 13, 2017</span>
-					 			</div>
-				 			</div><!-- Post content end -->
-						</div><!-- Post block style end -->
-					</li><!-- Li 1 end -->
+                    @foreach ($data['random_posts'] as $post)
+                        <li class="clearfix">
+                            <div class="post-block-style post-float clearfix">
+                                <div class="post-thumb">
+                                    <a href="{{ $post->thumb_url }}">
+                                        <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                    </a>
+                                    <a class="post-cat" href="#">{{ $data['category_name'] }}</a>
+                                </div><!-- Post thumb end -->
 
-					<li class="clearfix">
-						<div class="post-block-style post-float clearfix">
-							<div class="post-thumb">
-								<a href="#">
-									<img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel5.jpg')}}" alt="" />
-								</a>
-								<a class="post-cat" href="#">Travel</a>
-							</div><!-- Post thumb end -->
-
-							<div class="post-content">
-					 			<h2 class="post-title title-small">
-					 				<a href="#">Hynopedia helps female travelers find health care...</a>
-					 			</h2>
-					 			<div class="post-meta">
-					 				<span class="post-date">Jan 11, 2017</span>
-					 			</div>
-				 			</div><!-- Post content end -->
-						</div><!-- Post block style end -->
-					</li><!-- Li 2 end -->
-
-					<li class="clearfix">
-						<div class="post-block-style post-float clearfix">
-							<div class="post-thumb">
-								<a href="#">
-									<img class="img-responsive" src="{{ URL::asset('images/news/tech/robot5.jpg')}}" alt="" />
-								</a>
-								<a class="post-cat" href="#">Robotics</a>
-							</div><!-- Post thumb end -->
-
-							<div class="post-content">
-					 			<h2 class="post-title title-small">
-					 				<a href="#">Robots in hospitals can be quite handy to navigate around...</a>
-					 			</h2>
-					 			<div class="post-meta">
-					 				<span class="post-date">Feb 19, 2017</span>
-					 			</div>
-				 			</div><!-- Post content end -->
-						</div><!-- Post block style end -->
-					</li><!-- Li 3 end -->
-
-					<li class="clearfix">
-						<div class="post-block-style post-float clearfix">
-							<div class="post-thumb">
-								<a href="#">
-									<img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/food1.jpg')}}" alt="" />
-								</a>
-								<a class="post-cat" href="#">Food</a>
-							</div><!-- Post thumb end -->
-
-							<div class="post-content">
-					 			<h2 class="post-title title-small">
-					 				<a href="#">Tacos ditched the naked chicken chalupa, so here's how…</a>
-					 			</h2>
-					 			<div class="post-meta">
-					 				<span class="post-date">Feb 27, 2017</span>
-					 			</div>
-				 			</div><!-- Post content end -->
-						</div><!-- Post block style end -->
-					</li><!-- Li 4 end -->
-
+                                <div class="post-content">
+                                    <h2 class="post-title title-small">
+                                        <a href="/{{ $cat_slug }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                    </div>
+                                </div><!-- Post content end -->
+                            </div><!-- Post block style end -->
+                        </li><!-- Li 1 end -->
+                    @endforeach
 				</ul><!-- List post end -->
 			</div><!-- List post block end -->
 

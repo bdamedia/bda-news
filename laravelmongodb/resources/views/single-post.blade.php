@@ -20,18 +20,18 @@
                 <div class="single-post">
 
                     <div class="post-title-area">
-                        <a class="post-cat" href="#">Health</a>
+                        <a class="post-cat" href="#">{{ $cat_name }}</a>
                         <h2 class="post-title">
                             {{ $post['title'] ?? '' }}
                         </h2>
                         <div class="post-meta">
 								<span class="post-author">
-									By <a href="#">John Doe</a>
+									By <a href="#">{{ $data['authors'][array_rand($data['authors'])] }}</a>
 								</span>
-                            <span class="post-date"><i class="fa fa-clock-o"></i>{{ print_r(date('d/m/Y', strtotime($post['date']['$date']['$numberLong']))) ?? '' }} March 14, 2017</span>
-                            <span class="post-hits"><i class="fa fa-eye"></i> 21</span>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>{{--{{ $post['date']['$date']->toDateTime()->format('M d, Y') }}--}}</span>
+                            <!--span class="post-hits"><i class="fa fa-eye"></i> 21</span>
                             <span class="post-comment"><i class="fa fa-comments-o"></i>
-								<a href="#" class="comments-link"><span>01</span></a></span>
+								<a href="#" class="comments-link"><span>01</span></a></span-->
                         </div>
                     </div><!-- Post title end -->
 
@@ -79,7 +79,7 @@
                     </div><!-- post-content end -->
                 </div><!-- Single post end -->
 
-                <nav class="post-navigation clearfix">
+                <!--nav class="post-navigation clearfix">
                     <div class="post-previous">
                         <a href="#">
                             <span><i class="fa fa-angle-left"></i>Previous Post</span>
@@ -96,9 +96,9 @@
                             </h3>
                         </a>
                     </div>
-                </nav><!-- Post navigation end -->
+                </nav--><!-- Post navigation end -->
 
-                <div class="author-box">
+                <!--div class="author-box">
                     <div class="author-img pull-left">
                         <img src="{{ URL::asset('images/news/author.png') }}"  alt="">
                     </div>
@@ -115,181 +115,38 @@
                             <a href="#"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                     </div>
-                </div> <!-- Author box end -->
+                </div--> <!-- Author box end -->
 
                 <div class="related-posts block">
                     <h3 class="block-title"><span>Related Posts</span></h3>
 
                     <div id="latest-news-slide" class="owl-carousel owl-theme latest-news-slide">
+
+
+                        @foreach ($releted_posts as $post)
                         <div class="item">
                             <div class="post-block-style clearfix">
                                 <div class="post-thumb">
-                                    <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel5.jpg') }}" alt="" /></a>
+                                    <a href="{{ $post->thumb_url }}"><img class="img-responsive" src="{{ $post->thumb_url }}" alt="" /></a>
                                 </div>
-                                <a class="post-cat" href="#">Health</a>
+                                <a class="post-cat" href="#">{{ $data['category_name'] }}</a>
                                 <div class="post-content">
                                     <h2 class="post-title title-medium">
-                                        <a href="#">Hynopedia helps female travelers find health care in Maldivs</a>
+                                        <a href="/{{ $cat_slug }}/{{ $post->slug }}">{{ $post->title }}</a>
                                     </h2>
                                     <div class="post-meta">
                                         <span class="post-author"><a href="#">John Doe</a></span>
-                                        <span class="post-date">Feb 19, 2017</span>
+                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
                                     </div>
                                 </div><!-- Post content end -->
                             </div><!-- Post Block style end -->
                         </div><!-- Item 1 end -->
+                        @endforeach
 
-                        <div class="item">
-                            <div class="post-block-style clearfix">
-                                <div class="post-thumb">
-                                    <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health5.jpg') }}" alt="" /></a>
-                                </div>
-                                <a class="post-cat" href="#">Health</a>
-                                <div class="post-content">
-                                    <h2 class="post-title title-medium">
-                                        <a href="#">Netcix cuts out the chill with an integrated...</a>
-                                    </h2>
-                                    <div class="post-meta">
-                                        <span class="post-author"><a href="#">John Doe</a></span>
-                                        <span class="post-date">Feb 19, 2017</span>
-                                    </div>
-                                </div><!-- Post content end -->
-                            </div><!-- Post Block style end -->
-                        </div><!-- Item 2 end -->
-
-                        <div class="item">
-                            <div class="post-block-style clearfix">
-                                <div class="post-thumb">
-                                    <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel3.jpg') }}" alt="" /></a>
-                                </div>
-                                <a class="post-cat" href="#">Travel</a>
-                                <div class="post-content">
-                                    <h2 class="post-title title-medium">
-                                        <a href="#">This Aeroplane that looks like a butt is the largest aircraft in the world</a>
-                                    </h2>
-                                    <div class="post-meta">
-                                        <span class="post-author"><a href="#">John Doe</a></span>
-                                        <span class="post-date">Feb 19, 2017</span>
-                                    </div>
-                                </div><!-- Post content end -->
-                            </div><!-- Post Block style end -->
-                        </div><!-- Item 3 end -->
-
-                        <div class="item">
-                            <div class="post-block-style clearfix">
-                                <div class="post-thumb">
-                                    <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel4.jpg') }}" alt="" /></a>
-                                </div>
-                                <a class="post-cat" href="#">Travel</a>
-                                <div class="post-content">
-                                    <h2 class="post-title title-medium">
-                                        <a href="#">19 incredible photos from Disney's 'Star Wars' cruise algore</a>
-                                    </h2>
-                                    <div class="post-meta">
-                                        <span class="post-author"><a href="#">John Doe</a></span>
-                                        <span class="post-date">Feb 19, 2017</span>
-                                    </div>
-                                </div><!-- Post content end -->
-                            </div><!-- Post Block style end -->
-                        </div><!-- Item 4 end -->
                     </div><!-- Carousel end -->
 
                 </div><!-- Related posts end -->
-
-                <!-- Post comment start -->
-                <!--div id="comments" class="comments-area block">
-                    <h3 class="block-title"><span>03 Comments</span></h3>
-
-                    <ul class="comments-list">
-                        <li>
-                            <div class="comment">
-                                <img class="comment-avatar pull-left" alt="" src="images/news/user1.png">
-                                <div class="comment-body">
-                                    <div class="meta-data">
-                                        <span class="comment-author">Michelle Aimber</span>
-                                        <span class="comment-date pull-right">January 17, 2017 at 1:38 pm</span>
-                                    </div>
-                                    <div class="comment-content">
-                                        <p>High Life tempor retro Truffaut. Tofu mixtape twee, assumenda quinoa flexitarian aesthetic artisan vinyl pug. Chambray et Carles Thundercats cardigan actually, magna bicycle rights.</p></div>
-                                    <div class="text-left">
-                                        <a class="comment-reply" href="#">Reply</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <ul class="comments-reply">
-                                <li>
-                                    <div class="comment">
-                                        <img class="comment-avatar pull-left" alt="" src="images/news/user2.png">
-                                        <div class="comment-body">
-                                            <div class="meta-data">
-                                                <span class="comment-author">Genelia Dusteen</span>
-                                                <span class="comment-date pull-right">January 17, 2017 at 1:38 pm</span>
-                                            </div>
-                                            <div class="comment-content">
-                                                <p>Farm-to-table selfies labore, leggings cupidatat sunt taxidermy umami fanny pack typewriter hoodie art party voluptate cardigan banjo.</p></div>
-                                            <div class="text-left">
-                                                <a class="comment-reply" href="#">Reply</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="comment last">
-                                <img class="comment-avatar pull-left" alt="" src="images/news/user1.png">
-                                <div class="comment-body">
-                                    <div class="meta-data">
-                                        <span class="comment-author">Michelle Aimber</span>
-                                        <span class="comment-date pull-right">January 17, 2017 at 1:38 pm</span>
-                                    </div>
-                                    <div class="comment-content">
-                                        <p>VHS Wes Anderson Banksy food truck vero. Farm-to-table selfies labore, leggings cupidatat sunt taxidermy umami fanny pack typewriter hoodie art party voluptate cardigan banjo.</p></div>
-                                    <div class="text-left">
-                                        <a class="comment-reply" href="#">Reply</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div-->
-
-                <!--div class="comments-form">
-                    <h3 class="title-normal">Leave a comment</h3>
-
-                    <form role="form">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea class="form-control required-field" id="message" placeholder="Your Comment" rows="10" required></textarea>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input class="form-control" name="name" id="name" placeholder="Your Name" type="text" required>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input class="form-control" name="email" id="email" placeholder="Your Email" type="email" required>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Your Website" type="text" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix">
-                            <button class="comments-btn btn btn-primary" type="submit">Post Comment</button>
-                        </div>
-                    </form>
-                </div-->
-
             </div><!-- Content Col end -->
-
             @include('sidebar')
         </div><!-- Row end -->
     </div><!-- Container end -->

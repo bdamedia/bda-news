@@ -5,7 +5,7 @@
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>{{ $brand ?? '' }}</title>
+    <title>{{ $data['brand'] ?? '' }}</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -237,7 +237,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="{{ URL::asset('images/logos/logo.svg') }}" alt="">
                         </a>
                     </div>
@@ -266,7 +266,7 @@
 
                         <div class="collapse navbar-collapse navbar-responsive-collapse">
                             <ul class="nav navbar-nav">
-                                @foreach ($menus as $menu)
+                                @foreach ($data['menus'] as $menu)
                                     <li>
                                         <a href="/{{ $menu->slug }}">{{ $menu->name }}</a>
                                     </li>

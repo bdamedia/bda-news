@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\news;
 use Illuminate\Http\Request;
+use Carbon\Traits\Date;
 
 class NewsController extends Controller
 {
@@ -32,14 +33,15 @@ class NewsController extends Controller
     public function getnews($cat_slug,$slug){
 
         $cat1 = Category::where('slug',$cat_slug)->get();
-        $data['brand'] = 'Bda News';
-        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
+        $data['cat_slug'] = $cat_slug;
         $results = News::where('slug',$slug)->get();
-        $category = Category::all();
         $post = json_decode($results,true);
         $data['post'] = $post[0];
+        $title = $post[0]['title'];
         $data['cat_name'] = collect($cat1)->first()->name;
-        $data['menus'] = $category;
+        $titleArray = explode(' ',$title);
+        $reletedPosts = News::where('title','like',"%$titleArray[0]%")->skip(15)->take(10)->get();
+        $data['releted_posts'] = $reletedPosts;
         return view('single-post')->with($data);
     }
 
@@ -47,10 +49,6 @@ class NewsController extends Controller
 
         $cat = Category::where('slug',$slug)->get();
         $cat_id = collect($cat)->first()->id; // no error
-        $category = Category::all();
-        $data['brand'] = 'Bda News';
-        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
-        $data['menus'] = $category;
         $data['cat_slug'] = $slug;
         $data['cat_name'] = collect($cat)->first()->name;
         $results = News::where('category',$cat_id)->paginate(10);
