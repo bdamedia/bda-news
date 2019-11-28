@@ -5,6 +5,7 @@
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ $brand ?? '' }}</title>
 
     <!-- Mobile Specific Metas

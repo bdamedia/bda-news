@@ -47,7 +47,9 @@
 				</div><!-- Widget end -->
 
 				<h3>Contact Form</h3>
-	    			<form id="contact-form" action="sendEmailReminder" method="post" role="form">
+	    			<form id="contact-form" action="/top/page/form/create" method="post" role="form">
+	    				<input type="hidden" name="_method" value="POST">
+    					<input type="hidden" name="_token" value="{{ csrf_token() }}">
 	    				<div class="error-container"></div>
 						<div class="row">
 							<div class="col-md-4">
