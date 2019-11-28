@@ -194,7 +194,7 @@
             <div class="row">
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <div class="ts-date">
-                        <i class="fa fa-calendar-check-o"></i>May 29, 2017
+                        <i class="fa fa-calendar-check-o"></i>{{date("F j, Y ")}}
                     </div>
                     <ul class="unstyled top-nav">
                         <li><a href="/top/page/aboutus">About us</a></li>
