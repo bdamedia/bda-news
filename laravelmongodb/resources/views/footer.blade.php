@@ -6,62 +6,27 @@
                     <h3 class="widget-title">Trending Now</h3>
                     <div class="list-post-block">
                         <ul class="list-post">
+                            @foreach ($data['random_posts'] as $post)
                             <li class="clearfix">
                                 <div class="post-block-style post-float clearfix">
                                     <div class="post-thumb">
-                                        <a href="#">
-                                            <img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health2.jpg') }}" alt="" />
+                                        <a href="{{ $post->thumb_url }}">
+                                            <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
                                         </a>
                                     </div><!-- Post thumb end -->
 
                                     <div class="post-content">
                                         <h2 class="post-title title-small">
-                                            <a href="#">Can't shed those Gym? The problem might...</a>
+                                            <a href="/{{ $data['cat_slug'] }}/{{ $post->slug }}">{{ $post->title }}</a>
                                         </h2>
                                         <div class="post-meta">
-                                            <span class="post-date">Mar 13, 2017</span>
+                                            <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y') }}</span>
                                         </div>
                                     </div><!-- Post content end -->
                                 </div><!-- Post block style end -->
                             </li><!-- Li 1 end -->
+                            @endforeach
 
-                            <li class="clearfix">
-                                <div class="post-block-style post-float clearfix">
-                                    <div class="post-thumb">
-                                        <a href="#">
-                                            <img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health3.jpg') }}" alt="" />
-                                        </a>
-                                    </div><!-- Post thumb end -->
-
-                                    <div class="post-content">
-                                        <h2 class="post-title title-small">
-                                            <a href="#">Deleting fears from the brain means you…</a>
-                                        </h2>
-                                        <div class="post-meta">
-                                            <span class="post-date">Jan 11, 2017</span>
-                                        </div>
-                                    </div><!-- Post content end -->
-                                </div><!-- Post block style end -->
-                            </li><!-- Li 2 end -->
-
-                            <li class="clearfix">
-                                <div class="post-block-style post-float clearfix">
-                                    <div class="post-thumb">
-                                        <a href="#">
-                                            <img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health4.jpg') }}" alt="" />
-                                        </a>
-                                    </div><!-- Post thumb end -->
-
-                                    <div class="post-content">
-                                        <h2 class="post-title title-small">
-                                            <a href="#">Smart packs parking sensor tech...</a>
-                                        </h2>
-                                        <div class="post-meta">
-                                            <span class="post-date">Feb 19, 2017</span>
-                                        </div>
-                                    </div><!-- Post content end -->
-                                </div><!-- Post block style end -->
-                            </li><!-- Li 3 end -->
                         </ul><!-- List post end -->
                     </div><!-- List post block end -->
 
