@@ -16,18 +16,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $category = Category::all();
-        $data['brand'] = 'Bda News';
-        $data['navsearch'] = 'Search Now!';
-
-        $data['variableone'] = 'The value of variable one.';
-        $data['variabletwo'] = 'The value of variable two.';
-        $data['variablethree'] = 'The value of variable three.';
-
-        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
-        $data['menus'] = $category;
-
-        return view('index')->with($data);
+        return view('index');
     }
 
     /**
@@ -36,15 +25,8 @@ class IndexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function  aboutus($slug) {
-        $category = Category::all();
-        $data['brand'] = 'Bda News';
-        $data['navsearch'] = 'Search Now!';
-        $data['variableone'] = 'The value of variable one.';
-        $data['variabletwo'] = 'The value of variable two.';
-        $data['variablethree'] = 'The value of variable three.';
-        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
-        $data['menus'] = $category;
-        return view($slug)->with($data);
+
+        return view($slug);
     }
 
     /**
@@ -53,15 +35,8 @@ class IndexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function  writeus() {
-        $category = Category::all();
-        $data['brand'] = 'Bda News';
-        $data['navsearch'] = 'Search Now!';
-        $data['variableone'] = 'The value of variable one.';
-        $data['variabletwo'] = 'The value of variable two.';
-        $data['variablethree'] = 'The value of variable three.';
-        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
-        $data['menus'] = $category;
-        return view('writeus')->with($data);
+
+        return view('writeus');
     }
 
     /**
@@ -70,15 +45,8 @@ class IndexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function  advertise() {
-        $category = Category::all();
-        $data['brand'] = 'Bda News';
-        $data['navsearch'] = 'Search Now!';
-        $data['variableone'] = 'The value of variable one.';
-        $data['variabletwo'] = 'The value of variable two.';
-        $data['variablethree'] = 'The value of variable three.';
-        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
-        $data['menus'] = $category;
-        return view('advertise')->with($data);
+
+        return view('advertise');
     }
 
     /**
@@ -87,15 +55,8 @@ class IndexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function  contact() {
-        $category = Category::all();
-        $data['brand'] = 'Bda News';
-        $data['navsearch'] = 'Search Now!';
-        $data['variableone'] = 'The value of variable one.';
-        $data['variabletwo'] = 'The value of variable two.';
-        $data['variablethree'] = 'The value of variable three.';
-        $data['footer'] = 'Trademark, Copyright, and all that Jazz';
-        $data['menus'] = $category;
-        return view('contact')->with($data);
+
+        return view('contact');
     }
 
     /**
