@@ -47,7 +47,7 @@ class AppServiceProvider extends ServiceProvider
         $catresult = Category::where('slug',$cat_slug)->get();
         $cat_name = collect($catresult)->first()->name; // no error
         $cat_id = collect($catresult)->first()->id; // no error
-        $randomPosts = News::where('category',$cat_id)->skip(15)->take(5)->get();
+        $randomPosts = News::where('category',$cat_id)->skip(15)->take(4)->get();
         $popularPosts = News::where('category',$cat_id)->take(1)->get();
         $data['random_posts'] = $randomPosts;
         $data['popular_posts'] = $popularPosts;
