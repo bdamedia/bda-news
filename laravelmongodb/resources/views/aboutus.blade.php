@@ -19,32 +19,11 @@
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
 				<h3>About Us</h3>
-				<p>Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted</p>
+				<div class="td-page-content">
+				    <p>BDA Media Network has the right to edit contents, news on the internet.</p><h2>Contact BDA Media Network</h2><p>BDA Media Network<br>Floor 6th, Caribe Plaza Building, 53 Palmeras Street, San Juan<br>Puerto Rico 00901<br>Email:&nbsp;<a href="https://5vietnam.com/about-us/ads@5vietnam.com">ads@5vietnam.com</a></p>
+				</div>
 
-				<div class="widget contact-info">
-
-					<div class="contact-info-box">
-						<div class="contact-info-box-content">
-							<h4>News247 Webagency</h4>
-							<p>Hungry Center, 3021 Horizon Circle</p>
-						</div>
-					</div>
-
-					<div class="contact-info-box">
-						<div class="contact-info-box-content">
-							<h4>Mail Us</h4>
-							<p>contact@cornike.com.uk</p>
-						</div>
-					</div>
-
-					<div class="contact-info-box">
-						<div class="contact-info-box-content">
-							<h4>Call Us</h4>
-							<p>+253-480-8973</p>
-						</div>
-					</div>
-
-				</div><!-- Widget end -->
+				
 
 				<!-- <h3>Contact Form</h3>
 	    			<form id="contact-form" action="contact-form.php" method="post" role="form">

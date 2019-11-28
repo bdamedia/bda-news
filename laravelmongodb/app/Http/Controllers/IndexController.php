@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Mail;
+use App\Mail\DemoMail;
 use App\Category;
 use App\index;
 use Illuminate\Http\Request;
@@ -87,7 +88,7 @@ class IndexController extends Controller
             $message->from('kuldeep.raj@dba_media', 'BDA');
             $message->to("kuldeep.raj@dba_media")->cc("kuldeep.raj@dba_media");
         });*/
-
+        //Mail::to("kuldeep.raj@bda.media")->send(new DemoMail());
         $data['message'] = 'Thanks for sharing some information';
         return  view('message')->with($data);
     }
