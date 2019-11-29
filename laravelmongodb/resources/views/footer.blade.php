@@ -116,8 +116,8 @@
                         </div>
                         <p>Báo điện tử 5Vietnam - Một chuyên trang của BDA Media Network.
 Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puerto Rico.</p>
-                        <p class="footer-info-phone"><i class="fa fa-phone"></i>Email : news@5vietnam.com</p>
-                        <p class="footer-info-email"><i class="fa fa-envelope-o"></i>Liên hệ quảng cáo : ads@5vietnam.com</p>
+                        <p class="footer-info-phone"><i class="fa"></i>Email : news@5vietnam.com</p>
+                        <p class="footer-info-email"><i class="fa"></i>Liên hệ quảng cáo : ads@5vietnam.com</p>
 
                         <!-- <p class="footer-info-phone"><i class="fa fa-phone"></i> +(785) 238-4131</p>
                         <p class="footer-info-email"><i class="fa fa-envelope-o"></i> editor@news247.com</p> -->
