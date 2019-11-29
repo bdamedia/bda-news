@@ -90,7 +90,7 @@
                     </div><!-- List post block end -->
                 </div><!-- Col end -->
 
-                <div class="col-md-3 col-sm-12 footer-widget twitter-widget">
+                <div class="col-md-3 col-sm-12 footer-widget ">
                     <h3 class="widget-title">THỜI SỰ</h3>
                     <!--ul>
                         <li>
