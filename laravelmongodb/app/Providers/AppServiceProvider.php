@@ -39,17 +39,26 @@ class AppServiceProvider extends ServiceProvider
 
         $data['menus'] = $category;
         $cat_slug = array_values(array_filter(explode('/',$request->getRequestUri())));
+
         if(isset($cat_slug) && count($cat_slug) > 0){
             if($cat_slug[0] == 'top'){
                 $cat_slug = 'thoi-su';
             }else{
-                $cat_slug = $cat_slug[0];
+
+                if(strpos($cat_slug[0],'?')){
+                    $catpagecheck = explode('?',$cat_slug[0]);
+                    $cat_slug = $catpagecheck[0];
+                }else{
+                    $cat_slug = $cat_slug[0];
+                }
+
+
             }
 
         }else{
             $cat_slug = 'thoi-su';
         }
-       // $cat_slug  = "thoi-su";
+        //$cat_slug  = "thoi-su";
         $catresult = Category::where('slug',$cat_slug)->get();
         $cat_name = collect($catresult)->first()->name; // no error
         $cat_id = collect($catresult)->first()->id; // no error
