@@ -6,7 +6,11 @@
                     <h3 class="widget-title">Trending Now</h3>
                     <div class="list-post-block">
                         <ul class="list-post">
+                            @php $h = 0; @endphp
                             @foreach ($data['random_posts'] as $post)
+                                @if($h == 0)
+                                    @else
+
                             <li class="clearfix">
                                 <div class="post-block-style post-float clearfix">
                                     <div class="post-thumb">
@@ -25,6 +29,8 @@
                                     </div><!-- Post content end -->
                                 </div><!-- Post block style end -->
                             </li><!-- Li 1 end -->
+                                @endif
+                                @php $h++; @endphp
                             @endforeach
 
                         </ul><!-- List post end -->
@@ -33,8 +39,8 @@
                 </div><!-- Col end -->
 
                 <div class="col-md-3 col-sm-12 footer-widget widget-categories">
-                    <h3 class="widget-title">Hot Categories</h3>
-                    <ul>
+                    <h3 class="widget-title">KINH DOANH</h3>
+                    <!--ul>
                         <li>
                             <a href="#"><span class="catTitle">Robotics</span><span class="catCounter"> (5)</span></a>
                         </li>
@@ -56,13 +62,37 @@
                         <li>
                             <a href="#"><span class="catTitle">Food</span><span class="catCounter"> (5)</span></a>
                         </li>
-                    </ul>
+                    </ul-->
+                    <div class="list-post-block">
+                        <ul class="list-post">
+                            @foreach ($data['footer_one_home_posts'] as $post)
+                                <li class="clearfix">
+                                    <div class="post-block-style post-float clearfix">
+                                        <div class="post-thumb">
+                                            <a href="{{ $post->thumb_url }}">
+                                                <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                            </a>
+                                        </div><!-- Post thumb end -->
 
+                                        <div class="post-content">
+                                            <h2 class="post-title title-small">
+                                                <a href="/{{ $data['cat_slug'] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                            </h2>
+                                            <div class="post-meta">
+                                                <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y') }}</span>
+                                            </div>
+                                        </div><!-- Post content end -->
+                                    </div><!-- Post block style end -->
+                                </li><!-- Li 1 end -->
+                            @endforeach
+
+                        </ul><!-- List post end -->
+                    </div><!-- List post block end -->
                 </div><!-- Col end -->
 
                 <div class="col-md-3 col-sm-12 footer-widget twitter-widget">
-                    <h3 class="widget-title">Latest Tweets</h3>
-                    <ul>
+                    <h3 class="widget-title">THỜI SỰ</h3>
+                    <!--ul>
                         <li>
                             <div class="tweet-text">
                                 <span>About 13 days ago</span>
@@ -84,12 +114,37 @@
                                 <a href="#">https://t.co/LlEv8HgokN</a>
                             </div>
                         </li>
-                    </ul>
+                    </ul-->
+                    <div class="list-post-block">
+                        <ul class="list-post">
+                            @foreach ($data['footer_two_home_posts'] as $post)
+                                <li class="clearfix">
+                                    <div class="post-block-style post-float clearfix">
+                                        <div class="post-thumb">
+                                            <a href="{{ $post->thumb_url }}">
+                                                <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                            </a>
+                                        </div><!-- Post thumb end -->
+
+                                        <div class="post-content">
+                                            <h2 class="post-title title-small">
+                                                <a href="/{{ $data['cat_slug'] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                            </h2>
+                                            <div class="post-meta">
+                                                <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y') }}</span>
+                                            </div>
+                                        </div><!-- Post content end -->
+                                    </div><!-- Post block style end -->
+                                </li><!-- Li 1 end -->
+                            @endforeach
+
+                        </ul><!-- List post end -->
+                    </div><!-- List post block end -->
                 </div><!-- Col end -->
 
                 <div class="col-md-3 col-sm-12 footer-widget">
-                    <h3 class="widget-title">Post Gallery</h3>
-                    <div class="gallery-widget">
+                    <h3 class="widget-title">THẾ GIỚI</h3>
+                    <!--div class="gallery-widget">
                         <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/health1.jpg') }}" alt="" /></a>
                         <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/food3.jpg') }}" alt="" /></a>
                         <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel4.jpg') }}" alt="" /></a>
@@ -99,7 +154,32 @@
                         <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/tech/game2.jpg') }}" alt="" /></a>
                         <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/tech/robot5.jpg') }}" alt="" /></a>
                         <a href="#"><img class="img-responsive" src="{{ URL::asset('images/news/lifestyle/travel5.jpg') }}" alt="" /></a>
-                    </div>
+                    </div-->
+                    <div class="list-post-block">
+                        <ul class="list-post">
+                            @foreach ($data['footer_third_home_posts'] as $post)
+                                <li class="clearfix">
+                                    <div class="post-block-style post-float clearfix">
+                                        <div class="post-thumb">
+                                            <a href="{{ $post->thumb_url }}">
+                                                <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                            </a>
+                                        </div><!-- Post thumb end -->
+
+                                        <div class="post-content">
+                                            <h2 class="post-title title-small">
+                                                <a href="/{{ $data['cat_slug'] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                            </h2>
+                                            <div class="post-meta">
+                                                <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y') }}</span>
+                                            </div>
+                                        </div><!-- Post content end -->
+                                    </div><!-- Post block style end -->
+                                </li><!-- Li 1 end -->
+                            @endforeach
+
+                        </ul><!-- List post end -->
+                    </div><!-- List post block end -->
                 </div><!-- Col end -->
 
             </div><!-- Row end -->
@@ -176,7 +256,7 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">Advertisement</a></li>
                         <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Contact Us</a></li> 
+                        <li><a href="#">Contact Us</a></li>
                         <li><a href="/top/page/advertise">LH Quảng cáo</a></li>
                         `-->
                         <li><a href="/top/page/aboutus">About us</a></li>

@@ -127,7 +127,7 @@
 
                 <!--- Featured Tab startet -->
                 <div class="featured-tab color-blue">
-                    <h3 class="block-title"><span>{{ $cname }}</span></h3>
+                    <h3 class="block-title"><span>{{ $data['category_array']['5d7b520b60b8e37981b55477'][0] }}</span></h3>
                     <!--ul class="nav nav-tabs">
                         <li class="active">
                             <a class="animated fadeIn" href="#tab_a" data-toggle="tab">
