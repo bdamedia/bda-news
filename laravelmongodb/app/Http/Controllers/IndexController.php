@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use Mail;
 use App\Mail\DemoMail;
 use App\Category;
@@ -17,7 +18,11 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $data['random_home_posts'] = News::get()->random(5);
+        $data['single_home_posts'] = News::get()->random(1);
+        $data['latest_home_posts'] = News::get()->random(14);
+        $data['single_category_home_posts'] = News::get()->random(14);
+        return view('index')->with($data);
     }
 
     /**
