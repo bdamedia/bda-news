@@ -34,7 +34,7 @@
                                     <a class="post-cat" href="# ">{{ $cat_name }}</a>
                                     <div class="post-content">
                                         <h2 class="post-title title-large">
-                                            <a href="{{ $cat_slug }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                            <a href="/{{ $cat_slug }}/{{ $post->slug }}">{{ $post->title }}</a>
                                         </h2>
                                         <div class="post-meta">
                                             <span class="post-author"><a href="#">{{ $data['authors'][array_rand($data['authors'])] }}</a></span>
