@@ -52,7 +52,7 @@ class NewsController extends Controller
         $data['cat_slug'] = $slug;
         $data['cat_name'] = collect($cat)->first()->name;
         $results = News::where('category',$cat_id)->orderBy('date', 'desc')->paginate(10);
-        $results->withPath("/$slug/");
+
         $data['category_posts'] = $results;
         return view('category-posts')->with($data);
 
