@@ -25,15 +25,17 @@
 
 					<div class="contact-info-box">
 						<div class="contact-info-box-content">
-							<h4>News247 Webagency</h4>
-							<p>Hungry Center, 3021 Horizon Circle</p>
+							<h4>Contact BDA Media Network</h4>
+							<p>BDA Media Network
+								Floor 6th, Caribe Plaza Building, 53 Palmeras Street, San Juan
+								Puerto Rico 00901</p>
 						</div>
 					</div>
 
 					<div class="contact-info-box">
 						<div class="contact-info-box-content">
 							<h4>Mail Us</h4>
-							<p>contact@cornike.com.uk</p>
+							<p>ads@5vietnam.com</p>
 						</div>
 					</div>
 
