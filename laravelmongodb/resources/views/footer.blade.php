@@ -176,10 +176,12 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">Advertisement</a></li>
                         <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Contact Us</a></li> -->
+                        <li><a href="#">Contact Us</a></li> 
+                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li>
+                        `-->
                         <li><a href="/top/page/aboutus">About us</a></li>
                         <li><a href="/top/page/writeus">Policy</a></li>
-                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li>
+                        <li><a href="/top/page/advertise">Advertisement</a></li>
                     </ul>
                 </div>
             </div>

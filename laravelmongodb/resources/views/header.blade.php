@@ -196,10 +196,11 @@
                         <i class="fa fa-calendar-check-o"></i>{{date("F j, Y ")}}
                     </div>
                     <ul class="unstyled top-nav">
-                        <li><a href="/top/page/aboutus">About us</a></li>
+                        <!-- <li><a href="/top/page/aboutus">About us</a></li>
                         <li><a href="/top/page/writeus">Policy</a></li>
-                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li>
-                       <!--  <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li> -->
+                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li> -->
+                        <!--  <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li> -->
+                        <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li>
                     </ul>
                 </div><!--/ Top bar left end -->
 
@@ -282,7 +283,7 @@
                 </div><!-- Search end -->
 
                 <div class="search-block" style="display: none;">
-                    <input type="text" class="form-control" placeholder="Type what you want and enter">
+                    <input type="text" class="form-control" placeholder="Type what you want and enter" name="searchname" id="searchname">
                     <span class="search-close">&times;</span>
                 </div><!-- Site search end -->
 
