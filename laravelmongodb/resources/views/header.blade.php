@@ -200,7 +200,7 @@
                         <li><a href="/top/page/writeus">Policy</a></li>
                         <li><a href="/top/page/advertise">LH Quảng cáo</a></li> -->
                         <!--  <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li> -->
-                        <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li>
+                        <li><a href="#">Trực tiếp bóng đá</a></li>
                     </ul>
                 </div><!--/ Top bar left end -->
 
