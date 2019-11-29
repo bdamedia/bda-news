@@ -25,48 +25,62 @@
 
             <div class="col-md-5 col-xs-12 pad-l">
                 <div class="row">
+
+                    @php $l = 0; @endphp
+                    @foreach ($home_posts as $post)
+
+                        @if($l == 0)
                     <div class="col-sm-12">
                         <div class="post-overaly-style contentTop hot-post-top clearfix">
                             <div class="post-thumb">
-                                <a href="#"><img class="img-responsive" src="images/news/tech/gadget4.jpg" alt="" /></a>
+                                <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                    <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                </a>
                             </div>
                             <div class="post-content">
-                                <a class="post-cat" href="#">Gadget</a>
+                                <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
                                 <h2 class="post-title title-large">
-                                    <a href="#">Why The iPhone X Will Force Apple To Choose Between Good Or Evil</a>
+                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
                                 </h2>
-                                <span class="post-date">February 19, 2017</span>
+                                <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
                             </div><!-- Post content end -->
                         </div><!-- Post Overaly end -->
                     </div><!-- Col end -->
-
+                        @elseif($l == 1)
                     <div class="col-sm-6 pad-r-small">
                         <div class="post-overaly-style contentTop hot-post-bottom clearfix">
                             <div class="post-thumb">
-                                <a href="#"><img class="img-responsive" src="images/news/lifestyle/travel2.jpg" alt="" /></a>
+                                <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                    <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                </a>
                             </div>
                             <div class="post-content">
-                                <a class="post-cat" href="#">Travel</a>
+                                <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
                                 <h2 class="post-title title-medium">
-                                    <a href="#">Early tourists choices to the sea of Maldiv…</a>
+                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
                                 </h2>
                             </div><!-- Post content end -->
                         </div><!-- Post Overaly end -->
                     </div><!-- Col end -->
-
+                    @else
                     <div class="col-sm-6 pad-l-small">
                         <div class="post-overaly-style contentTop hot-post-bottom clearfix">
                             <div class="post-thumb">
-                                <a href="#"><img class="img-responsive" src="images/news/lifestyle/health1.jpg" alt="" /></a>
+                                <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                    <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                </a>
                             </div>
                             <div class="post-content">
-                                <a class="post-cat" href="#">Health</a>
+                                <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
                                 <h2 class="post-title title-medium">
-                                    <a href="#">That wearable on your wrist could soon...</a>
+                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
                                 </h2>
                             </div><!-- Post content end -->
                         </div><!-- Post Overaly end -->
                     </div><!-- Col end -->
+                        @endif
+                            @php $l++; @endphp
+                    @endforeach
                 </div>
             </div><!-- Col 5 end -->
 

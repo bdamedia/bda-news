@@ -22,6 +22,7 @@ class IndexController extends Controller
         $data['random_home_posts'] = News::orderBy('date', 'desc')->take(5)->get()->random(5);
         $data['single_home_posts'] = News::orderBy('date', 'desc')->take(1)->get()->random(1);
         $data['latest_home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(14);
+        $data['home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(3);
         $data['single_category_home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(14);
         $data['random_one_home_posts'] = News::orderBy('date', 'desc')->take(15)->get()->random(5);
         $data['random_two_home_posts'] = News::orderBy('date', 'desc')->take(15)->get()->random(5);
