@@ -16,7 +16,7 @@
 	<section class="block-wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<div class="col-xs-12">
 
 				<h3>LH Quảng cáo</h3>
 				<p>Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted Lumbersexual meh sustainable Thundercats meditation kogi. Tilde Pitchfork vegan, gentrify minim elit semiotics non messenger bag Austin which roasted</p>
@@ -25,15 +25,17 @@
 
 					<div class="contact-info-box">
 						<div class="contact-info-box-content">
-							<h4>News247 Webagency</h4>
-							<p>Hungry Center, 3021 Horizon Circle</p>
+							<h4>Contact BDA Media Network</h4>
+							<p>BDA Media Network
+								Floor 6th, Caribe Plaza Building, 53 Palmeras Street, San Juan
+								Puerto Rico 00901</p>
 						</div>
 					</div>
 
 					<div class="contact-info-box">
 						<div class="contact-info-box-content">
 							<h4>Mail Us</h4>
-							<p>contact@cornike.com.uk</p>
+							<p>ads@5vietnam.com</p>
 						</div>
 					</div>
 
@@ -83,7 +85,7 @@
 
 
 				</div><!-- Content Col end -->
-				@include('sidebar')
+				
 			</div><!-- Row end -->
 		</div><!-- Container end -->
 	</section><!-- First block end -->

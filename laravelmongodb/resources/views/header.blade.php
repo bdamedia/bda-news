@@ -196,9 +196,10 @@
                         <i class="fa fa-calendar-check-o"></i>{{date("F j, Y ")}}
                     </div>
                     <ul class="unstyled top-nav">
-                        <li><a href="/top/page/aboutus">About us</a></li>
+                        <!-- <li><a href="/top/page/aboutus">About us</a></li>
                         <li><a href="/top/page/writeus">Policy</a></li>
-                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li>
+                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li> -->
+                        <!--  <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li> -->
                         <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li>
                     </ul>
                 </div><!--/ Top bar left end -->
@@ -209,7 +210,7 @@
                             <a title="Facebook" href="https://facebook.com/5Vietnam247" target="_blank">
                                 <span class="social-icon"><i class="fa fa-facebook"></i></span>
                             </a>
-                            <a title="Twitter" href="https://twitter.com/" target="_blank">
+                            <!-- <a title="Twitter" href="https://twitter.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-twitter"></i></span>
                             </a>
                             <a title="Google+" href="https://aboutme.google.com/" target="_blank">
@@ -223,7 +224,7 @@
                             </a>
                             <a title="Skype" href="https://skype.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-skype"></i></span>
-                            </a>
+                            </a> -->
                         </li>
                     </ul><!-- Ul end -->
                 </div><!--/ Top social col end -->
@@ -282,7 +283,7 @@
                 </div><!-- Search end -->
 
                 <div class="search-block" style="display: none;">
-                    <input type="text" class="form-control" placeholder="Type what you want and enter">
+                    <input type="text" class="form-control" placeholder="Type what you want and enter" name="searchname" id="searchname">
                     <span class="search-close">&times;</span>
                 </div><!-- Site search end -->
 

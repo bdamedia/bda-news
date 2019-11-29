@@ -123,13 +123,13 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
                         <p class="footer-info-email"><i class="fa fa-envelope-o"></i> editor@news247.com</p> -->
                         <ul class="unstyled footer-social">
                             <li>
-                                <a title="Rss" href="https://fontawesome.com/" target="_blank">
+                                <!-- <a title="Rss" href="https://fontawesome.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-rss"></i></span>
-                                </a>
+                                </a> -->
                                 <a title="Facebook" href="https://www.facebook.com/5Vietnam247" target="_blank">
                                     <span class="social-icon"><i class="fa fa-facebook"></i></span>
                                 </a>
-                                <a title="Twitter" href="https://twitter.com/" target="_blank">
+                                <!-- <a title="Twitter" href="https://twitter.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-twitter"></i></span>
                                 </a>
                                 <a title="Google+" href="https://aboutme.google.com/" target="_blank">
@@ -149,7 +149,7 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
                                 </a>
                                 <a title="Instagram" href="https://instagram.com/" target="_blank">
                                     <span class="social-icon"><i class="fa fa-instagram"></i></span>
-                                </a>
+                                </a> -->
                             </li>
                         </ul>
                     </div><!-- Footer info content end -->
@@ -172,11 +172,16 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
             <div class="col-xs-12 col-sm-6">
                 <div class="footer-menu">
                     <ul class="nav unstyled">
-                        <li><a href="#">Site Terms</a></li>
+                        <!-- <li><a href="#">Site Terms</a></li>
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">Advertisement</a></li>
                         <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li> 
+                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li>
+                        `-->
+                        <li><a href="/top/page/aboutus">About us</a></li>
+                        <li><a href="/top/page/writeus">Policy</a></li>
+                        <li><a href="/top/page/advertise">Advertisement</a></li>
                     </ul>
                 </div>
             </div>
