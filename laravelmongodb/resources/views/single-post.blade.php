@@ -57,9 +57,10 @@
 
                         <div class="share-items clearfix">
                             <ul class="post-social-icons unstyled">
-                                <li class="facebook">
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i> <span class="ts-social-title">Facebook</span></a>
+                                <li  class="fb-share-button" data-href="{{ Request::fullUrl() }}" data-layout="button" data-size="large" class="facebook">
+                                    <a class="fb-share-button" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ Request::fullUrl() }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" >
+                                        <i class="fa fa-facebook"></i> <span class="ts-social-title">Facebook</span>
+                                    </a>
                                 </li>
                                 <li class="twitter">
                                     <a href="#">
