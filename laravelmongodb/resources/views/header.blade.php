@@ -293,8 +293,18 @@
                 </div><!-- Search end -->
 
                 <div class="search-block" style="display: none;">
-                    <input type="text" class="form-control" placeholder="Type what you want and enter" name="searchname" id="searchname">
-                    <span class="search-close">&times;</span>
+                    <!-- <input type="text" class="form-control" placeholder="Type what you want and enter" name="searchname" id="searchname">
+                    <span class="search-close">&times;</span> -->
+                   <!-- <div class="searchform-wrap">
+                        <form name="search" id="searchbox" class="znewsSearch active" target="_blank">
+                            <input type="text" name="s" id="searchname" placeholder="Search">
+                            <button type="submit" id="search_button"><span class="fa fa-search"></span></button>
+                        </form>
+                    </div> -->
+                     <div class="searchform-wrap">
+                        <input type="text" id="searchnameinput" placeholder="Search">
+                        <button id="searchname"><span class="fa fa-search"></span></button>
+                    </div>
                 </div><!-- Site search end -->
 
             </div><!--/ Row end -->
@@ -303,3 +313,4 @@
     </div><!-- Menu wrapper end -->
 
     <div class="gap-40"></div>
+  
