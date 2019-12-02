@@ -45,6 +45,7 @@ class NewsController extends Controller
         $data['page_name'] = $title;
         $data['meta_keywords'] = str_replace(' ',',',$title);
         $data['meta_desc'] = $post[0]['desc'];
+        $data['og_image'] = $post[0]['thumb_url'];
         return view('single-post')->with($data);
     }
 
@@ -59,6 +60,7 @@ class NewsController extends Controller
         $data['page_name'] = collect($cat)->first()->title;
         $data['meta_keywords'] = collect($cat)->first()->keywords;
         $data['meta_desc'] = collect($cat)->first()->desc;
+        $data['og_image'] = collect($cat)->first()->thumb_url;
         if ($request->ajax()) {
             $view = view('data',$data)->render();
             return response()->json(['html'=>$view]);

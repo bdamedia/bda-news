@@ -14,9 +14,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="{{ $meta_keywords ?? '' }}">
     <meta name="keywords" content="{{ $meta_desc ?? '' }}">
+    <meta property="og:url"           content="{{ Request::fullUrl() }}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{ $data['brand'] ?? '' }} | {{ $page_name ?? '' }}" />
+    <meta property="og:description"   content="{{ $meta_desc ?? '' }}" />
+    <meta property="og:image"         content="{{ $og_image ?? URL::asset('images/logos/logo.svg') }}" />
+
     <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
     <!-- CSS
     ================================================== -->
@@ -42,6 +48,9 @@
     <!--[if lt IE 9]>
     <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
     <script src="{{ URL::asset('js/respond.min.js') }}"></script>
+
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
     <![endif]-->
     <style>
         .dot {
