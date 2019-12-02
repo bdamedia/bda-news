@@ -15,7 +15,7 @@
                                 <div class="post-block-style post-float clearfix">
                                     <div class="post-thumb">
                                         <a href="{{ $post->thumb_url }}">
-                                            <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                            <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                                         </a>
                                     </div><!-- Post thumb end -->
 
@@ -70,7 +70,7 @@
                                     <div class="post-block-style post-float clearfix">
                                         <div class="post-thumb">
                                             <a href="{{ $post->thumb_url }}">
-                                                <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                                <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                                             </a>
                                         </div><!-- Post thumb end -->
 
@@ -122,7 +122,7 @@
                                     <div class="post-block-style post-float clearfix">
                                         <div class="post-thumb">
                                             <a href="{{ $post->thumb_url }}">
-                                                <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                                <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                                             </a>
                                         </div><!-- Post thumb end -->
 
@@ -162,7 +162,7 @@
                                     <div class="post-block-style post-float clearfix">
                                         <div class="post-thumb">
                                             <a href="{{ $post->thumb_url }}">
-                                                <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                                <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                                             </a>
                                         </div><!-- Post thumb end -->
 
@@ -298,7 +298,13 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
 
 <!-- Template custom -->
 <script type="text/javascript" src="{{ URL::asset('js/custom.js') }}"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+<script type="text/javascript">
+    $("img").lazyload({
+        effect : "fadeIn",
+            effectTime: 1500
+    });
+</script>
 </div><!-- Body inner end -->
 </body>
 </html>
