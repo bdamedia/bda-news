@@ -48,11 +48,10 @@ class NewsController extends Controller
         return view('single-post')->with($data);
     }
 
-    public function getnewsbycategory($slug){
+    public function getnewsbycategory(Request $request,$slug){
 
         $cat = Category::where('slug',$slug)->get();
         $cat_id = collect($cat)->first()->id; // no error
-
         $data['cat_slug'] = $slug;
         $data['cat_name'] = collect($cat)->first()->name;
         $results = News::where('category',$cat_id)->orderBy('date', 'desc')->paginate(10);
@@ -60,6 +59,11 @@ class NewsController extends Controller
         $data['page_name'] = collect($cat)->first()->title;
         $data['meta_keywords'] = collect($cat)->first()->keywords;
         $data['meta_desc'] = collect($cat)->first()->desc;
+        if ($request->ajax()) {
+            $view = view('data',$data)->render();
+            return response()->json(['html'=>$view]);
+        }
+
         return view('category-posts')->with($data);
 
     }
