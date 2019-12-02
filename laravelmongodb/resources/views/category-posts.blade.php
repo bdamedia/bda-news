@@ -20,7 +20,7 @@
                 <div class="block category-listing">
                     <h3 class="block-title"><span>{{ $cat_name }}</span></h3>
 
-                    <div class="row">
+                    <div class="row" id="post-data">
 
                         @foreach ($category_posts as $post)
 
@@ -53,11 +53,50 @@
                 </div><!-- Block Lifestyle end -->
 
                 <div class="paging">
-                    {{ $category_posts }}
+                    {{--{{ $category_posts }}--}}
                 </div><!-- Paging end -->
             </div><!-- Content Col end -->
             @include('sidebar')
         </div><!-- Row end -->
     </div><!-- Container end -->
 </section><!-- First block end -->
+
 @include('footer')
+<script type="text/javascript">
+    var page = 1;
+    $(window).scroll(function() {
+        console.log($('footer').height())
+        console.log($(document).height())
+        console.log($(window).height())
+        if($(window).scrollTop() + $(window).height()  >= $(document).height() - $('footer').height()) {
+            page++;
+            loadMoreData(page);
+        }
+    });
+
+
+    function loadMoreData(page){
+        $.ajax(
+            {
+                url: '?page=' + page,
+                type: "get",
+                beforeSend: function()
+                {
+                    $('.ajax-load').show();
+                }
+            })
+            .done(function(data)
+            {
+                if(data.html == " "){
+                    $('.ajax-load').html("No more records found");
+                    return;
+                }
+                $('.ajax-load').hide();
+                $("#post-data").append(data.html);
+            })
+            .fail(function(jqXHR, ajaxOptions, thrownError)
+            {
+                alert('server not responding...');
+            });
+    }
+</script>
