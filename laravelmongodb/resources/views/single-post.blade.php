@@ -63,15 +63,15 @@
                                     </a>
                                 </li>
                                 <li class="twitter">
-                                    <a href="#">
+                                    <a target="_blank"  href="https://twitter.com/intent/tweet?url={{ Request::fullUrl() }}&via=BDA&text={{ $post['title'] ?? '' }}">
                                         <i class="fa fa-twitter"></i> <span class="ts-social-title">Twitter</span></a>
                                 </li>
                                 <li class="gplus">
-                                    <a href="#">
+                                    <a target="_blank" href="https://plus.google.com/share?url={{ Request::fullUrl() }}">
                                         <i class="fa fa-google-plus"></i> <span class="ts-social-title">Google +</span></a>
                                 </li>
                                 <li class="pinterest">
-                                    <a href="#">
+                                    <a target="_blank" href="https://in.pinterest.com/pin/create/button/?url={{ Request::fullUrl() }}&description={{ $post['title'] ?? '' }}&media={{ $post['images'][0] ?? '' }}">
                                         <i class="fa fa-pinterest"></i> <span class="ts-social-title">Pinterest</span></a>
                                 </li>
                             </ul>
