@@ -4,7 +4,7 @@
         <div class="post-block-style post-grid clearfix">
             <div class="post-thumb">
                 <a href="#">
-                    <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                    <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                 </a>
             </div>
             <a class="post-cat" href="# ">{{ $cat_name }}</a>

@@ -20,6 +20,9 @@
                 <div class="block category-listing">
                     <h3 class="block-title"><span>{{ $cat_name }}</span></h3>
 
+                    <div class="ajax-load text-center" style="display:none">
+                        <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Loading More post</p>
+                    </div>
                     <div class="row" id="post-data">
 
                         @foreach ($category_posts as $post)
@@ -28,7 +31,7 @@
                                 <div class="post-block-style post-grid clearfix">
                                     <div class="post-thumb">
                                         <a href="#">
-                                            <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                            <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                                         </a>
                                     </div>
                                     <a class="post-cat" href="# ">{{ $cat_name }}</a>
@@ -62,6 +65,7 @@
 </section><!-- First block end -->
 
 @include('footer')
+
 <script type="text/javascript">
     var page = 1;
     $(window).scroll(function() {
@@ -92,6 +96,10 @@
                     return;
                 }
                 $('.ajax-load').hide();
+                $("img").lazyload({
+                    effect : "fadeIn",
+                    effectTime: 1500
+                });
                 $("#post-data").append(data.html);
             })
             .fail(function(jqXHR, ajaxOptions, thrownError)
@@ -100,3 +108,6 @@
             });
     }
 </script>
+
+
+
