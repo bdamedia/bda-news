@@ -39,3 +39,5 @@ Route::get('top/page/{slug}', 'IndexController@aboutus');
 Route::get('news/show/{slug}', 'NewsController@getnews');
 Route::post('/top/page/form/create', 'IndexController@store');
 //Route::get('news/category/{id}', 'NewsController@getnewsbycategory');
+
+Route::get('search/values/{text}', 'NewsController@getsearchvalue');

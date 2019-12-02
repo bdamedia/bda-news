@@ -304,6 +304,18 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
         effect : "fadeIn",
             effectTime: 1500
     });
+    $('document').ready(function(){
+        $('#searchname').click(function(){
+            var search = $('#searchname').val();
+            $('.search-block').hide();
+            window.location.href = '/search/values/' + $('#searchnameinput').val();
+        })
+        $('#searchnameinput').keypress(function(e){
+            if(e.which == 13){//Enter key pressed
+                $('#searchname').click();//Trigger search button click event
+            }
+        });
+    });
 </script>
 </div><!-- Body inner end -->
 </body>

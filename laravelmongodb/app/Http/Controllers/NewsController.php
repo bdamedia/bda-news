@@ -69,6 +69,17 @@ class NewsController extends Controller
         return view('category-posts')->with($data);
 
     }
+
+    public function getsearchvalue(Request $request, $slug){
+        $seachVAlue = last(request()->segments());
+        $data['random_home_posts'] = News::where('title','like',"%$seachVAlue%")->orderBy('date', 'desc')->paginate(10);
+        if ($request->ajax()) {
+            $view = view('searchdata',$data)->render();
+            return response()->json(['html'=>$view]);
+        }
+        return view('search')->with($data);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
