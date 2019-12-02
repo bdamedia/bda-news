@@ -5,14 +5,15 @@
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>{{ $data['brand'] ?? '' }}</title>
+    <title>{{ $data['brand'] ?? '' }} | {{ $page_name ?? '' }}</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+    <meta name="description" content="{{ $meta_keywords ?? '' }}">
+    <meta name="keywords" content="{{ $meta_desc ?? '' }}">
     <!--Favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">

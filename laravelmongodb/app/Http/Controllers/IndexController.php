@@ -37,7 +37,7 @@ class IndexController extends Controller
         $data['after_ad_two_home_posts'] = News::where('category','5d7b520b60b8e37981b55477')->orderBy('date', 'desc')->take(5)->get()->random(4);
         $data['after_ad_third_home_posts'] = News::where('category','5d80e961626f8bd8657773b4')->orderBy('date', 'desc')->take(5)->get()->random(4);
         $data['cname'] = 'thoi-su';
-
+        $data['page_name'] = 'Home';
         return view('index')->with($data);
     }
 

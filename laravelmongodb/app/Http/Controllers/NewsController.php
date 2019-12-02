@@ -42,6 +42,9 @@ class NewsController extends Controller
         $titleArray = explode(' ',$title);
         $reletedPosts = News::where('title','like',"%$titleArray[0]%")->orderBy('date', 'desc')->skip(15)->take(10)->get();
         $data['releted_posts'] = $reletedPosts;
+        $data['page_name'] = $title;
+        $data['meta_keywords'] = str_replace(' ',',',$title);
+        $data['meta_desc'] = $post[0]['desc'];
         return view('single-post')->with($data);
     }
 
@@ -49,10 +52,14 @@ class NewsController extends Controller
 
         $cat = Category::where('slug',$slug)->get();
         $cat_id = collect($cat)->first()->id; // no error
+
         $data['cat_slug'] = $slug;
         $data['cat_name'] = collect($cat)->first()->name;
         $results = News::where('category',$cat_id)->orderBy('date', 'desc')->paginate(10);
         $data['category_posts'] = $results;
+        $data['page_name'] = collect($cat)->first()->title;
+        $data['meta_keywords'] = collect($cat)->first()->keywords;
+        $data['meta_desc'] = collect($cat)->first()->desc;
         return view('category-posts')->with($data);
 
     }
