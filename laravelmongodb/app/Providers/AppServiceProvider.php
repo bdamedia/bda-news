@@ -58,10 +58,24 @@ class AppServiceProvider extends ServiceProvider
         }else{
             $cat_slug = 'thoi-su';
         }
+
+        if ($cat_slug[0] == 'search') {
+            $cat_slug  = "thoi-su";
+            $cat_name = 'search';
+        } else {
+            $catresult = Category::where('slug',$cat_slug)->get();
+            if(isset(collect($catresult)->first()->name)) {
+                $cat_name = collect($catresult)->first()->name; // no error
+                $cat_id = collect($catresult)->first()->id; // no error
+            } else {
+                $cat_name = $cat_slug[0]; 
+            }
+        }
         //$cat_slug  = "thoi-su";
-        $catresult = Category::where('slug',$cat_slug)->get();
-        $cat_name = collect($catresult)->first()->name; // no error
-        $cat_id = collect($catresult)->first()->id; // no error
+        //$catresult = Category::where('slug',$cat_slug)->get();
+        //$cat_name = collect($catresult)->first()->name; // no error
+        //$cat_id = collect($catresult)->first()->id; // no error
+
         $randomPosts = News::orderBy('date', 'desc')->take(5)->get()->random(5);
         $popularPosts = News::orderBy('date', 'desc')->take(1)->get()->random(1);
         $data['footer_one_home_posts'] = News::where('category','5d81b4e9626f8bd86577b633')->orderBy('date', 'desc')->take(5)->get()->random(4);
