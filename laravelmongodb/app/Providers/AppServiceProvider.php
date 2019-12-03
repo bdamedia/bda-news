@@ -41,7 +41,7 @@ class AppServiceProvider extends ServiceProvider
         $cat_slug = array_values(array_filter(explode('/',$request->getRequestUri())));
 
         if(isset($cat_slug) && count($cat_slug) > 0){
-            if($cat_slug[0] == 'top'){
+            if($cat_slug[0] == 'top' || $cat_slug[0] == 'search'){
                 $cat_slug = 'thoi-su';
             }else{
 
