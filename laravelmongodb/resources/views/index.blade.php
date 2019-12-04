@@ -1,4 +1,6 @@
+
 @include('header')
+<div class="gap-40"></div>
 <section class="featured-post-area no-padding">
     <div class="container">
         <div class="row">
