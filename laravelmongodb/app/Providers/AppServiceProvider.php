@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(Request $request)
     {
-        $data['brand'] = 'Bda News';
+        $data['brand'] = 'Thời sự 247';
         $data['footer'] = 'Trademark, Copyright, and all that Jazz';
         $category = Category::all();
         $arrayCat = array();
@@ -68,7 +68,7 @@ class AppServiceProvider extends ServiceProvider
                 $cat_name = collect($catresult)->first()->name; // no error
                 $cat_id = collect($catresult)->first()->id; // no error
             } else {
-                $cat_name = $cat_slug[0]; 
+                $cat_name = $cat_slug[0];
             }
         }
         //$cat_slug  = "thoi-su";

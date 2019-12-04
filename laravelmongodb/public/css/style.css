@@ -29,7 +29,7 @@
 19.   News Single
 20.   Sidebar
 21.   Error page
-	
+
 */
 
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,700);
@@ -405,7 +405,7 @@ blockquote.pull-left {
 
 /* Ul, Ol */
 
-.list-round, 
+.list-round,
 .list-arrow,
 .list-check{
 	list-style: none;
@@ -449,8 +449,8 @@ ul.list-check li:before {
 
 /* Bootstrap */
 
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li>a:hover,
 .nav-tabs>li>a{
@@ -694,6 +694,18 @@ span.post-comment span{
 	-o-transition: all .3s ease-out;
 	transition: all .3s ease-out;
 }
+#post-data .post-thumb img{
+    height: 200px;
+}
+
+.latest-news-slide .post-thumb img{
+    min-height: 160px;
+}
+
+.color-orange .post-overaly-style .post-thumb img{
+    height: 200px;
+}
+
 
 .post-block-style:hover .post-thumb img,
 .post-overaly-style:hover .post-thumb img{
@@ -1071,7 +1083,7 @@ span.post-comment span{
 	right: 0;
 	top: -3px;
 	margin: 0;
-}	
+}
 
 .owl-carousel.owl-theme.trending-slide .owl-nav > div{
 	background: #ec0000;
@@ -1117,7 +1129,7 @@ span.post-comment span{
 	padding: 8px 10px 7px;
 }
 
-.trending-light .owl-carousel.owl-theme.trending-slide 
+.trending-light .owl-carousel.owl-theme.trending-slide
 .owl-nav > div:hover{
 	background: #333;
 	color: #fff;
@@ -1360,7 +1372,7 @@ ul.navbar-nav > li > a{
 	transition: 350ms;
 }
 
-ul.navbar-nav >li:hover>a:before, 
+ul.navbar-nav >li:hover>a:before,
 ul.navbar-nav >li.active>a:before {
 	border-color: #ec0000;
 	opacity: 1;
@@ -1384,7 +1396,7 @@ ul.navbar-nav >li>a:before{
 }
 
 
-ul.navbar-nav > li > a:hover, 
+ul.navbar-nav > li > a:hover,
 ul.navbar-nav > li > a:focus{
 	 background: none;
 }
@@ -1393,7 +1405,7 @@ ul.navbar-nav > li > a i{
 	font-weight: 700;
 }
 
-.nav .open>a, .nav .open>a:hover, 
+.nav .open>a, .nav .open>a:hover,
 .nav .open>a:focus{
 	background: transparent;
 	border:0;
@@ -1499,17 +1511,17 @@ ul.navbar-nav > li.mega-dropdown{
 	border-bottom: 0;
 }
 
-.dropdown-menu>.active>a, 
-.dropdown-menu>.active>a:hover, 
-.dropdown-menu>.active>a:focus, 
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
 .dropdown-menu>.active>.dropdown-menu>.active>a{
 	background: none;
 	color: #ec0000;
 }
 
-.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus{
-	background: #ec0000; 
+	background: #ec0000;
 	color: #fff;
 }
 
@@ -1705,7 +1717,7 @@ ul.navbar-nav > li.mega-dropdown{
    left: -43%;
 }
 
-/* Featured Post area 
+/* Featured Post area
 ================================================== */
 
 .featured-post-area{
@@ -1895,7 +1907,7 @@ ul.navbar-nav > li.mega-dropdown{
 
 /*-- 4 News Box --*/
 
-.fourNewsbox, 
+.fourNewsbox,
 .fourNewsbox img,
 .fourNewsboxTop,
 .fourNewsboxTop img{
@@ -2437,7 +2449,7 @@ ul.navbar-nav > li.mega-dropdown{
 }
 
 
-/* Sub Pages 
+/* Sub Pages
 ================================================== */
 
 /*-- Page title --*/
@@ -2889,7 +2901,7 @@ ul.navbar-nav > li.mega-dropdown{
 
 }
 
-.sidebar ul.nav-tabs li.active a, 
+.sidebar ul.nav-tabs li.active a,
 .sidebar ul.nav-tabs li:hover a{
 	 color: #ec0000;
 }
@@ -3037,7 +3049,7 @@ label{
 }
 
 .boxed-layout .body-inner{
-	background: #fff; 
+	background: #fff;
 	max-width: 1240px;
 	margin: 40px auto;
 	overflow-x: hidden;
