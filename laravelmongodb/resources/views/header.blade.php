@@ -159,10 +159,20 @@
             text-transform: capitalize!important;
         }
     </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KKLF49R');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKLF49R"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="body-inner">
 
     <div class="trending-bar hidden-xs">
@@ -228,13 +238,13 @@
                             <a name='fb_share' type='button_count' href='http://www.facebook.com/5Vietnam247?appId=1015971792082623&link=http://news.bda-media.com/admin/blog' rel='nofollow' target="_blank">Share</a>
                             <!-- <a name='fb_share' type='button_count' href='http://www.facebook.com/sharer.php?appId=1015971792082623&link=http://127.0.0.1:8000/admin/blog' rel='nofollow' target="_blank">Share static</a>
                              -->
-                            <a href="#" 
+                            <a href="#"
                               onclick="
                               window.open(
-                                'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
-                                'facebook-share-dialog', 
+                                'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                                'facebook-share-dialog',
                                 'width=626,height=436'
-                                ); 
+                                );
                                 return false;"
                               >
                               Share on Facebook
@@ -333,4 +343,3 @@
     </div><!-- Menu wrapper end -->
 
     <div class="gap-40"></div>
-  
