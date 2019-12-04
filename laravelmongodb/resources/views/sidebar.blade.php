@@ -1,17 +1,17 @@
 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-	<div class="sidebar sidebar-right">
-		<div class="widget">
+	<div-- class="sidebar sidebar-right">
+		<!--div class="widget">
 			<h3 class="block-title"><span>Follow Us</span></h3>
 
 			<ul class="social-icon">
-				<!--li><a href="https://fontawesome.com/" target="_blank"><i class="fa fa-rss"></i></a></li-->
+				<li><a href="https://fontawesome.com/" target="_blank"><i class="fa fa-rss"></i></a></li>
 				<li><a href="https://www.facebook.com/5Vietnam247" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				<!--li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="https://aboutme.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
 				<li><a href="https://vimeo.com/" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
-				<li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li-->
+				<li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
 			</ul>
-		</div><!-- Widget Social end -->
+		</div --><!-- Widget Social end -->
 
 		<div class="widget color-default">
 			<h3 class="block-title"><span>Popular News</span></h3>

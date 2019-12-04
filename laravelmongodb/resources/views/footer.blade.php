@@ -192,7 +192,7 @@
                 <div class="col-md-12">
                     <div class="footer-info-content">
                         <div class="footer-logo">
-                            <img class="img-responsive" src="{{ URL::asset('images/logos/logo.svg') }}" alt="" />
+                            <img class="img-responsive" src="{{ URL::asset('images/logos/logo.png') }}" alt="" />
                         </div>
                         <p>Báo điện tử 5Vietnam - Một chuyên trang của BDA Media Network.
 Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puerto Rico.</p>

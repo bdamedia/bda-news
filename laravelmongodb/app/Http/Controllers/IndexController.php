@@ -27,7 +27,7 @@ class IndexController extends Controller
                 $data['posts'][$cate->slug] = News::where('category',$cate->_id)->orderBy('date', 'desc')->take(5)->get()->random(5);
             }
             $data['cname'] = 'thoi-su';
-            $data['page_name'] = 'Home';
+            $data['page_name'] = 'Thời sự 247 - Tin tức, hình ảnh mới nhật cập nhật 24H!';
             // print_r($data);
             return view('mobileIndex')->with($data);
             }else{
