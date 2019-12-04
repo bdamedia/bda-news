@@ -107,7 +107,7 @@
             })
             .fail(function(jqXHR, ajaxOptions, thrownError)
             {
-                alert('server not responding...');
+                console.log('server not responding...');
             });
     }
 </script>
