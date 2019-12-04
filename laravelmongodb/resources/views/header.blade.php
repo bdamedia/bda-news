@@ -217,9 +217,29 @@
                 <div class="col-md-4 col-sm-4 col-xs-12 top-social text-right">
                     <ul class="unstyled">
                         <li>
+                            <!-- <a href="https://facebook.com/5Vietnam247?url=https://facebook.com/5Vietnam247&pubid=USERNAME&ct=1&title=test&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></a> -->
                             <a title="Facebook" href="https://facebook.com/5Vietnam247" target="_blank">
                                 <span class="social-icon"><i class="fa fa-facebook"></i></span>
                             </a>
+                            <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:8000/admin/blog" target="_blank">
+                              Share Any User
+                            </a> -->
+                            <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=YourPageLink.com&display=popup"> share this </a> -->
+                            <a name='fb_share' type='button_count' href='http://www.facebook.com/5Vietnam247?appId=1015971792082623&link=/admin/blog' rel='nofollow' target="_blank">Share</a>
+                            <!-- <a name='fb_share' type='button_count' href='http://www.facebook.com/sharer.php?appId=1015971792082623&link=http://127.0.0.1:8000/admin/blog' rel='nofollow' target="_blank">Share static</a>
+                             -->
+                            <a href="#" 
+                              onclick="
+                              window.open(
+                                'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+                                'facebook-share-dialog', 
+                                'width=626,height=436'
+                                ); 
+                                return false;"
+                              >
+                              Share on Facebook
+                            </a>
+
                             <!-- <a title="Twitter" href="https://twitter.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-twitter"></i></span>
                             </a>

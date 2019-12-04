@@ -16,6 +16,13 @@
 	// print_r($connection);
     return view('index');
 });*/
+
+Route::group(array('namespace' => 'admin', 'prefix' => 'admin'), function() {
+  Route::resource('blog', 'BlogController');
+  Route::resource('/', 'BlogController');
+});
+
+
 Route::get('/', 'IndexController@index');
 Route::resource('category','CategoryController');
 Route::get('{slug}','NewsController@getnewsbycategory');
