@@ -293,18 +293,19 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
 <!-- Color box -->
 <script type="text/javascript" src="{{ URL::asset('js/jquery.colorbox.js') }}"></script>
 <!-- Smoothscroll -->
-<script type="text/javascript" src="{{ URL::asset('js/smoothscroll.js') }}"></script>
+<!--script type="text/javascript" src="{{--{{ URL::asset('js/smoothscroll.js') }}--}}"></script-->
 
 
 <!-- Template custom -->
 <script type="text/javascript" src="{{ URL::asset('js/custom.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
 <script type="text/javascript">
-    $("img").lazyload({
-        effect : "fadeIn",
-            effectTime: 1500
-    });
+
     $('document').ready(function(){
+        $("img").lazyload({
+            effect : "fadeIn",
+            effectTime: 1500
+        });
         $('#searchname').click(function(){
             var search = $('#searchname').val();
             $('.search-block').hide();
