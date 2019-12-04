@@ -72,9 +72,7 @@
 <script type="text/javascript">
     var page = 1;
     $(window).scroll(function() {
-        console.log($('footer').height())
-        console.log($(document).height())
-        console.log($(window).height())
+
         if($(window).scrollTop() + $(window).height()  >= $(document).height() - $('footer').height()) {
             page++;
             loadMoreData(page);
