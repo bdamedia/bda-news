@@ -12,13 +12,13 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="{{ $meta_keywords ?? '' }}">
-    <meta name="keywords" content="{{ $meta_desc ?? '' }}">
+    <meta name="keywords" content="{{ $meta_keywords ?? '' }}">
+    <meta name="description" content="{{ $meta_desc ?? '' }}">
     <meta property="og:url"           content="{{ Request::fullUrl() }}" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="{{ $data['brand'] ?? '' }} | {{ $page_name ?? '' }}" />
     <meta property="og:description"   content="{{ $meta_desc ?? '' }}" />
-    <meta property="og:image"         content="{{ $og_image ?? URL::asset('images/logos/logo.svg') }}" />
+    <meta property="og:image"         content="{{ $og_image ?? URL::asset('images/logos/logo.png') }}" />
 
     <!--Favicon-->
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -279,7 +279,7 @@
                 <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="logo">
                         <a href="/">
-                            <img src="{{ URL::asset('images/logos/logo.svg') }}" alt="">
+                            <img src="{{ URL::asset('images/logos/logo.png') }}" alt="">
                         </a>
                     </div>
                 </div><!-- logo col end -->
