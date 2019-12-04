@@ -7,6 +7,7 @@ use App\News;
 use Mail;
 use App\index;
 use Illuminate\Http\Request;
+use Jenssegers\Agent\Agent;
 
 
 class IndexController extends Controller
@@ -19,26 +20,38 @@ class IndexController extends Controller
     public function index()
     {
 
-        $data['random_home_posts'] = News::orderBy('date', 'desc')->take(5)->get()->random(5);
-        $data['single_home_posts'] = News::orderBy('date', 'desc')->take(1)->get()->random(1);
-        $data['latest_home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(14);
-        $data['home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(3);
-        $data['single_category_home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(14);
-        $data['random_one_home_posts'] = News::orderBy('date', 'desc')->take(15)->get()->random(5);
-        $data['random_two_home_posts'] = News::orderBy('date', 'desc')->take(15)->get()->random(5);
+        $agent = new Agent();
+        if($agent->isMobile()){
+            $cat = Category::all();
+            foreach ($cat as $cate){
+                $data['posts'][$cate->slug] = News::where('category',$cate->_id)->orderBy('date', 'desc')->take(5)->get()->random(5);
+            }
+            $data['cname'] = 'thoi-su';
+            $data['page_name'] = 'Home';
+            // print_r($data);
+            return view('mobileIndex')->with($data);
+            }else{
+            $data['random_home_posts'] = News::orderBy('date', 'desc')->take(5)->get()->random(5);
+            $data['single_home_posts'] = News::orderBy('date', 'desc')->take(1)->get()->random(1);
+            $data['latest_home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(14);
+            $data['home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(3);
+            $data['single_category_home_posts'] = News::orderBy('date', 'desc')->take(14)->get()->random(14);
+            $data['random_one_home_posts'] = News::orderBy('date', 'desc')->take(15)->get()->random(5);
+            $data['random_two_home_posts'] = News::orderBy('date', 'desc')->take(15)->get()->random(5);
+            //echo $key = array_rand($data);
+            $cat = Category::where('slug','thoi-su')->get();
+            $cat_id = collect($cat)->first()->id; // no error
+            $data['after_latest_posts'] = News::where('category',$cat_id)->orderBy('date', 'desc')->take(5)->get()->random(5);
+            $data['after_ad_one_home_posts'] = News::where('category','5d81b4e9626f8bd86577b633')->orderBy('date', 'desc')->take(5)->get()->random(4);
+            $data['after_ad_two_home_posts'] = News::where('category','5d7b520b60b8e37981b55477')->orderBy('date', 'desc')->take(5)->get()->random(4);
+            $data['after_ad_third_home_posts'] = News::where('category','5d80e961626f8bd8657773b4')->orderBy('date', 'desc')->take(5)->get()->random(4);
+            $data['cname'] = 'thoi-su';
+            $data['page_name'] = 'Home';
+            return view('index')->with($data);
+        }
 
 
 
-        //echo $key = array_rand($data);
-        $cat = Category::where('slug','thoi-su')->get();
-        $cat_id = collect($cat)->first()->id; // no error
-        $data['after_latest_posts'] = News::where('category',$cat_id)->orderBy('date', 'desc')->take(5)->get()->random(5);
-        $data['after_ad_one_home_posts'] = News::where('category','5d81b4e9626f8bd86577b633')->orderBy('date', 'desc')->take(5)->get()->random(4);
-        $data['after_ad_two_home_posts'] = News::where('category','5d7b520b60b8e37981b55477')->orderBy('date', 'desc')->take(5)->get()->random(4);
-        $data['after_ad_third_home_posts'] = News::where('category','5d80e961626f8bd8657773b4')->orderBy('date', 'desc')->take(5)->get()->random(4);
-        $data['cname'] = 'thoi-su';
-        $data['page_name'] = 'Home';
-        return view('index')->with($data);
     }
 
     /**
