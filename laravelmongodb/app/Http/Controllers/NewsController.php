@@ -40,7 +40,7 @@ class NewsController extends Controller
         $title = $post[0]['title'];
         $data['cat_name'] = collect($cat1)->first()->name;
         $titleArray = explode(' ',$title);
-        $reletedPosts = News::where('title','like',"%$titleArray[0]%")->orderBy('date', 'desc')->skip(15)->take(10)->get();
+        $reletedPosts = News::where('category',collect($cat1)->first()->id)->orderBy('date', 'desc')->skip(15)->take(10)->get();
         $data['releted_posts'] = $reletedPosts;
         $data['page_name'] = $title;
         $data['meta_keywords'] = str_replace(' ',',',$title);
