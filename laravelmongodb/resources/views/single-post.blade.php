@@ -127,7 +127,7 @@
                 <div class="related-posts block">
                     <h3 class="block-title"><span>Related Posts</span></h3>
 
-                    <div id="latest-news-slide" class="owl-carousel owl-theme latest-news-slide">
+                    <div id="latest-news-slide" class="owl-carousel1 owl-theme1 latest-news-slide1">
 
 
                         @foreach ($releted_posts as $post)
@@ -159,3 +159,43 @@
     </div><!-- Container end -->
 </section><!-- First block end -->
 @include('footer')
+<script type="text/javascript">
+    var page = 1;
+    $(window).scroll(function() {
+
+        if($(window).scrollTop() + $(window).height()  >= $(document).height() - $('footer').height()) {
+            page++;
+            loadMoreData(page);
+        }
+    });
+
+
+    function loadMoreData(page){
+        $.ajax(
+            {
+                url: '?page=' + page,
+                type: "get",
+                beforeSend: function()
+                {
+                    $('.ajax-load').show();
+                }
+            })
+            .done(function(data)
+            {
+                if(data.html == " "){
+                    $('.ajax-load').html("No more records found");
+                    return;
+                }
+                $('.ajax-load').hide();
+                $("img").lazyload({
+                    effect : "fadeIn",
+                    effectTime: 1500
+                });
+                $("#latest-news-slide").append(data.html);
+            })
+            .fail(function(jqXHR, ajaxOptions, thrownError)
+            {
+                console.log('server not responding...');
+            });
+    }
+</script>
