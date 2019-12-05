@@ -158,6 +158,12 @@
         .nav a{
             text-transform: capitalize!important;
         }
+
+        #latest-news-slide .item {
+            width: 220px;
+            display: inline-block;
+            margin-right: 15px;
+        }
     </style>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

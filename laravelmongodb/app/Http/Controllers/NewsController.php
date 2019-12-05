@@ -30,7 +30,7 @@ class NewsController extends Controller
         return $news;
     }
 
-    public function getnews($cat_slug,$slug){
+    public function getnews(Request $request,$cat_slug,$slug){
 
         $cat1 = Category::where('slug',$cat_slug)->get();
         $data['cat_slug'] = $cat_slug;
@@ -40,12 +40,16 @@ class NewsController extends Controller
         $title = $post[0]['title'];
         $data['cat_name'] = collect($cat1)->first()->name;
         $titleArray = explode(' ',$title);
-        $reletedPosts = News::where('category',collect($cat1)->first()->id)->orderBy('date', 'desc')->skip(15)->take(10)->get();
+        $reletedPosts = News::where('category',collect($cat1)->first()->id)->orderBy('date', 'desc')->paginate(3);
         $data['releted_posts'] = $reletedPosts;
         $data['page_name'] = $title;
         $data['meta_keywords'] = str_replace(' ',',',$title);
         $data['meta_desc'] = $post[0]['desc'];
         $data['og_image'] = $post[0]['thumb_url'];
+        if ($request->ajax()) {
+            $view = view('relateddata',$data)->render();
+            return response()->json(['html'=>$view]);
+        }
         return view('single-post')->with($data);
     }
 

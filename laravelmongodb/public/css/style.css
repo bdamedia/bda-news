@@ -564,7 +564,7 @@ a[href^=tel] {
 	line-height: 26px;
 	margin-top: 15px;
 	margin-bottom: 5px;
-    height: 46px;
+    height: 50px;
     overflow: hidden;
 }
 
@@ -573,7 +573,7 @@ a[href^=tel] {
 	line-height: 24px;
 	margin-top: 15px;
 	margin-bottom: 5px;
-    height: 46px;
+    height: 50px;
     overflow: hidden;
 }
 
