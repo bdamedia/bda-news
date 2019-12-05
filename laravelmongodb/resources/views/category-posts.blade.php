@@ -1,16 +1,9 @@
-@include('header')
-<div class="page-title">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li>{{ $cat_name }}</li>
-                </ol>
-            </div><!-- Col end -->
-        </div><!-- Row end -->
-    </div><!-- Container end -->
-</div><!-- Page title end -->
+@if($data['isMobile'])
+    @include('mobileHeader')
+@else
+    @include('header')
+@endif
+
 
 <section class="block-wrapper">
     <div class="container">
