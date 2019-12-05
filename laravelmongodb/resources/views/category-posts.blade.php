@@ -20,9 +20,7 @@
                 <div class="block category-listing">
                     <h3 class="block-title"><span>{{ $cat_name }}</span></h3>
 
-                    <div class="ajax-load text-center" style="display:none">
-                        <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Loading More post</p>
-                    </div>
+
                     <div class="row" id="post-data">
 
                         @foreach ($category_posts as $post)
@@ -56,6 +54,9 @@
                 </div><!-- Block Lifestyle end -->
 
                 <div class="paging">
+                    <div class="ajax-load text-center" style="display:none">
+                        <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Loading More post</p>
+                    </div>
                     {{--{{ $category_posts }}--}}
                 </div><!-- Paging end -->
             </div><!-- Content Col end -->

@@ -151,7 +151,9 @@
                         @endforeach
 
                     </div><!-- Carousel end -->
-
+                    <div class="ajax-load text-center" style="display:none">
+                        <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Loading More post</p>
+                    </div>
                 </div><!-- Related posts end -->
             </div><!-- Content Col end -->
             @include('sidebar')
