@@ -244,10 +244,10 @@
                               Share Any User
                             </a> -->
                             <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=YourPageLink.com&display=popup"> share this </a> -->
-                            <a name='fb_share' type='button_count' href='http://www.facebook.com/5Vietnam247?appId=1015971792082623&link=http://news.bda-media.com/admin/blog' rel='nofollow' target="_blank">Share</a>
+                            <!--a name='fb_share' type='button_count' href='http://www.facebook.com/5Vietnam247?appId=1015971792082623&link=http://news.bda-media.com/admin/blog' rel='nofollow' target="_blank">Share</a-->
                             <!-- <a name='fb_share' type='button_count' href='http://www.facebook.com/sharer.php?appId=1015971792082623&link=http://127.0.0.1:8000/admin/blog' rel='nofollow' target="_blank">Share static</a>
                              -->
-                            <a href="#"
+                            <!--a href="#"
                               onclick="
                               window.open(
                                 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
@@ -257,7 +257,7 @@
                                 return false;"
                               >
                               Share on Facebook
-                            </a>
+                            </a-->
 
                             <!-- <a title="Twitter" href="https://twitter.com/" target="_blank">
                                 <span class="social-icon"><i class="fa fa-twitter"></i></span>
