@@ -394,7 +394,7 @@
                     <div class="post-overaly-style clearfix">
                         <div class="post-thumb">
                             <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
-                                <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                <img class="image-size img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                             </a>
                         </div>
 
@@ -448,7 +448,7 @@
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
                                     <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
-                                        <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                        <img class="image-size img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                                     </a>
                                 </div>
 
@@ -502,7 +502,7 @@
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
                                     <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
-                                        <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                        <img class="image-size img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                                     </a>
                                 </div>
 
