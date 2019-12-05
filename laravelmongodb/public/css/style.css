@@ -564,7 +564,7 @@ a[href^=tel] {
 	line-height: 26px;
 	margin-top: 15px;
 	margin-bottom: 5px;
-    height: 50px;
+    height: 52px;
     overflow: hidden;
 }
 
@@ -573,7 +573,7 @@ a[href^=tel] {
 	line-height: 24px;
 	margin-top: 15px;
 	margin-bottom: 5px;
-    height: 50px;
+    height: 52px;
     overflow: hidden;
 }
 
@@ -585,6 +585,20 @@ a[href^=tel] {
 }
 
 /*-- Post meta --*/
+
+
+.single-post a.post-cat{
+    position: relative;
+    font-size: 15px;
+    padding: 0 5px;
+    background: #1c1c1c;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    height: 24px;
+    line-height: 20px;
+    display: inline-block;
+}
 
 a.post-cat{
 	 position: relative;
