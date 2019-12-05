@@ -8,7 +8,7 @@
                 @foreach ($data['category_array'] as $categories)
 
                 <div class="block category-listing category-style2">
-                    <h3 class="block-title"><span>{{ $categories[0] }}</span></h3>
+                    <h3 class="block-title">{{--<span>{{ $categories[0] }}</span>--}}</h3>
 
                     <!--ul class="subCategory unstyled">
                         <li><a href="#">Robotics</a></li>
@@ -68,3 +68,4 @@
     </div><!-- Container end -->
 </section><!-- First block end -->
 @include('footer')
+

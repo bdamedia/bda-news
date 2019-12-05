@@ -1,3 +1,6 @@
+@if($data['isMobile'])
+@else
+
 <footer id="footer" class="footer">
     <div class="footer-main">
         <div class="container">
@@ -203,33 +206,11 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
                         <p class="footer-info-email"><i class="fa fa-envelope-o"></i> editor@news247.com</p> -->
                         <ul class="unstyled footer-social">
                             <li>
-                                <!-- <a title="Rss" href="https://fontawesome.com/" target="_blank">
-                                    <span class="social-icon"><i class="fa fa-rss"></i></span>
-                                </a> -->
+
                                 <a title="Facebook" href="https://www.facebook.com/5Vietnam247" target="_blank">
                                     <span class="social-icon"><i class="fa fa-facebook"></i></span>
                                 </a>
-                                <!-- <a title="Twitter" href="https://twitter.com/" target="_blank">
-                                    <span class="social-icon"><i class="fa fa-twitter"></i></span>
-                                </a>
-                                <a title="Google+" href="https://aboutme.google.com/" target="_blank">
-                                    <span class="social-icon"><i class="fa fa-google-plus"></i></span>
-                                </a>
-                                <a title="Linkdin" href="https://linkedin.com/" target="_blank">
-                                    <span class="social-icon"><i class="fa fa-linkedin"></i></span>
-                                </a>
-                                <a title="Skype" href="https://skype.com/" target="_blank">
-                                    <span class="social-icon"><i class="fa fa-skype"></i></span>
-                                </a>
-                                <a title="Dribbble" href="https://dribbble.com/" target="_blank">
-                                    <span class="social-icon"><i class="fa fa-dribbble"></i></span>
-                                </a>
-                                <a title="Pinterest" href="https://pinterest.com/" target="_blank">
-                                    <span class="social-icon"><i class="fa fa-pinterest"></i></span>
-                                </a>
-                                <a title="Instagram" href="https://instagram.com/" target="_blank">
-                                    <span class="social-icon"><i class="fa fa-instagram"></i></span>
-                                </a> -->
+
                             </li>
                         </ul>
                     </div><!-- Footer info content end -->
@@ -239,7 +220,8 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
     </div><!-- Footer info end -->
 
 </footer><!-- Footer end -->
-
+@endif
+<div class="menu1"><a href="#">Trực tiếp bóng đá</a></div>
 <div class="copyright">
     <div class="container">
         <div class="row">
@@ -252,13 +234,7 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
             <div class="col-xs-12 col-sm-6">
                 <div class="footer-menu">
                     <ul class="nav unstyled">
-                        <!-- <li><a href="#">Site Terms</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Advertisement</a></li>
-                        <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li>
-                        `-->
+
                         <li><a href="/top/page/aboutus">About us</a></li>
                         <li><a href="/top/page/writeus">Policy</a></li>
                         <li><a href="/top/page/advertise">Advertisement</a></li>
@@ -318,6 +294,43 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
         });
     });
 </script>
+@if($data['isMobile'])
+
+<script>
+    // Create a clone of the menu, right next to original.
+    $('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+    $('.menu1').addClass('original1').clone().insertAfter('.menu1').addClass('cloned1').css('position','fixed').css('bottom','0').css('margin-bottom','0').css('z-index','500').removeClass('original1').hide();
+
+    scrollIntervalID = setInterval(stickIt, 10);
+
+
+    function stickIt() {
+
+        var orgElementPos = $('.original').offset();
+        orgElementTop = orgElementPos.top;
+
+        if ($(window).scrollTop() >= (orgElementTop)) {
+            // scrolled past the original position; now only show the cloned, sticky element.
+
+            // Cloned element should always have same left position and width as original element.
+            orgElement = $('.original');
+            coordsOrgElement = orgElement.offset();
+            leftOrgElement = coordsOrgElement.left;
+            widthOrgElement = orgElement.css('width');
+            $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+            $('.original').css('visibility','hidden');
+            $('.cloned1').css('left',leftOrgElement+'px').css('bottom',0).css('width',widthOrgElement).show();
+            $('.original1').css('visibility','hidden');
+        } else {
+            // not scrolled past the menu; only show the original menu.
+            $('.cloned').hide();
+            $('.original').css('visibility','visible');
+            $('.cloned1').hide();
+            $('.original1').css('visibility','visible');
+        }
+    }
+</script>
+@endif
 </div><!-- Body inner end -->
 </body>
 </html>
