@@ -77,8 +77,8 @@ class AppServiceProvider extends ServiceProvider
         //$cat_name = collect($catresult)->first()->name; // no error
         //$cat_id = collect($catresult)->first()->id; // no error
 
-        $randomPosts = News::orderBy('date', 'desc')->take(5)->get()->random(5);
-        $popularPosts = News::orderBy('date', 'desc')->take(1)->get()->random(1);
+        $randomPosts = News::orderBy('date', 'desc')->skip(24)->take(5)->get();
+        $popularPosts = News::orderBy('date', 'desc')->skip(23)->take(1)->get();
         $data['footer_one_home_posts'] = News::where('category','5d81b4e9626f8bd86577b633')->orderBy('date', 'desc')->take(5)->get()->random(4);
         $data['footer_two_home_posts'] = News::where('category','5d7b520b60b8e37981b55477')->orderBy('date', 'desc')->take(5)->get()->random(4);
         $data['footer_third_home_posts'] = News::where('category','5d80e961626f8bd8657773b4')->orderBy('date', 'desc')->take(5)->get()->random(4);
