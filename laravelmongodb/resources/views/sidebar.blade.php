@@ -68,9 +68,9 @@
 		<div class="widget text-center">
 
             <!-- /21689237362/thoisu247-header -->
-            <div id='div-gpt-ad-1575461841526-0'>
+            <div id='div-gpt-ad-2'>
                 <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575461841526-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-2'); });
                 </script>
             </div>
 			<!--img class="banner img-responsive" src="{{--{{ URL::asset('images/banner-ads/ad-sidebar.png')}}--}}" alt="" /-->

@@ -170,7 +170,9 @@
     <script>
         window.googletag = window.googletag || {cmd: []};
         googletag.cmd.push(function() {
-            googletag.defineSlot('/21689237362/thoisu247-header', [[300, 300], [728, 90]], 'div-gpt-ad-1575461841526-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-header', [300, 250], 'div-gpt-ad-2').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-header', [728, 90], 'div-gpt-ad-3').addService(googletag.pubads());
+            //googletag.defineSlot('/21689237362/thoisu247-header', [[300, 300], [728, 90]], 'div-gpt-ad-1575461841526-0').addService(googletag.pubads());
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
@@ -296,9 +298,9 @@
                 <div class="col-xs-12 col-sm-9 col-md-9 header-right">
                     <div class="ad-banner pull-right">
                         <!-- /21689237362/thoisu247-header -->
-                        <div style="width: 728px; height: 90px;" id='div-gpt-ad-1575461841526-0'>
+                        <div style="width: 728px; height: 90px;" id='div-gpt-ad-3'>
                             <script>
-                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575461841526-0'); });
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-3'); });
                             </script>
                         </div>
                     </div>
