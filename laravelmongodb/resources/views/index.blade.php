@@ -659,9 +659,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <!-- /21689237362/thoisu247-header -->
-                <div style="width: 728px; height: 90px;" id='div-gpt-ad-3'>
+                <div style="width: 728px; height: 90px;" id='div-gpt-ad-1575528682755-0'>
                     <script>
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-3'); });
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575528682755-0'); });
                     </script>
                 </div>
             </div><!-- Col end -->
