@@ -1,4 +1,4 @@
-@include('header')
+@include('mobileHeader')
 <section class="block-wrapper">
     <div class="container">
         <div class="row">

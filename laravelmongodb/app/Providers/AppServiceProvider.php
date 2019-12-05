@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use View;
 use Route;
 use Illuminate\Support\ServiceProvider;
+use Jenssegers\Agent\Agent;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -87,6 +88,8 @@ class AppServiceProvider extends ServiceProvider
         $data['cat_slug'] = $cat_slug;
         $data['category_array'] = $arrayCat;
         $data['authors'] = array("Bích Huyền","Bùi Phái" ,"Cẩm Lệ","Cẩm Thi","Diễm Châu","Duy Tân","Đình Phong","Đức Đô","Hải Triều","Hoàng Minh","Hoàng Minh","Kim Chi","Le Hieu","Linh Đàm","Mạnh Dũng","Mạnh Tùng","Minh Hải","Mỹ Hảo","Mỹ Quỳnh","Ngọc Bích","Ngọc Dung","Ngọc Điệp","Ngọc Điệp","Ngọc Nhung","Quang Huy","Tấn Lộc","Thanh Dũng","Thanh Thuý","Thanh Triều","Thế Hùng","Thế Phương","Thu Cúc","Thu Lan","Thu Trang","Thuỳ Dung","Triều Khúc","Vĩnh Hảo","Xuân Cúc","Xuân Lan","Xuân Phú");
+        $agent = new Agent();
+        $data['isMobile'] = $agent->isMobile();
         view::share('data', $data);
     }
 }
