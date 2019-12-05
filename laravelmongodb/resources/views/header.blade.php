@@ -295,7 +295,12 @@
 
                 <div class="col-xs-12 col-sm-9 col-md-9 header-right">
                     <div class="ad-banner pull-right">
-                        <a href="#"><img src="{{ URL::asset('images/banner-ads/ad-top-header.png') }}" class="img-responsive" alt=""></a>
+                        <!-- /21689237362/thoisu247-header -->
+                        <div id='div-gpt-ad-1575461841526-0'>
+                            <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575461841526-0'); });
+                            </script>
+                        </div>
                     </div>
                 </div><!-- header right end -->
             </div><!-- Row end -->
