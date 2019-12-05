@@ -1,4 +1,5 @@
 @if($data['isMobile'])
+    <div class="menu1"><a href="#">Trực tiếp bóng đá</a></div>
 @else
 
 <footer id="footer" class="footer">
@@ -221,7 +222,7 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
 
 </footer><!-- Footer end -->
 @endif
-<div class="menu1"><a href="#">Trực tiếp bóng đá</a></div>
+
 <div class="copyright">
     <div class="container">
         <div class="row">

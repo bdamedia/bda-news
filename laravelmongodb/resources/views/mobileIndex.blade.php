@@ -1,14 +1,16 @@
 @include('mobileHeader')
-<section class="block-wrapper">
+<section style="    padding-top: 10px;" class="block-wrapper">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-
+                @php $p=1; @endphp
                 @foreach ($data['category_array'] as $categories)
 
                 <div class="block category-listing category-style2">
-                    <h3 class="block-title">{{--<span>{{ $categories[0] }}</span>--}}</h3>
+
+
+                    {{--<h3 class="block-title"><span>{{ $categories[0] }}</span></h3>--}}
 
                     <!--ul class="subCategory unstyled">
                         <li><a href="#">Robotics</a></li>
@@ -68,4 +70,3 @@
     </div><!-- Container end -->
 </section><!-- First block end -->
 @include('footer')
-

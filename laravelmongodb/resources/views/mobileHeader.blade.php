@@ -171,7 +171,8 @@
         .site-navigation{
             float: left;
         }
-        .menu,.menu1 {cursor: pointer; background:#ec0000; color:#fff; height:40px; line-height:40px;letter-spacing:1px; width:100%;}
+        .menu1 {cursor: pointer; background:#ec0000; color:#fff; height:40px; line-height:40px;letter-spacing:1px; width:100%;}
+        .menu {cursor: pointer; background: #ffffff; width:100%;}
         .menu a,.menu1 a{ color:#fff; padding: 10px; cursor: pointer;}
     </style>
     <!-- Google Tag Manager -->
@@ -220,7 +221,7 @@
     </div>--}}
 
 
-    <div class="main-nav clearfix">
+    <div class="main-nav menu clearfix">
         <div class="container">
             <div class="row">
                 <nav class="site-navigation navigation">
@@ -272,4 +273,3 @@
         </div><!--/ Container end -->
 
     </div><!-- Menu wrapper end -->
-    <div class="menu"><a href="#">Trực tiếp bóng đá</a></div>
