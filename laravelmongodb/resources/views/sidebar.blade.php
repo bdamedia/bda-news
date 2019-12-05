@@ -66,15 +66,7 @@
 		</div><!-- Popular news widget end -->
 
 		<div class="widget text-center">
-            <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-            <script>
-                window.googletag = window.googletag || {cmd: []};
-                googletag.cmd.push(function() {
-                    googletag.defineSlot('/21689237362/thoisu247-header', [[300, 300], [728, 90]], 'div-gpt-ad-1575461841526-0').addService(googletag.pubads());
-                    googletag.pubads().enableSingleRequest();
-                    googletag.enableServices();
-                });
-            </script>
+
             <!-- /21689237362/thoisu247-header -->
             <div id='div-gpt-ad-1575461841526-0'>
                 <script>
