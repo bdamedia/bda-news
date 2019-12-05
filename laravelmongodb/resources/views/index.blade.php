@@ -370,7 +370,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <!-- /21689237362/thoisu247-header -->
-                <div id='div-gpt-ad-1575461841526-0'>
+                <div style="width: 728px; height: 90px;" id='div-gpt-ad-1575461841526-0'>
                     <script>
                         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575461841526-0'); });
                     </script>
@@ -658,7 +658,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <img class="img-responsive" data-original="images/banner-ads/ad-content-two.png" alt="" />
+                <!-- /21689237362/thoisu247-header -->
+                <div style="width: 728px; height: 90px;" id='div-gpt-ad-1575461841526-0'>
+                    <script>
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575461841526-0'); });
+                    </script>
+                </div>
             </div><!-- Col end -->
         </div><!-- Row end -->
     </div><!-- Container end -->
