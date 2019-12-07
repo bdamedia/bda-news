@@ -1069,7 +1069,15 @@ span.post-comment span{
     border-color: #9401d3 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
 }
 
-
+.ad-banner-header{
+    background: #f7f7f7;
+    text-align: center;
+    padding: 16px;
+}
+.ad-banner-header img{
+    width: 60%;
+    height: 200px;
+}
 /* Trending Bar
 ================================================== */
 
@@ -1079,6 +1087,7 @@ span.post-comment span{
 	/*color: #fff;*/
     color: #000000;
 	padding: 10px 0;
+    margin-top: 20px;
 }
 
 .trending-title{
