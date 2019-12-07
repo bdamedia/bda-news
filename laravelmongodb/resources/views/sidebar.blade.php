@@ -76,7 +76,7 @@
 			<!--img class="banner img-responsive" src="{{--{{ URL::asset('images/banner-ads/ad-sidebar.png')}}--}}" alt="" /-->
 		</div><!-- Sidebar Ad end -->
 
-		<div class="widget m-bottom-0">
+		<!--div class="widget m-bottom-0">
 			<h3 class="block-title"><span>Newsletter</span></h3>
 			<div class="ts-newsletter">
 				<div class="newsletter-introtext">
@@ -92,8 +92,8 @@
 						</div>
 					</form>
 				</div>
-			</div><!-- Newsletter end -->
-		</div><!-- Newsletter widget end -->
+			</div>
+		</div-->
 
 	</div><!-- Sidebar right end -->
 </div><!-- Sidebar Col end -->
