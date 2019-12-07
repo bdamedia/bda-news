@@ -1074,8 +1074,10 @@ span.post-comment span{
 ================================================== */
 
 .trending-bar{
-	background: #272727;
-	color: #fff;
+	/*background: #272727;*/
+    background: transparent;
+	/*color: #fff;*/
+    color: #000000;
 	padding: 10px 0;
 }
 
@@ -1117,7 +1119,8 @@ span.post-comment span{
 
 
 .trending-slide .post-title a{
-	color: #fff;
+	/*color: #fff;*/
+    color: #000;
 }
 
 .trending-slide .post-title.title-small{
@@ -1253,7 +1256,8 @@ span.post-comment span{
 ================================================== */
 
 .header{
-	 padding: 25px 0;
+/*	 padding: 25px 0;*/
+    border-bottom: 1px solid #ddd;
 }
 
 .navbar-fixed {
@@ -1274,9 +1278,13 @@ span.post-comment span{
 /*-- Logo --*/
 
 .logo {
-	padding: 28px 0;
-}
+	/*padding: 28px 0;*/
 
+    padding: 10px;
+}
+.logo img{
+    width: 95%;
+}
 /* header right */
 
 .header-right {
@@ -3244,7 +3252,7 @@ button {
     padding: 14px;
   }
   .topnav input[type=text] {
-    border: 1px solid #ccc;  
+    border: 1px solid #ccc;
   }
 }
 

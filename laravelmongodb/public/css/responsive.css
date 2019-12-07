@@ -166,7 +166,7 @@
 		width: 100%;
 	}
 
-	ul.navbar-nav > li:hover > a:after, 
+	ul.navbar-nav > li:hover > a:after,
 	ul.navbar-nav > li.active > a:after{
 		content: '';
 	}
@@ -179,7 +179,7 @@
 		padding-left: 0;
 	}
 
-	.navbar-nav .open .dropdown-menu>li>a, 
+	.navbar-nav .open .dropdown-menu>li>a,
 	.navbar-nav .open .dropdown-menu .dropdown-header{
 		padding: 5px 15px 10px 10px;
 	}
@@ -267,7 +267,7 @@
    	bottom: 78px;
 	}
 
-	
+
 }
 
 /* Small Devices Potrait */
@@ -298,7 +298,7 @@
 		text-align: center;
 		display: inline-block;
 	}
-	
+
 	/* Header */
 
 	.navbar-fixed{
@@ -329,8 +329,12 @@
 		background: none;
 		width: 100%;
 	}
-
-	ul.navbar-nav > li:hover > a:after, 
+    .logo-mobile{
+        float: left;
+        margin-left: 0px!important;
+        text-align: center;
+    }
+	ul.navbar-nav > li:hover > a:after,
 	ul.navbar-nav > li.active > a:after{
 		content: '';
 	}
@@ -339,7 +343,7 @@
 		border-bottom: 0;
 	}
 
-	.navbar-nav .open .dropdown-menu>li>a, 
+	.navbar-nav .open .dropdown-menu>li>a,
 	.navbar-nav .open .dropdown-menu .dropdown-header{
 		padding: 10px 15px 10px 10px;
 	}
@@ -377,7 +381,7 @@
 	ul.navbar-nav li a i, .dropdown-submenu>a:after {background: #f5f5f5;color:#333;float: right;width: 36px;height: 28px;line-height: 28px;margin-top: -5px;text-align: center;}
 	.dropdown-submenu>a:after{margin-right: 0;}
 
-	
+
 	/* Dart bg */
 
 	.main-nav.dark-bg{
@@ -437,13 +441,13 @@
    	line-height: 26px;
 	}
 
-	
+
 
 	/* Block */
 
 	.block.color-orange .post-overaly-style.last{
 		margin-top: 40px;
-	}	
+	}
 
 	/* Sidebar */
 
@@ -536,14 +540,14 @@
 
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media (max-width : 479px) {
 
 
 
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media (max-width : 320px) and (max-width: 478px)  {
 
 
