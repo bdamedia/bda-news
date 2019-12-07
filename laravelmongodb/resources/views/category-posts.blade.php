@@ -46,12 +46,10 @@
                     </div><!-- Row end -->
                 </div><!-- Block Lifestyle end -->
 
-                <div class="paging">
                     <div class="ajax-load text-center" style="display:none">
                         <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Loading More post</p>
                     </div>
                     {{--{{ $category_posts }}--}}
-                </div><!-- Paging end -->
             </div><!-- Content Col end -->
             @include('sidebar')
         </div><!-- Row end -->
