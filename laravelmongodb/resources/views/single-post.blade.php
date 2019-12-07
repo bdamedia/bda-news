@@ -52,20 +52,23 @@
                             <ul class="post-social-icons unstyled">
                                 <li  class="fb-share-button" data-href="{{ Request::fullUrl() }}" data-layout="button" data-size="large" class="facebook">
                                     <a class="fb-share-button" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ Request::fullUrl() }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" >
-                                        <i class="fa fa-facebook"></i> <span class="ts-social-title">Facebook</span>
+                                        <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li class="twitter">
                                     <a target="_blank"  href="https://twitter.com/intent/tweet?url={{ Request::fullUrl() }}&via=BDA&text={{ $post['title'] ?? '' }}">
-                                        <i class="fa fa-twitter"></i> <span class="ts-social-title">Twitter</span></a>
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
                                 </li>
                                 <li class="gplus">
                                     <a target="_blank" href="https://plus.google.com/share?url={{ Request::fullUrl() }}">
-                                        <i class="fa fa-google-plus"></i> <span class="ts-social-title">Google +</span></a>
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
                                 </li>
                                 <li class="pinterest">
                                     <a target="_blank" href="https://in.pinterest.com/pin/create/button/?url={{ Request::fullUrl() }}&description={{ $post['title'] ?? '' }}&media={{ $post['images'][0] ?? '' }}">
-                                        <i class="fa fa-pinterest"></i> <span class="ts-social-title">Pinterest</span></a>
+                                        <i class="fa fa-pinterest"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </div><!-- Share items end -->

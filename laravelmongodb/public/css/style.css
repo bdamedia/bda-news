@@ -721,7 +721,7 @@ span.post-comment span{
 }
 
 .color-orange .post-overaly-style .post-thumb img{
-    height: 200px;
+    height: 326px;
 }
 
 
@@ -2723,9 +2723,9 @@ ul.navbar-nav > li.mega-dropdown{
 }
 
 .post-social-icons a i{
-	border-right: 1px solid rgba(255, 255, 255, 0.5);
-	margin-right: 5px;
-	padding-right: 8px;
+    /*border-right: 1px solid rgba(255, 255, 255, 0.5);
+    margin-right: 5px;
+    padding-right: 8px;*/
 	font-size: 14px;
 	line-height: 12px;
 }
