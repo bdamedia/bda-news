@@ -654,7 +654,7 @@
 
 
 
-<section class="ad-content-area text-center">
+{{--<section class="ad-content-area text-center">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -667,5 +667,5 @@
             </div><!-- Col end -->
         </div><!-- Row end -->
     </div><!-- Container end -->
-</section><!-- Ad content two end -->
+</section><!-- Ad content two end -->--}}
 @include('footer')
