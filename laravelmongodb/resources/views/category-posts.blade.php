@@ -52,7 +52,7 @@
                     {{--{{ $category_posts }}--}}
             </div><!-- Content Col end -->
             @if($data['isMobile'])
-               
+
             @else
                 @include('sidebar')
             @endif
