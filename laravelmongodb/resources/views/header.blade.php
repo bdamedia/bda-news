@@ -198,7 +198,7 @@
 <!-- End Google Tag Manager (noscript) -->
 <div class="body-inner">
 
-    <div class="trending-bar hidden-xs">
+{{--    <div class="trending-bar hidden-xs">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -229,77 +229,15 @@
                 </div><!-- Col end -->
             </div><!--/ Row end -->
         </div><!--/ Container end -->
-    </div><!--/ Trending end -->
+    </div><!--/ Trending end -->--}}
 
-    <div id="top-bar" class="top-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                    <div class="ts-date">
-                        <i class="fa fa-calendar-check-o"></i>{{date("F j, Y ")}}
-                    </div>
-                    <ul class="unstyled top-nav">
-                        <!-- <li><a href="/top/page/aboutus">About us</a></li>
-                        <li><a href="/top/page/writeus">Policy</a></li>
-                        <li><a href="/top/page/advertise">LH Quảng cáo</a></li> -->
-                        <!--  <li><a href="/top/page/contact">Trực tiếp bóng đá</a></li> -->
-                        <li><a href="#">Trực tiếp bóng đá</a></li>
-                    </ul>
-                </div><!--/ Top bar left end -->
 
-                <div class="col-md-4 col-sm-4 col-xs-12 top-social text-right">
-                    <ul class="unstyled">
-                        <li>
-                            <!-- <a href="https://facebook.com/5Vietnam247?url=https://facebook.com/5Vietnam247&pubid=USERNAME&ct=1&title=test&pco=tbxnj-1.0" target="_blank"><img src="https://cache.addthiscdn.com/icons/v2/thumbs/32x32/facebook.png" border="0" alt="Facebook"/></a> -->
-                            <a title="Facebook" href="https://facebook.com/5Vietnam247" target="_blank">
-                                <span class="social-icon"><i class="fa fa-facebook"></i></span>
-                            </a>
-                            <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:8000/admin/blog" target="_blank">
-                              Share Any User
-                            </a> -->
-                            <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=YourPageLink.com&display=popup"> share this </a> -->
-                            <!--a name='fb_share' type='button_count' href='http://www.facebook.com/5Vietnam247?appId=1015971792082623&link=http://news.bda-media.com/admin/blog' rel='nofollow' target="_blank">Share</a-->
-                            <!-- <a name='fb_share' type='button_count' href='http://www.facebook.com/sharer.php?appId=1015971792082623&link=http://127.0.0.1:8000/admin/blog' rel='nofollow' target="_blank">Share static</a>
-                             -->
-                            <!--a href="#"
-                              onclick="
-                              window.open(
-                                'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-                                'facebook-share-dialog',
-                                'width=626,height=436'
-                                );
-                                return false;"
-                              >
-                              Share on Facebook
-                            </a-->
-
-                            <!-- <a title="Twitter" href="https://twitter.com/" target="_blank">
-                                <span class="social-icon"><i class="fa fa-twitter"></i></span>
-                            </a>
-                            <a title="Google+" href="https://aboutme.google.com/" target="_blank">
-                                <span class="social-icon"><i class="fa fa-google-plus"></i></span>
-                            </a>
-                            <a title="Linkdin" href="https://linkedin.com/" target="_blank">
-                                <span class="social-icon"><i class="fa fa-linkedin"></i></span>
-                            </a>
-                            <a title="Rss" href="https://fontawesome.com/" target="_blank">
-                                <span class="social-icon"><i class="fa fa-rss"></i></span>
-                            </a>
-                            <a title="Skype" href="https://skype.com/" target="_blank">
-                                <span class="social-icon"><i class="fa fa-skype"></i></span>
-                            </a> -->
-                        </li>
-                    </ul><!-- Ul end -->
-                </div><!--/ Top social col end -->
-            </div><!--/ Content row end -->
-        </div><!--/ Container end -->
-    </div><!--/ Topbar end -->
 
     <!-- Header start -->
     <header id="header" class="header">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="col-xs-12 col-sm-2 col-md-2">
                     <div class="logo">
                         <a href="/">
                             <img src="{{ URL::asset('images/logos/logo.png') }}" alt="">
@@ -307,80 +245,71 @@
                     </div>
                 </div><!-- logo col end -->
 
-                <div class="col-xs-12 col-sm-9 col-md-9 header-right">
-                    <div class="ad-banner pull-right">
-                        <!-- /21689237362/thoisu247-header -->
-                        <div style="width: 728px; height: 90px;" id='div-gpt-ad-1575528738501-0'>
-                            <script>
-                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575528738501-0'); });
-                            </script>
-                        </div>
-                    </div>
-                </div><!-- header right end -->
-            </div><!-- Row end -->
-        </div><!-- Logo and banner area end -->
+
+
+                                <nav class="site-navigation navigation">
+                                    <div class="site-nav-inner pull-left">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+
+                                        <div class="collapse navbar-collapse navbar-responsive-collapse">
+                                            <ul class="nav navbar-nav">
+                                                @foreach ($data['menus'] as $menu)
+                                                    <li>
+                                                        <a href="/{{ $menu->slug }}">{{ $menu->name }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul><!--/ Nav ul end -->
+                                        </div><!--/ Collapse end -->
+
+                                    </div><!-- Site Navbar inner end -->
+                                </nav><!--/ Navigation end -->
+
+
+                                <!-- <div class="nav-search">
+                                    <span id="search"><i class="fa fa-search"></i></span>
+                                </div> -->
+
+                                <!-- Search end -->
+
+
+                                <div class="topnav">
+                                    <div class="search-container searchform-wrap">
+                                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm...">
+                                        <button onclick="myFunction()" id="searchname"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="search-block" style="display: none;">
+                                     <div class="searchform-wrap">
+                                        <input type="text" id="searchnameinput" placeholder="Search">
+                                        <button id="searchname"><span class="fa fa-search"></span></button>
+                                    </div>
+                                </div> -->
+
+                                <!-- Site search end -->
+
+
+                        </div><!--/ Container end -->
+
+                    </div><!-- Menu wrapper end -->
+
     </header><!--/ Header end -->
 
-    <div class="main-nav clearfix">
-        <div class="container">
-            <div class="row">
-                <nav class="site-navigation navigation">
-                    <div class="site-nav-inner pull-left">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
 
-                        <div class="collapse navbar-collapse navbar-responsive-collapse">
-                            <ul class="nav navbar-nav">
-                                @foreach ($data['menus'] as $menu)
-                                    <li>
-                                        <a href="/{{ $menu->slug }}">{{ $menu->name }}</a>
-                                    </li>
-                                @endforeach
-                            </ul><!--/ Nav ul end -->
-                        </div><!--/ Collapse end -->
-
-                    </div><!-- Site Navbar inner end -->
-                </nav><!--/ Navigation end -->
-
-
-                <!-- <div class="nav-search">
-                    <span id="search"><i class="fa fa-search"></i></span>
-                </div> -->
-
-                <!-- Search end -->
-
-
-                <div class="topnav">
-                    <div class="search-container searchform-wrap">
-                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm...">
-                        <button onclick="myFunction()" id="searchname"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
-
-                <!-- <div class="search-block" style="display: none;">
-                     <div class="searchform-wrap">
-                        <input type="text" id="searchnameinput" placeholder="Search">
-                        <button id="searchname"><span class="fa fa-search"></span></button>
-                    </div>
-                </div> -->
-
-                <!-- Site search end -->
-
-            </div><!--/ Row end -->
-        </div><!--/ Container end -->
-
-    </div><!-- Menu wrapper end -->
     @if($data['isMobile'])
 
     @else
-        <div class="gap-40"></div>
-        <div style="text-align: center;" class="row">
+
+        <div style="    background: #f7f7f7; text-align: center;    padding: 25px;" class="row">
             <div class="col-md-12">
                 <img style=" width: 60%; height: 200px;" src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
             </div>
         </div>
+
+
     @endif
