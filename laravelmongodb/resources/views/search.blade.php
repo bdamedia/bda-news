@@ -387,11 +387,9 @@
             }
             
            // url = "/" + keyword + "-tim-kiem.html";
-           //var url1      = window.location.href; 
-           //alert(url1);
            var urlNew = window.location.href.split('?')
            //alert(urlNew[0]);
-           url = urlNew;
+           url = urlNew[0];
         }
 
         var filterParam = {};
