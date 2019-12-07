@@ -305,9 +305,9 @@
 
     @else
 
-        <div style="    background: #f7f7f7; text-align: center;    padding: 25px;" class="row">
+        <div  class="row ad-banner-header">
             <div class="col-md-12">
-                <img style=" width: 60%; height: 200px;" src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
+                <img src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
             </div>
         </div>
 
