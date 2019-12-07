@@ -283,16 +283,16 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
             effect : "fadeIn",
             effectTime: 1500
         });
-        $('#searchname').click(function(){
+        /*$('#searchname').click(function(){
             var search = $('#searchname').val();
-            $('.search-block').hide();
+            //$('.search-block').hide();
             window.location.href = '/search/values/' + $('#searchnameinput').val();
-        })
+        });
         $('#searchnameinput').keypress(function(e){
             if(e.which == 13){//Enter key pressed
                 $('#searchname').click();//Trigger search button click event
             }
-        });
+        });*/
     });
 </script>
 @if($data['isMobile'])
@@ -333,5 +333,27 @@ Tòa soạn : Tầng 6 Caribe Plaza Building, 53 Palmeras Street San Juan, Puert
 </script>
 @endif
 </div><!-- Body inner end -->
+    <script type="text/javascript">
+        var x = document.getElementById("searchnameinput");
+        x.style.display = "none";
+        function myFunction() {
+          var x = document.getElementById("searchnameinput");
+          if (x.style.display === "none") {
+            x.style.display = "inline-table";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        $('#searchname').click(function(){
+            if ($('#searchnameinput').val().length > 1){
+                window.location.href = '/search/values/' + $('#searchnameinput').val();
+            }
+        });
+        $('#searchnameinput').keypress(function(e){
+            if(e.which == 13){
+                $('#searchname').click();
+            }
+        });
+    </script>
 </body>
 </html>

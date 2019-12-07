@@ -346,24 +346,29 @@
                     </div><!-- Site Navbar inner end -->
                 </nav><!--/ Navigation end -->
 
-                <div class="nav-search">
-                    <span id="search"><i class="fa fa-search"></i></span>
-                </div><!-- Search end -->
 
-                <div class="search-block" style="display: none;">
-                    <!-- <input type="text" class="form-control" placeholder="Type what you want and enter" name="searchname" id="searchname">
-                    <span class="search-close">&times;</span> -->
-                   <!-- <div class="searchform-wrap">
-                        <form name="search" id="searchbox" class="znewsSearch active" target="_blank">
-                            <input type="text" name="s" id="searchname" placeholder="Search">
-                            <button type="submit" id="search_button"><span class="fa fa-search"></span></button>
-                        </form>
-                    </div> -->
+                <!-- <div class="nav-search">
+                    <span id="search"><i class="fa fa-search"></i></span>
+                </div> -->
+
+                <!-- Search end -->
+
+
+                <div class="topnav">
+                    <div class="search-container searchform-wrap">
+                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm...">
+                        <button onclick="myFunction()" id="searchname"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+
+                <!-- <div class="search-block" style="display: none;">
                      <div class="searchform-wrap">
                         <input type="text" id="searchnameinput" placeholder="Search">
                         <button id="searchname"><span class="fa fa-search"></span></button>
                     </div>
-                </div><!-- Site search end -->
+                </div> -->
+
+                <!-- Site search end -->
 
             </div><!--/ Row end -->
         </div><!--/ Container end -->
