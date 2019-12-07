@@ -365,20 +365,6 @@
     </div><!-- Container end -->
 </section><!-- First block end -->
 
-<section class="ad-content-area text-center no-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <!-- /21689237362/thoisu247-header -->
-                <div style="width: 728px; height: 90px;" id='div-gpt-ad-1575461841526-0'>
-                    <script>
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575461841526-0'); });
-                    </script>
-                </div>
-            </div><!-- Col end -->
-        </div><!-- Row end -->
-    </div><!-- Container end -->
-</section><!-- Ad content top end -->
 
 <section class="block-wrapper">
     <div class="container">
