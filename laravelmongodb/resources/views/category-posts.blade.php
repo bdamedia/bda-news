@@ -51,7 +51,13 @@
                     </div>
                     {{--{{ $category_posts }}--}}
             </div><!-- Content Col end -->
-            @include('sidebar')
+            @if($data['isMobile'])
+               
+            @else
+                @include('sidebar')
+            @endif
+
+
         </div><!-- Row end -->
     </div><!-- Container end -->
 </section><!-- First block end -->
