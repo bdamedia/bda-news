@@ -125,17 +125,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-
                 <div class="latest-news block color-red">
                     <h3 class="block-title"><span>Latest News</span></h3>
-
                     <div id="latest-news-slide-home" class="owl-carousel1 owl-theme1 latest-news-slide1">
-
-
                         @php $count = 1; @endphp
                         @foreach ($latest_home_posts as $post)
-
-
                             <div class="item">
                                     <div class="post-block-style clearfix">
                                         <div class="post-thumb-home">
@@ -156,18 +150,19 @@
                                         </div><!-- Post content end -->
                                     </div><!-- Post Block style end -->
                             </div>
-
-
-
                             @php $count++; @endphp
-
                         @endforeach
-
                     </div><!-- Latest News owl carousel end-->
                 </div><!--- Latest news end -->
-
                 <div class="gap-50"></div>
-
+            </div><!-- Content Col end -->
+            @include('sidebar')
+            <div  class="row ad-banner-header">
+                <div class="col-md-12">
+                    <img src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <!--- Featured Tab startet -->
                 <div class="featured-tab color-blue">
                     <h3 class="block-title"><span>{{ $data['category_array']['5d7b520b60b8e37981b55477'][0] }}</span></h3>
@@ -359,11 +354,11 @@
 
                     </div><!-- Row end -->
                 </div><!-- Block Lifestyle end -->
+            </div>
 
 
-            </div><!-- Content Col end -->
 
-            @include('sidebar')
+
 
         </div><!-- Row end -->
     </div><!-- Container end -->

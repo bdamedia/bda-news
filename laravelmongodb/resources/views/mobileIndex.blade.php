@@ -42,12 +42,7 @@
                 <div class="ajax-load text-center" style="display:none">
                     <p><img src="http://demo.itsolutionstuff.com/plugin/loader.gif">Loading More post</p>
                 </div>
-
-
             </div><!-- Content Col end -->
-
-
-
         </div><!-- Row end -->
     </div><!-- Container end -->
 </section><!-- First block end -->
