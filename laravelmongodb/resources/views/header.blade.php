@@ -374,5 +374,13 @@
         </div><!--/ Container end -->
 
     </div><!-- Menu wrapper end -->
+    @if($data['isMobile'])
 
-
+    @else
+        <div class="gap-40"></div>
+        <div style="text-align: center;" class="row">
+            <div class="col-md-12">
+                <img style=" width: 60%; height: 200px;" src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
+            </div>
+        </div>
+    @endif
