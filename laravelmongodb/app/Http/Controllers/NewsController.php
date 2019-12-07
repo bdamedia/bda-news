@@ -76,11 +76,30 @@ class NewsController extends Controller
 
     public function getsearchvalue(Request $request, $slug){
         $seachVAlue = last(request()->segments());
-        $data['random_home_posts'] = News::where('title','like',"%$seachVAlue%")->orderBy('date', 'desc')->paginate(10);
+        $seachType = $request->input('type');
+        $searchDate = $request->input('date');
+        $searchContant = $request->input('content_type');
+        $searchCategory = $request->input('category');
+        //print_r($request->input('type'));
+        //print_r($request->input('date'));
+        //print_r($request->input('content_type'));
+        //print_r($request->input('category'));
+        //die();
+        //$data['random_home_posts'] = News::where('title','like',"%$seachVAlue%")->orderBy('date', 'desc')->paginate(10);
+        $data['random_home_posts'] = News::where('title','like',"%$seachVAlue%")
+            ->orWhere('date', $searchDate)
+            ->orWhere('category', $searchCategory)
+            ->orWhere('slug', $seachType)
+            ->orderBy('date', 'desc')->paginate(10);
+        //$query->select(DB::raw("SUM(amount_total) as paidsum"))->where('status', 'paid');
+        //print_r($data['random_home_posts']);
+        //die();
         if ($request->ajax()) {
             $view = view('searchdata',$data)->render();
             return response()->json(['html'=>$view]);
         }
+        $data['sum_records'] = count($data['random_home_posts']);
+        $data['search_text'] = $seachVAlue;
         return view('search')->with($data);
     }
 
