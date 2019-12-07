@@ -1078,6 +1078,35 @@ span.post-comment span{
     width: 60%;
     height: 200px;
 }
+
+.post-thumb-home{
+    width: 33%;
+    float: left;
+    margin-right: 15px;
+}
+
+#latest-news-slide-home .item{
+    margin-bottom: 29px;
+}
+#latest-news-slide-home .item:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    position: absolute;
+    left: 0;
+    margin-top: 14px;
+}
+
+#latest-news-slide-home .item h2{
+    margin: 0
+}
+
+#latest-news-slide-home .item p{
+    text-align: justify;
+}
+
 /* Trending Bar
 ================================================== */
 

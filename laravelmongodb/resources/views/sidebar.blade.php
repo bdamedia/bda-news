@@ -44,7 +44,7 @@
                             <div class="post-block-style post-float clearfix">
                                 <div class="post-thumb">
                                     <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
-                                        <img class="img-responsive" src="{{ $post->thumb_url }}" alt="" />
+                                        <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
                                     </a>
                                     <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
                                 </div><!-- Post thumb end -->

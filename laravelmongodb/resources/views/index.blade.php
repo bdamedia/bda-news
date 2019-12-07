@@ -40,7 +40,7 @@
 
 
                     @foreach ($random_home_posts as $post)
-                    <div class="item" onclick="window.location.href='/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}'" style="background-image:url({{ $post->thumb_url }})">
+                    <div class="item" onclick="" style="background-image:url({{ $post->thumb_url }})">
                         <div class="featured-post">
                             <div class="post-content">
                                 <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
@@ -126,42 +126,38 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-                <ul class="latest-news block color-red">
+                <div class="latest-news block color-red">
                     <h3 class="block-title"><span>Latest News</span></h3>
 
-                    <div id="latest-news-slide" class="owl-carousel owl-theme latest-news-slide">
-                        <div class="item">
-                            <ul class="list-post">
+                    <div id="latest-news-slide-home" class="owl-carousel1 owl-theme1 latest-news-slide1">
+
+
                         @php $count = 1; @endphp
                         @foreach ($latest_home_posts as $post)
 
 
-                                <li class="clearfix">
+                            <div class="item">
                                     <div class="post-block-style clearfix">
-                                        <div class="post-thumb">
-                                            <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}"><img class="img-responsive" src="{{ $post->thumb_url }}" alt="" /></a>
+                                        <div class="post-thumb-home">
+                                            <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}"><img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" /></a>
                                         </div>
                                         <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
                                         <div class="post-content">
                                             <h2 class="post-title title-medium">
                                                 <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
                                             </h2>
+                                            <p>
+                                                {{ $post->desc }}
+                                            </p>
                                             <div class="post-meta">
                                                 <span class="post-author"><a href="#">{{ $data['authors'][array_rand($data['authors'])] }}</a></span>
                                                 <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
                                             </div>
                                         </div><!-- Post content end -->
                                     </div><!-- Post Block style end -->
-                                </li><!-- Li end -->
-                                <div class="gap-30"></div>
-                            @if(($count % 2) == 0)
-                            </ul><!-- List post 1 end -->
-                        </div><!-- Item 1 end -->
-                        <div class="item" ><!-- List post 1 end -->
-                    <ul class="list-post" ><!-- Item 1 end -->
-                                    @else
+                            </div>
 
-                                    @endif
+
 
                             @php $count++; @endphp
 
@@ -175,29 +171,6 @@
                 <!--- Featured Tab startet -->
                 <div class="featured-tab color-blue">
                     <h3 class="block-title"><span>{{ $data['category_array']['5d7b520b60b8e37981b55477'][0] }}</span></h3>
-                    <!--ul class="nav nav-tabs">
-                        <li class="active">
-                            <a class="animated fadeIn" href="#tab_a" data-toggle="tab">
-						  			<span class="tab-head">
-										<span class="tab-text-title">Gadgets</span>
-									</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="animated fadeIn" href="#tab_b" data-toggle="tab">
-							  		<span class="tab-head">
-										<span class="tab-text-title">Games</span>
-									</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="animated fadeIn" href="#tab_c" data-toggle="tab">
-							  		<span class="tab-head">
-										<span class="tab-text-title">Robotics</span>
-									</span>
-                            </a>
-                        </li>
-                    </ul-->
 
                     <div class="tab-content">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
