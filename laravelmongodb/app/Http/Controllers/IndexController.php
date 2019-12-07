@@ -17,18 +17,23 @@ class IndexController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
 
         $agent = new Agent();
         if($agent->isMobile()){
             $cat = Category::all();
             foreach ($cat as $cate){
-                $data['posts'][$cate->slug] = News::where('category',$cate->_id)->orderBy('date', 'desc')->take(5)->get()->random(5);
+                $data['posts'] = News::orderBy('date', 'desc')->paginate(10);
             }
             $data['cname'] = 'thoi-su';
             $data['page_name'] = 'Thời sự 247 - Tin tức, hình ảnh mới nhật cập nhật 24H!';
-            // print_r($data);
+
+            if ($request->ajax()) {
+                $view = view('mobileData',$data)->render();
+                return response()->json(['html'=>$view]);
+            }
+
             return view('mobileIndex')->with($data);
             }else{
             $data['random_home_posts'] = News::orderBy('date', 'desc')->take(5)->get();
