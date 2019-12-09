@@ -21,7 +21,7 @@
 								<span class="post-author">
 									By <a href="#">{{ $data['authors'][array_rand($data['authors'])] }}</a>
 								</span>
-                            <span class="post-date"><i class="fa fa-clock-o"></i>{{--{{ $post['date']['$date']->toDateTime()->format('M d, Y') }}--}}</span>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>{{ $date }}</span>
                             <!--span class="post-hits"><i class="fa fa-eye"></i> 21</span>
                             <span class="post-comment"><i class="fa fa-comments-o"></i>
 								<a href="#" class="comments-link"><span>01</span></a></span-->
@@ -33,11 +33,47 @@
                             <a href="{{ $post['images'][0] ?? '' }}" class="gallery-popup"><img src="{{ $post['images'][0] ?? '' }}" class="img-responsive" alt=""></a>
                         </div>
                         <div class="entry-content">
+                            @php
+                                $ps=1;
+
+                                 $count = round(count($post['content']) / 2);
+                            @endphp
+                            {{--{{ print_r($post['content']) }}--}}
                             @foreach ($post['content'] as $content)
                                <p> {{ $content ?? '' }} </p>
+                                @if($data['isMobile'])
+                                @if($count == $ps)
+                                    <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
+                                        <!-- /21689237362/thoisu247-postpage-innerpost-mobile -->
+                                        <div id='div-gpt-ad-1575892083273-0' style='width: 300px; height: 300px;'>
+                                          <script>
+                                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892083273-0'); });
+                                          </script>
+                                        </div>
+                                    </div><!-- 1st Post list end -->
+                                @endif
+                                @endif
+                                @php $ps++; @endphp
                             @endforeach
                         </div><!-- Entery content end -->
+                        <div class="post-block-style post-list clearfix">
 
+                        @if($data['isMobile'])
+                            <!-- /21689237362/thoisu247-postpage-endpost-mobile -->
+                            <div id='div-gpt-ad-1575892048752-0' style='width: 320px; height: 480px;'>
+                              <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892048752-0'); });
+                              </script>
+                            </div>
+                            @else
+                            <!-- /21689237362/thoisu247-postpage-endpost-desktop -->
+                            <div id='div-gpt-ad-1575892015830-0' style='width: 970px; height: 250px;'>
+                              <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892015830-0'); });
+                              </script>
+                            </div>
+                            @endif
+                        </div><!-- 1st Post list end -->
                         <div class="tags-area clearfix">
                             <div class="post-tags">
                                 <span>Tags:</span>
@@ -150,6 +186,37 @@
         </div><!-- Row end -->
     </div><!-- Container end -->
 </section><!-- First block end -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/{{ $cat_slug }}/{{ $post->slug }}"
+  },
+  "headline": "{{ $post->title }}",
+  "image": [
+    "{{ $post->thumb_url }}"
+   ],
+  "datePublished": "{{ $post->date->toDateTime()->format('M d, Y')  }}",
+  "dateModified": "{{ $post->date->toDateTime()->format('M d, Y')  }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ $data['authors'][array_rand($data['authors'])] }}"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "BDA News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ URL::asset('images/logos/logo.png') }}"
+    }
+  },
+  "description": "{{ $post->desc }}"
+}
+
+</script>
+
 @include('footer')
 <script type="text/javascript">
     var page = 1;

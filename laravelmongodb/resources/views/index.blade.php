@@ -1,4 +1,3 @@
-
 @include('header')
 <div class="trending-bar hidden-xs">
     <div class="container">
@@ -136,7 +135,7 @@
                                             <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}"><img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" /></a>
                                         </div>
                                         <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
-                                        <div class="post-content">
+                                        <div class="post-content-new">
                                             <h2 class="post-title title-medium">
                                                 <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
                                             </h2>
@@ -159,81 +158,238 @@
             @include('sidebar')
             <div  class="row ad-banner-header">
                 <div class="col-md-12">
-                    <img src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
+                    <!-- /21689237362/thoisu247-footer-desktop -->
+                    <div id='div-gpt-ad-1575885103852-0'>
+                        <script>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575885103852-0'); });
+                        </script>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <!--- Featured Tab startet -->
-                <div class="featured-tab color-blue">
-                    <h3 class="block-title"><span>{{ $data['category_array']['5d7b520b60b8e37981b55477'][0] }}</span></h3>
 
-                    <div class="tab-content">
-                        <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <div class="row">
-                                @php $i=1; @endphp
-                                @foreach ($after_latest_posts as $post)
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="post-block-style clearfix">
-                                        <div class="post-thumb">
-                                            <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
-                                                <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
-                                            </a>
-                                        </div>
-                                        <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
-                                        <div class="post-content">
-                                            <h2 class="post-title">
-                                                <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
-                                            </h2>
-                                            <div class="post-meta">
-                                                <span class="post-author"><a href="#">{{ $data['authors'][array_rand($data['authors'])] }}</a></span>
-                                                <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
-                                            </div>
-                                            <p>{{ $post->desc  }}...</p>
-                                        </div><!-- Post content end -->
-                                    </div><!-- Post Block style end -->
-                                </div><!-- Col end -->
-                                    @if($i == 1)
-                                        @break
-                                    @endif
-                                    @php $i++; @endphp
-                                @endforeach
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="list-post-block">
-                                        <ul class="list-post">
-                                            @php $j=1; @endphp
-                                            @foreach ($after_latest_posts as $post)
-                                                @if($j == 1)
 
-                                                @else
-                                            <li class="clearfix">
-                                                <div class="post-block-style post-float clearfix">
-                                                    <div class="post-thumb">
-                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
-                                                            <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
-                                                        </a>
-                                                    </div><!-- Post thumb end -->
+                <section class="four-section block-wrapper">
+                    <div class="container">
+                        <div class="row">
 
-                                                    <div class="post-content">
-                                                        <h2 class="post-title title-small">
-                                                            <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
-                                                        </h2>
-                                                        <div class="post-meta">
-                                                            <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
-                                                        </div>
-                                                    </div><!-- Post content end -->
-                                                </div><!-- Post block style end -->
-                                            </li><!-- Li 1 end -->
-                                                @endif
-                                                    @php $j++; @endphp
-                                            @endforeach
-                                        </ul><!-- List post end -->
-                                    </div><!-- List post block end -->
-                                </div><!-- List post Col end -->
-                            </div><!-- Tab pane Row 1 end -->
-                        </div><!-- Tab pane 1 end -->
+                            <div class="col-md-3">
+                                <div class="block color-dark-blue">
+                                    <h3 class="block-title"><span>{{ $data['category_array']['5d80e236626f8bd865776ed5'][0] }}</span></h3>
 
-                    </div><!-- tab content -->
-                </div><!-- Technology Tab end -->
+                                    @php $k=1; @endphp
+                                    @foreach ($four_section_one_home_posts as $post)
+                                        @if($k == 1)
+                                            <div class="post-overaly-style clearfix">
+                                                <div class="post-thumb">
+                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                                        <img class="image-size img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content">
+                                                    <h2 class="post-title title-small">
+                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                                    </h2>
+                                                    <div class="post-meta">
+                                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                                    </div>
+                                                </div><!-- Post content end -->
+                                            </div><!-- Post Overaly Article end -->
+
+                                            <div class="list-post-block">
+                                                <ul class="list-post">
+                                                    @else
+                                                        <li class="clearfix">
+                                                            <div class="post-block-style post-float clearfix">
+                                                                <div class="post-thumb">
+                                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                                                        <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                                                    </a>
+                                                                </div><!-- Post thumb end -->
+
+                                                                <div class="post-content">
+                                                                    <h2 class="post-title title-small">
+                                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                                                    </h2>
+                                                                    <div class="post-meta">
+                                                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                                                    </div>
+                                                                </div><!-- Post content end -->
+                                                            </div><!-- Post block style end -->
+                                                        </li><!-- Li 1 end -->
+                                                    @endif
+                                                    @php $k++; @endphp
+
+                                                    @endforeach
+                                                </ul><!-- List post end -->
+                                            </div><!-- List post block end -->
+                                </div><!-- Block end -->
+                            </div><!-- Travel Col end -->
+
+                            <div class="col-md-3">
+                                <div class="block color-aqua">
+                                    <h3 class="block-title"><span>{{ $data['category_array']['5d81b607626f8bd86577b6d1'][0] }}</span></h3>
+
+                                    @php $k=1; @endphp
+                                    @foreach ($four_section_two_home_posts as $post)
+                                        @if($k == 1)
+                                            <div class="post-overaly-style clearfix">
+                                                <div class="post-thumb">
+                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                                        <img class="image-size img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content">
+                                                    <h2 class="post-title title-small">
+                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                                    </h2>
+                                                    <div class="post-meta">
+                                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                                    </div>
+                                                </div><!-- Post content end -->
+                                            </div><!-- Post Overaly Article end -->
+
+                                            <div class="list-post-block">
+                                                <ul class="list-post">
+                                                    @else
+                                                        <li class="clearfix">
+                                                            <div class="post-block-style post-float clearfix">
+                                                                <div class="post-thumb">
+                                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                                                        <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                                                    </a>
+                                                                </div><!-- Post thumb end -->
+
+                                                                <div class="post-content">
+                                                                    <h2 class="post-title title-small">
+                                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                                                    </h2>
+                                                                    <div class="post-meta">
+                                                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                                                    </div>
+                                                                </div><!-- Post content end -->
+                                                            </div><!-- Post block style end -->
+                                                        </li><!-- Li 1 end -->
+                                                    @endif
+                                                    @php $k++; @endphp
+
+                                                    @endforeach
+                                                </ul><!-- List post end -->
+                                            </div><!-- List post block end -->
+                                </div><!-- Block end -->
+                            </div><!-- Gadget Col end -->
+
+                            <div class="col-md-3">
+                                <div class="block color-violet">
+                                    <h3 class="block-title"><span>{{ $data['category_array']['5d81b566626f8bd86577b682'][0] }}</span></h3>
+
+                                    @php $k=1; @endphp
+                                    @foreach ($four_section_third_home_posts as $post)
+                                        @if($k == 1)
+                                            <div class="post-overaly-style clearfix">
+                                                <div class="post-thumb">
+                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                                        <img class="image-size img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content">
+                                                    <h2 class="post-title title-small">
+                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                                    </h2>
+                                                    <div class="post-meta">
+                                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                                    </div>
+                                                </div><!-- Post content end -->
+                                            </div><!-- Post Overaly Article end -->
+
+                                            <div class="list-post-block">
+                                                <ul class="list-post">
+                                                    @else
+                                                        <li class="clearfix">
+                                                            <div class="post-block-style post-float clearfix">
+                                                                <div class="post-thumb">
+                                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                                                        <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                                                    </a>
+                                                                </div><!-- Post thumb end -->
+
+                                                                <div class="post-content">
+                                                                    <h2 class="post-title title-small">
+                                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                                                    </h2>
+                                                                    <div class="post-meta">
+                                                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                                                    </div>
+                                                                </div><!-- Post content end -->
+                                                            </div><!-- Post block style end -->
+                                                        </li><!-- Li 1 end -->
+                                                    @endif
+                                                    @php $k++; @endphp
+                                                    @endforeach
+                                                </ul><!-- List post end -->
+                                            </div><!-- List post block end -->
+                                </div><!-- Block end -->
+                            </div><!-- Health Col end -->
+                            <div class="col-md-3">
+                                <div class="block color-violet">
+                                    <h3 class="block-title"><span>{{ $data['category_array']['5d81b597626f8bd86577b695'][0] }}</span></h3>
+
+                                    @php $k=1; @endphp
+                                    @foreach ($four_section_four_home_posts as $post)
+                                        @if($k == 1)
+                                            <div class="post-overaly-style clearfix">
+                                                <div class="post-thumb">
+                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                                        <img class="image-size img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                                    </a>
+                                                </div>
+
+                                                <div class="post-content">
+                                                    <h2 class="post-title title-small">
+                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                                    </h2>
+                                                    <div class="post-meta">
+                                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                                    </div>
+                                                </div><!-- Post content end -->
+                                            </div><!-- Post Overaly Article end -->
+
+                                            <div class="list-post-block">
+                                                <ul class="list-post">
+                                                    @else
+                                                        <li class="clearfix">
+                                                            <div class="post-block-style post-float clearfix">
+                                                                <div class="post-thumb">
+                                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
+                                                                        <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
+                                                                    </a>
+                                                                </div><!-- Post thumb end -->
+
+                                                                <div class="post-content">
+                                                                    <h2 class="post-title title-small">
+                                                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
+                                                                    </h2>
+                                                                    <div class="post-meta">
+                                                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
+                                                                    </div>
+                                                                </div><!-- Post content end -->
+                                                            </div><!-- Post block style end -->
+                                                        </li><!-- Li 1 end -->
+                                                    @endif
+                                                    @php $k++; @endphp
+                                                    @endforeach
+                                                </ul><!-- List post end -->
+                                            </div><!-- List post block end -->
+                                </div><!-- Block end -->
+                            </div><!-- Health Col end -->
+                        </div><!-- Row end -->
+                    </div><!-- Container end -->
+                </section><!-- 2nd block end -->
+
+
 
                 <div class="gap-40"></div>
 
@@ -241,7 +397,7 @@
                     <h3 class="block-title"><span>Other</span></h3>
 
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-12 col-sm-12">
 
                             @php $k=1; @endphp
                             @foreach ($random_one_home_posts as $post)
@@ -296,60 +452,7 @@
                             </div><!-- List post block end -->
                         </div><!-- Col 1 end -->
 
-                        <div class="col-md-6 col-sm-6">
 
-                            @php $k=1; @endphp
-                            @foreach ($random_two_home_posts as $post)
-
-                                @if($k == 1)
-                            <div class="post-overaly-style clearfix">
-                                <div class="post-thumb">
-                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
-                                        <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
-                                    </a>
-                                </div>
-
-                                <div class="post-content">
-                                    <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
-                                    <h2 class="post-title">
-                                        <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
-                                    </h2>
-                                    <div class="post-meta">
-                                        <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
-                                    </div>
-                                </div><!-- Post content end -->
-                            </div><!-- Post Overaly Article end -->
-
-                            <div class="list-post-block">
-                                <ul class="list-post">
-                                    @else
-                                    <li class="clearfix">
-                                        <div class="post-block-style post-float clearfix">
-                                            <div class="post-thumb">
-                                                <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">
-                                                    <img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" />
-                                                </a>
-                                                <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
-                                            </div><!-- Post thumb end -->
-
-                                            <div class="post-content">
-                                                <h2 class="post-title title-small">
-                                                    <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
-                                                </h2>
-                                                <div class="post-meta">
-                                                    <span class="post-date">{{ $post->date->toDateTime()->format('M d, Y')  }}</span>
-                                                </div>
-                                            </div><!-- Post content end -->
-                                        </div><!-- Post block style end -->
-                                    </li><!-- Li 1 end -->
-                                    @endif
-                                    @php $k++; @endphp
-                                    @endforeach
-
-
-                                </ul><!-- List post end -->
-                            </div><!-- List post block end -->
-                        </div><!-- Col 2 end -->
 
 
                     </div><!-- Row end -->
@@ -537,15 +640,22 @@
 <section class="block-wrapper video-block">
     <div class="container">
         <div class="row">
+           {{-- {{ print_r($videos) }}
+--}}
             <div class="video-tab clearfix">
                 <h2 class="video-tab-title">Watch Now</h2>
                 <div class="col-md-7 pad-r-0">
                     <div class="tab-content">
-                        <div class="tab-pane active animated fadeIn" id="video1">
+                        @php $s=1; @endphp
+                        @foreach ($videos as $video)
+                            @if($s == 1)
+
+                        <div class="tab-pane active animated fadeIn" id="video{{ $s }}">
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
-                                    <img class="img-responsive" data-original="images/news/video/video4.jpg" alt="" />
-                                    <a class="popup" href="https://www.youtube.com/embed/XhveHKJWnOQ?autoplay=1&amp;loop=1">
+
+                                    <img class="img-responsive" src="{{ $video->snippet->thumbnails->standard->url }}" data-original="{{ $video->snippet->thumbnails->standard->url }}" alt="" />
+                                    <a class="popup" href="https://www.youtube.com/embed/{{ $video->id }}?autoplay=1&amp;loop=1">
                                         <div class="video-icon">
                                             <i class="fa fa-play"></i>
                                         </div>
@@ -554,17 +664,17 @@
                                 <div class="post-content">
                                     <a class="post-cat" href="#">Video</a>
                                     <h2 class="post-title">
-                                        <a href="#">Is Running Good for You, Health Benefits of Morning Running</a>
+                                        <a href="#">{{ $video->snippet->title }}</a>
                                     </h2>
                                 </div><!-- Post content end -->
                             </div><!-- Post Overaly Article end -->
                         </div><!--Tab pane 1 end-->
-
-                        <div class="tab-pane animated fadeIn" id="video2">
+                        @else
+                        <div class="tab-pane animated fadeIn" id="video{{ $s }}">
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
-                                    <img class="img-responsive" data-original="images/news/video/video3.jpg" alt="" />
-                                    <a class="popup" href="https://www.youtube.com/embed/wJF5NXygL4k?autoplay=1&amp;loop=1">
+                                    <img class="img-responsive" src="{{ $video->snippet->thumbnails->high->url }}" data-original="{{ $video->snippet->thumbnails->high->url }}" alt="" />
+                                    <a class="popup" href="https://www.youtube.com/embed/{{ $video->id }}?autoplay=1&amp;loop=1">
                                         <div class="video-icon">
                                             <i class="fa fa-play"></i>
                                         </div>
@@ -573,13 +683,13 @@
                                 <div class="post-content">
                                     <a class="post-cat" href="#">Video</a>
                                     <h2 class="post-title title-medium">
-                                        <a href="#">Breeze through 17 locations in Europe in this breathtaking video</a>
+                                        <a href="#">{{ $video->snippet->title }}</a>
                                     </h2>
                                 </div><!-- Post content end -->
                             </div><!-- Post Overaly Article 2 end -->
                         </div><!--Tab pane 2 end-->
-
-                        <div class="tab-pane animated fadeIn" id="video3">
+                        @endif
+                        {{--<div class="tab-pane animated fadeIn" id="video3">
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
                                     <img class="img-responsive" data-original="images/news/video/video2.jpg" alt="" />
@@ -596,23 +706,31 @@
                                     </h2>
                                 </div><!-- Post content end -->
                             </div><!-- Post Overaly Article 2 end -->
-                        </div><!--Tab pane 2 end-->
-
-
+                        </div><!--Tab pane 2 end-->--}}
+                            @php $s++; @endphp
+                        @endforeach
                     </div><!-- Tab content end -->
                 </div><!--Tab col end -->
 
-                <div class="col-md-5 pad-l-0">
+                <div style="height: 499px;overflow-y: scroll;" class="col-md-5 pad-l-0">
                     <ul class="nav nav-tabs">
+                        @php $s=1; @endphp
+                        @foreach ($videos as $video)
+                            @if($s == 1)
                         <li class="active">
-                            <a class="animated fadeIn" href="#video1" data-toggle="tab">
+                            @else
+                                <li class="">
+                                @endif
+                            <a class="animated fadeIn" href="#video{{ $s }}" data-toggle="tab">
                                 <div class="post-thumb">
-                                    <img class="img-responsive" data-original="images/news/video/video4.jpg" alt="" />
+                                    <img class="img-responsive" src="{{ $video->snippet->thumbnails->high->url }}" data-original="{{ $video->snippet->thumbnails->high->url }}" alt="" />
                                 </div><!-- Post thumb end -->
-                                <h3>Is Running Good for You, Health Benefits of Morning Running</h3>
+                                <h3>{{ $video->snippet->title }}</h3>
                             </a>
                         </li>
-                        <li>
+                                @php $s++; @endphp
+                                @endforeach
+                       {{-- <li>
                             <a class="animated fadeIn" href="#video2" data-toggle="tab">
                                 <div class="post-thumb">
                                     <img class="img-responsive" data-original="images/news/video/video3.jpg" alt="" />
@@ -627,7 +745,7 @@
                                 </div><!-- Post thumb end -->
                                 <h3>TG G6 will have dual 13-megapixel cameras on the back</h3>
                             </a>
-                        </li>
+                        </li>--}}
                     </ul>
                 </div><!--Tab nav col end -->
             </div><!-- Video tab end -->
@@ -643,14 +761,24 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <!-- /21689237362/thoisu247-header -->
-                <div style="width: 728px; height: 90px;" id='div-gpt-ad-1575528682755-0'>
-                    <script>
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575528682755-0'); });
-                    </script>
+               <!-- /21689237362/thoisu247-footer -->
+                <div id='div-gpt-ad-1575891936435-0' style='width: 970px; height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575891936435-0'); });
+                  </script>
                 </div>
             </div><!-- Col end -->
         </div><!-- Row end -->
     </div><!-- Container end -->
 </section><!-- Ad content two end -->--}}
+<script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+"@type" : "WebSite",
+"name" : "{{ $page_name ?? '' }}",
+"alternateName" : "{{ $meta_desc }}",
+"dateModified": "",
+"url" : "/"
+}
+</script>
 @include('footer')

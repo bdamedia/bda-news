@@ -720,10 +720,18 @@ span.post-comment span{
     min-height: 160px;
 }
 
-.color-orange .post-overaly-style .post-thumb img{
-    height: 326px;
+.color-orange  .list-post-block{
+    float: left;
+    width: 32%;
+    margin-top:0px;
 }
 
+.color-orange .post-overaly-style{
+    width: 64%;
+    float: left;
+    margin-right: 22px;
+    height: 400px;
+}
 
 .post-block-style:hover .post-thumb img,
 .post-overaly-style:hover .post-thumb img{
@@ -745,8 +753,14 @@ span.post-comment span{
 	z-index: 1;
 }
 
+.four-section .image-size{
+    height: 174px;
+}
 /* Post overaly Top Content */
 
+.post-overaly-style{
+    cursor: pointer;
+}
 .post-overaly-style.contentTop .post-content{
 	top: 0;
 	bottom: auto;

@@ -353,10 +353,23 @@
 
 
     $(document).ready(function () {
+
+        /*
         var keyword = 'a';
         if (keyword != '') {
             keyword = keyword.trim();
             $('#search_keyword').val(keyword);
+        }*/
+
+        var urlNew = window.location.href.split('?')
+        //alert(urlNew[0]);
+        url = urlNew[0].split('/');
+        var searchkey = url[5];
+        var keyword = searchkey;
+        if (keyword != '') {
+            keyword = keyword.trim();
+            $('#searchnameinput').val(keyword);
+            $("#searchnameinput").show();
         }
 
         $("input[name='search_mode']").on("click", function () {

@@ -46,6 +46,7 @@ class NewsController extends Controller
         $data['meta_keywords'] = str_replace(' ',',',$title);
         $data['meta_desc'] = $post[0]['desc'];
         $data['og_image'] = $post[0]['thumb_url'];
+        $data['date'] = collect($results)->first()->date->toDateTime()->format('M d, Y');
         if ($request->ajax()) {
             $view = view('relateddata',$data)->render();
             return response()->json(['html'=>$view]);

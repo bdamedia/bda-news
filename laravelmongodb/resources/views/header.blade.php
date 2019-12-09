@@ -168,6 +168,8 @@
         .image-size{
             height: 242px;
         }
+
+
     </style>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -177,18 +179,26 @@
         })(window,document,'script','dataLayer','GTM-KKLF49R');</script>
     <!-- End Google Tag Manager -->
 
+
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script>
-        window.googletag = window.googletag || {cmd: []};
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/21689237362/thoisu247-footer', [728, 90], 'div-gpt-ad-1575528682755-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-header', [728, 90], 'div-gpt-ad-1575528738501-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-sidebar', [300, 300], 'div-gpt-ad-1575528797111-0').addService(googletag.pubads());
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/21689237362/thoisu247-footer', [970, 250], 'div-gpt-ad-1575891936435-0').addService(googletag.pubads());
+        googletag.defineSlot('/21689237362/thoisu247-header', [970, 250], 'div-gpt-ad-1575891986270-0').addService(googletag.pubads());
+        googletag.defineSlot('/21689237362/thoisu247-postpage-endpost-desktop', [970, 250], 'div-gpt-ad-1575892015830-0').addService(googletag.pubads());
+        googletag.defineSlot('/21689237362/thoisu247-postpage-endpost-mobile', [320, 480], 'div-gpt-ad-1575892048752-0').addService(googletag.pubads());
+        googletag.defineSlot('/21689237362/thoisu247-postpage-innerpost-mobile', [300, 300], 'div-gpt-ad-1575892083273-0').addService(googletag.pubads());
+        googletag.defineSlot('/21689237362/thoisu247-sidebar', [300, 600], 'div-gpt-ad-1575892118048-0').addService(googletag.pubads());
+        googletag.defineSlot('/21689237362/thoisu-sidebar2-desktop', [300, 600], 'div-gpt-ad-1575892145031-0').addService(googletag.pubads());
+        googletag.defineSlot('/21689237362/thoisu247-sidebar3-desktop', [300, 600], 'div-gpt-ad-1575892179919-0').addService(googletag.pubads());
 
-            googletag.pubads().enableSingleRequest();
-            googletag.enableServices();
-        });
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
     </script>
+
+
 </head>
 
 <body>
@@ -279,17 +289,12 @@
 
                                 <div class="topnav">
                                     <div class="search-container searchform-wrap">
-                                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm...">
+                                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm.searchnameinput..">
                                         <button onclick="myFunction()" id="searchname"><i class="fa fa-search"></i></button>
                                     </div>
                                 </div>
 
-                                <!-- <div class="search-block" style="display: none;">
-                                     <div class="searchform-wrap">
-                                        <input type="text" id="searchnameinput" placeholder="Search">
-                                        <button id="searchname"><span class="fa fa-search"></span></button>
-                                    </div>
-                                </div> -->
+
 
                                 <!-- Site search end -->
 
@@ -307,8 +312,14 @@
 
         <div  class="row ad-banner-header">
             <div class="col-md-12">
-                <img src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
+                <!-- /21689237362/thoisu247-header-desktop -->
+                <div id='div-gpt-ad-1575891986270-0' style='width: 970px; height: 250px;'>
+                    <script>
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575891986270-0'); });
+                    </script>
+                </div>
             </div>
+
         </div>
 
 
