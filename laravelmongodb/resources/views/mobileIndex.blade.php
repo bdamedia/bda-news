@@ -86,4 +86,127 @@
                 console.log('server not responding...');
             });
     }
+
+   
+        var x = document.getElementById("searchnameinput");
+        x.style.display = "none";
+        function myFunction() {
+              var x = document.getElementById("searchnameinput");
+              if (x.style.display === "none") {
+                x.style.display = "inline-table";
+              } else {
+                x.style.display = "none";
+              }
+        }
+        var newValue = '';
+        $('body').on('click','#searchname',function(){
+            if (newValue.length > 1){
+                window.location.href = '/search/values/' + newValue;
+            }
+        });
+
+        $('body').on('keypress','#searchnameinput',function(e){
+            var dInput = this.value;
+            console.log(dInput);
+            newValue = dInput;
+            if(e.which == 13){
+                $('#searchname').click();
+            }
+        });
+
+        $('body').on('mouseup','#searchnameinput',function(e){
+            var container = $("#searchnameinput");
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.hide();
+            }
+        });
+    
+
+    $(document).ready(function () {
+
+        
+        var keyword = $('#searchnameinput').val();
+        if (keyword != '') {
+            keyword = keyword.trim();
+            $('#searchnameinput').val(keyword);
+            $("#searchnameinput").show();
+        }
+        /*var urlNew = window.location.href.split('?')
+        //alert(urlNew[0]);
+        url = urlNew[0].split('/');
+        var searchkey = url[5];
+        var keyword = searchkey;
+        if (keyword != '') {
+            keyword = keyword.trim();
+            $('#searchnameinput').val(keyword);
+            $("#searchnameinput").show();
+        }*/
+
+        $("input[name='search_mode']").on("click", function () {
+            applySearchFilter();
+        });
+
+        $("input[name='content_type']").on("click", function (e) {
+            applySearchFilter();
+        });
+
+        $("input[name='date_filter']").on("click", function (e) {
+            applySearchFilter();
+        });
+
+        $("select[name='category']").on("change", function (e) {
+            applySearchFilter();
+        });
+    });
+
+    var applySearchFilter = function () {
+        $(this).parent("li").addClass("active");
+        var url = '';
+        var keyword = 'a';
+        if (keyword != '') {
+            keyword = keyword.trim();
+            while (keyword.indexOf(" ") >= 0) {
+                keyword = keyword.replace(" ", "-");
+            }
+            
+           // url = "/" + keyword + "-tim-kiem.html";
+           var urlNew = window.location.href.split('?')
+           //alert(urlNew[0]);
+           url = urlNew[0];
+        }
+
+        var filterParam = {};
+        var searchMode = $("input[name='search_mode']:checked").val();
+        filterParam["type"] = searchMode;
+
+        var content_type = $("input[name='content_type']:checked").val();
+        if (content_type != '0') {
+            filterParam["content_type"] = content_type;
+        }
+
+        var dateFilter = $("input[name='date_filter']:checked").val();
+
+        if (dateFilter == 'other') {
+            var otherDateFilter = $("#custom_date_filter").val();
+            if (otherDateFilter == '') {
+                return false;
+            } else {
+                filterParam["date"] = otherDateFilter;
+            }
+        }
+
+        if (dateFilter != "alltime" && dateFilter != "other") {
+            filterParam["date"] = dateFilter;
+        }
+
+        var category = $("select[name='category']").val();
+        if (category != 0) {
+            filterParam['category'] = category;
+        }
+
+        var strFilterParam = jQuery.param(filterParam);
+        window.location = url + (strFilterParam != '' ? ("?" + strFilterParam) : "");
+        return false;
+    }
 </script>
