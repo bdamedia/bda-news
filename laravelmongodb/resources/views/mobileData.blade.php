@@ -26,3 +26,6 @@
         </div><!-- 1st row end -->
     </div><!-- 1st Post list end -->
 @endforeach
+<div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
+    Ads
+</div><!-- 1st Post list end -->

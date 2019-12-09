@@ -174,6 +174,10 @@
         .menu1 {cursor: pointer; background:#ec0000; color:#fff; height:40px; line-height:40px;letter-spacing:1px; width:100%;}
         .menu {cursor: pointer; background: #ffffff; width:100%;}
         .menu a,.menu1 a{ color:#fff; padding: 10px; cursor: pointer;}
+        h3.block-title-mobile{
+            margin-bottom: 7px;
+            color: #0097D2;
+        }
     </style>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -250,7 +254,7 @@
                     </div><!-- Site Navbar inner end -->
                 </nav><!--/ Navigation end -->
 
-                   
+
 
                 <div class="nav-search">
                     <span id="search"><i class="fa fa-search"></i></span>

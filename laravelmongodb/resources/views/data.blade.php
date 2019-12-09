@@ -23,3 +23,8 @@
         </div><!-- Post Block style end -->
     </div><!-- Col 1 end -->
 @endforeach
+@if($data['isMobile'])
+<div style="width: 300px;height: 400px" class="col-md-6 col-sm-6">
+    ads
+</div><!-- Col 1 end -->
+@endif

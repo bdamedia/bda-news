@@ -771,7 +771,7 @@
 "@context" : "http://schema.org",
 "@type" : "WebSite",
 "name" : "{{ $page_name ?? '' }}",
-"alternateName" : "{{ $page_name }}",
+"alternateName" : "{{ $meta_desc }}",
 "dateModified": "",
 "url" : "/"
 }

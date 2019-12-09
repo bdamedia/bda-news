@@ -11,8 +11,12 @@
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
                 <div class="block category-listing">
-                    <h3 class="block-title"><span>{{ $cat_name }}</span></h3>
 
+                    @if($data['isMobile'])
+                        <h3 class="block-title-mobile"><span>{{ $cat_name }}</span></h3>
+                    @else
+                    <h3 class="block-title"><span>{{ $cat_name }}</span></h3>
+                    @endif
 
                     <div class="row" id="post-data">
 
@@ -42,7 +46,11 @@
                             </div><!-- Col 1 end -->
                         @endforeach
 
-
+                            @if($data['isMobile'])
+                                <div style="width: 300px;height: 400px" class="col-md-6 col-sm-6">
+                                    ads
+                                </div><!-- Col 1 end -->
+                            @endif
                     </div><!-- Row end -->
                 </div><!-- Block Lifestyle end -->
 
