@@ -50,6 +50,12 @@ class IndexController extends Controller
             $data['after_ad_one_home_posts'] = News::where('category','5d81b4e9626f8bd86577b633')->orderBy('date', 'desc')->skip(64)->take(4)->get();
             $data['after_ad_two_home_posts'] = News::where('category','5d7b520b60b8e37981b55477')->orderBy('date', 'desc')->skip(64)->take(4)->get();
             $data['after_ad_third_home_posts'] = News::where('category','5d80e961626f8bd8657773b4')->orderBy('date', 'desc')->skip(64)->take(4)->get();
+
+            $data['four_section_one_home_posts'] = News::where('category','5d80e236626f8bd865776ed5')->orderBy('date', 'desc')->skip(64)->take(4)->get();
+            $data['four_section_two_home_posts'] = News::where('category','5d81b607626f8bd86577b6d1')->orderBy('date', 'desc')->skip(64)->take(4)->get();
+            $data['four_section_third_home_posts'] = News::where('category','5d81b566626f8bd86577b682')->orderBy('date', 'desc')->skip(64)->take(4)->get();
+            $data['four_section_four_home_posts'] = News::where('category','5d81b597626f8bd86577b695')->orderBy('date', 'desc')->skip(64)->take(4)->get();
+
             $data['cname'] = 'thoi-su';
             $data['page_name'] = 'Tin tức, hình ảnh mới nhật cập nhật 24H!';
             return view('index')->with($data);
