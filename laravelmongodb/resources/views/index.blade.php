@@ -158,10 +158,10 @@
             @include('sidebar')
             <div  class="row ad-banner-header">
                 <div class="col-md-12">
-                    <!-- /21689237362/thoisu247-footer-desktop -->
-                    <div id='div-gpt-ad-1575885103852-0'>
+                    <!-- /21689237362/thoisu247-footer -->
+                    <div id='div-gpt-ad-1575891936435-0' style='width: 970px; height: 250px;'>
                         <script>
-                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575885103852-0'); });
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575891936435-0'); });
                         </script>
                     </div>
                 </div>
