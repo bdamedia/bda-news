@@ -152,23 +152,33 @@
 </section><!-- First block end -->
 <script type="application/ld+json">
 {
-   "@context": "http://schema.org",
-   "@type": "NewsArticle",
-   "url": "/{{ $cat_slug }}/{{ $post->slug }}",
-   "publisher":{
-      "@type":"Organization",
-      "name":"BDA News",
-      "logo":"{{ URL::asset('images/logos/logo.png') }}"
-   },
-   "headline": "{{ $post->title }}",
-   "mainEntityOfPage": "/{{ $cat_slug }}/{{ $post->slug }}",
-   "articleBody": "{{ $post->desc }}",
-   "image":[
-      "{{ $post->thumb_url }}"
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/{{ $cat_slug }}/{{ $post->slug }}"
+  },
+  "headline": "{{ $post->title }}",
+  "image": [
+    "{{ $post->thumb_url }}"
    ],
-   "datePublished":"{{ $post->date->toDateTime()->format('M d, Y')  }}",
-   "author":"{{ $data['authors'][array_rand($data['authors'])] }}"
+  "datePublished": "{{ $post->date->toDateTime()->format('M d, Y')  }}",
+  "dateModified": "{{ $post->date->toDateTime()->format('M d, Y')  }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ $data['authors'][array_rand($data['authors'])] }}"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "BDA News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ URL::asset('images/logos/logo.png') }}"
+    }
+  },
+  "description": "{{ $post->desc }}"
 }
+
 </script>
 
 @include('footer')
