@@ -33,11 +33,25 @@
                             <a href="{{ $post['images'][0] ?? '' }}" class="gallery-popup"><img src="{{ $post['images'][0] ?? '' }}" class="img-responsive" alt=""></a>
                         </div>
                         <div class="entry-content">
+                            @php
+                                $ps=1;
+
+                                 $count = round(count($post['content']) / 2);
+                            @endphp
+                            {{--{{ print_r($post['content']) }}--}}
                             @foreach ($post['content'] as $content)
                                <p> {{ $content ?? '' }} </p>
+                            @if($count == $ps)
+                                    <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
+                                        Ads 123
+                                    </div><!-- 1st Post list end -->
+                                @endif
+                                @php $ps++; @endphp
                             @endforeach
                         </div><!-- Entery content end -->
-
+                        <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
+                            Ads 123
+                        </div><!-- 1st Post list end -->
                         <div class="tags-area clearfix">
                             <div class="post-tags">
                                 <span>Tags:</span>

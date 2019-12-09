@@ -175,8 +175,13 @@
         .menu {cursor: pointer; background: #ffffff; width:100%;}
         .menu a,.menu1 a{ color:#fff; padding: 10px; cursor: pointer;}
         h3.block-title-mobile{
-            margin-bottom: 7px;
+            margin-bottom: 10px;
             color: #0097D2;
+        }
+
+        h3.block-title-mobile span{
+            text-transform: uppercase;
+            font-size: 18px;
         }
     </style>
     <!-- Google Tag Manager -->
