@@ -45,10 +45,10 @@
                                 @if($count == $ps)
                                     <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
                                         <!-- /21689237362/thoisu247-postpage-innerpost-mobile -->
-                                        <div id='div-gpt-ad-1575885395800-0'>
-                                            <script>
-                                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575885395800-0'); });
-                                            </script>
+                                        <div id='div-gpt-ad-1575892083273-0' style='width: 300px; height: 300px;'>
+                                          <script>
+                                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892083273-0'); });
+                                          </script>
                                         </div>
                                     </div><!-- 1st Post list end -->
                                 @endif
@@ -60,17 +60,17 @@
 
                         @if($data['isMobile'])
                             <!-- /21689237362/thoisu247-postpage-endpost-mobile -->
-                                <div id='div-gpt-ad-1575885322013-0'>
-                                    <script>
-                                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575885322013-0'); });
-                                    </script>
-                                </div>
+                            <div id='div-gpt-ad-1575892048752-0' style='width: 320px; height: 480px;'>
+                              <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892048752-0'); });
+                              </script>
+                            </div>
                             @else
                             <!-- /21689237362/thoisu247-postpage-endpost-desktop -->
-                            <div id='div-gpt-ad-1575885246511-0'>
-                                <script>
-                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575885246511-0'); });
-                                </script>
+                            <div id='div-gpt-ad-1575892015830-0' style='width: 970px; height: 250px;'>
+                              <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892015830-0'); });
+                              </script>
                             </div>
                             @endif
                         </div><!-- 1st Post list end -->
