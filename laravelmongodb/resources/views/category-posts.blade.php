@@ -62,6 +62,16 @@
     </div><!-- Container end -->
 </section><!-- First block end -->
 
+<script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+"@type" : "WebSite",
+"name" : "{{ $page_name ?? '' }}",
+"alternateName" : "{{ $meta_desc }}",
+"dateModified": "",
+"url" : "/{{ $cat_slug }}"
+}
+</script>
 @include('footer')
 
 <script type="text/javascript">
