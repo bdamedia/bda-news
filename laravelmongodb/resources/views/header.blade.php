@@ -313,7 +313,7 @@
         <div  class="row ad-banner-header">
             <div class="col-md-12">
                 <!-- /21689237362/thoisu247-header-desktop -->
-                <div id='div-gpt-ad-1575891986270-0' style='width: 970px; height: 250px;'>
+                <div id='div-gpt-ad-1575891986270-0' style='height: 10px;'>
                     <script>
                         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575891986270-0'); });
                     </script>
