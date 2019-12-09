@@ -66,28 +66,23 @@
 		</div><!-- Popular news widget end -->
 
 		<div class="widget text-center">
-            <!-- /21689237362/thoisu247-sidebar -->
-			<div id='div-gpt-ad-1575892118048-0' style='width: 300px; height: 600px;'>
+
+            <!-- /21689237362/thoisu-sidebar2-desktop -->
+			<div id='div-gpt-ad-1575892118048-0' style='width: 300px; height: 600px;    margin-bottom: 40px;'>
 			  <script>
 			    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892118048-0'); });
 			  </script>
 			</div>
-            <!-- /21689237362/thoisu-sidebar2-desktop -->
-			<div id='div-gpt-ad-1575892145031-0' style='width: 300px; height: 600px;'>
+            <!-- /21689237362/thoisu247-sidebar3-desktop -->
+			<div id='div-gpt-ad-1575892145031-0' style='width: 300px; height: 600px;    margin-bottom: 40px;'>
 			  <script>
 			    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892145031-0'); });
 			  </script>
 			</div>
-            <!-- /21689237362/thoisu247-sidebar3-desktop -->
-			<div id='div-gpt-ad-1575892179919-0' style='width: 300px; height: 600px;'>
-			  <script>
-			    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892179919-0'); });
-			  </script>
-			</div>
             <!-- /21689237362/thoisu247-header -->
-            <div id='div-gpt-ad-1575528797111-0'>
+            <div id='div-gpt-ad-1575892179919-0' style='width: 300px; height: 600px;    margin-bottom: 40px;'>
                 <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575528797111-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892179919-0'); });
                 </script>
             </div>
 			<!--img class="banner img-responsive" src="{{--{{ URL::asset('images/banner-ads/ad-sidebar.png')}}--}}" alt="" /-->
