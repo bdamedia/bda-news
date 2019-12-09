@@ -158,7 +158,12 @@
             @include('sidebar')
             <div  class="row ad-banner-header">
                 <div class="col-md-12">
-                    <img src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
+                    <!-- /21689237362/thoisu247-footer-desktop -->
+                    <div id='div-gpt-ad-1575885103852-0'>
+                        <script>
+                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575885103852-0'); });
+                        </script>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -766,4 +771,14 @@
         </div><!-- Row end -->
     </div><!-- Container end -->
 </section><!-- Ad content two end -->--}}
+<script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+"@type" : "WebSite",
+"name" : "{{ $page_name ?? '' }}",
+"alternateName" : "{{ $meta_desc }}",
+"dateModified": "",
+"url" : "/"
+}
+</script>
 @include('footer')

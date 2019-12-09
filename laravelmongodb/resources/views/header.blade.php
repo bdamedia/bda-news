@@ -168,6 +168,8 @@
         .image-size{
             height: 242px;
         }
+
+
     </style>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -184,6 +186,12 @@
             googletag.defineSlot('/21689237362/thoisu247-footer', [728, 90], 'div-gpt-ad-1575528682755-0').addService(googletag.pubads());
             googletag.defineSlot('/21689237362/thoisu247-header', [728, 90], 'div-gpt-ad-1575528738501-0').addService(googletag.pubads());
             googletag.defineSlot('/21689237362/thoisu247-sidebar', [300, 300], 'div-gpt-ad-1575528797111-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-postpage-endpost-desktop', [[728, 90], [970, 250]], 'div-gpt-ad-1575885246511-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-postpage-endpost-mobile', [[336, 280], [320, 480], [300, 300]], 'div-gpt-ad-1575885322013-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-postpage-innerpost-mobile', [[300, 300], [320, 480], [336, 280]], 'div-gpt-ad-1575885395800-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-sidebar', [[300, 300], [300, 600]], 'div-gpt-ad-1575885464627-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu-sidebar2-desktop', [[300, 300], [300, 600]], 'div-gpt-ad-1575885503911-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-sidebar3-desktop', [[300, 300], [300, 600]], 'div-gpt-ad-1575885544142-0').addService(googletag.pubads());
 
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
@@ -279,17 +287,12 @@
 
                                 <div class="topnav">
                                     <div class="search-container searchform-wrap">
-                                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm...">
+                                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm.searchnameinput..">
                                         <button onclick="myFunction()" id="searchname"><i class="fa fa-search"></i></button>
                                     </div>
                                 </div>
 
-                                <!-- <div class="search-block" style="display: none;">
-                                     <div class="searchform-wrap">
-                                        <input type="text" id="searchnameinput" placeholder="Search">
-                                        <button id="searchname"><span class="fa fa-search"></span></button>
-                                    </div>
-                                </div> -->
+
 
                                 <!-- Site search end -->
 
@@ -307,7 +310,12 @@
 
         <div  class="row ad-banner-header">
             <div class="col-md-12">
-                <img src="https://hackernoon.com/hn-images/1*j41hMsYft-ifSvXuWOb7Gg.png" />
+                <!-- /21689237362/thoisu247-header-desktop -->
+                <div id='div-gpt-ad-1575885178973-0'>
+                    <script>
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575885178973-0'); });
+                    </script>
+                </div>
             </div>
         </div>
 

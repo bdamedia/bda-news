@@ -8,7 +8,7 @@
                 @foreach ($data['category_array'] as $categories)--}}
 
                 <div id="post-data" class="block category-listing category-style2">
-
+                    @php $p=1; @endphp
                     @foreach ($posts as $post)
                     <div class="post-block-style post-list clearfix">
                         <div class="row">
@@ -36,7 +36,11 @@
                             </div><!-- Post col end -->
                         </div><!-- 1st row end -->
                     </div><!-- 1st Post list end -->
+                        @php $p=1; @endphp
                     @endforeach
+                    <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
+                            Ads
+                    </div><!-- 1st Post list end -->
                 </div><!-- Block Technology end -->
                {{-- @endforeach--}}
                 <div class="ajax-load text-center" style="display:none">
