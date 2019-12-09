@@ -161,7 +161,7 @@
         }
         .logo-mobile{
             margin-left: 55px;
-            width: 50%;
+            /*width: 50%;*/
         }
         .logo-mobile img{
             width: 46%;
@@ -233,6 +233,10 @@
                             <span class="icon-bar"></span>
                         </button>
 
+                        <a class="logo-mobile" href="/">
+                            <img src="{{ URL::asset('images/logos/logo.png') }}" alt="">
+                        </a>
+
                         <div class="collapse navbar-collapse navbar-responsive-collapse">
                             <ul class="nav navbar-nav">
                                 @foreach ($data['menus'] as $menu)
@@ -246,9 +250,7 @@
                     </div><!-- Site Navbar inner end -->
                 </nav><!--/ Navigation end -->
 
-                    <a class="logo-mobile" href="/">
-                        <img src="{{ URL::asset('images/logos/logo.png') }}" alt="">
-                    </a>
+                   
 
                 <div class="nav-search">
                     <span id="search"><i class="fa fa-search"></i></span>
