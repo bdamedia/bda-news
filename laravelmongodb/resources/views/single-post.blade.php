@@ -150,6 +150,27 @@
         </div><!-- Row end -->
     </div><!-- Container end -->
 </section><!-- First block end -->
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "NewsArticle",
+   "url": "/{{ $cat_slug }}/{{ $post->slug }}",
+   "publisher":{
+      "@type":"Organization",
+      "name":"BDA News",
+      "logo":"{{ URL::asset('images/logos/logo.png') }}"
+   },
+   "headline": "{{ $post->title }}",
+   "mainEntityOfPage": "/{{ $cat_slug }}/{{ $post->slug }}",
+   "articleBody": "{{ $post->desc }}",
+   "image":[
+      "{{ $post->thumb_url }}"
+   ],
+   "datePublished":"{{ $post->date->toDateTime()->format('M d, Y')  }}",
+   "author":"{{ $data['authors'][array_rand($data['authors'])] }}"
+}
+</script>
+
 @include('footer')
 <script type="text/javascript">
     var page = 1;
