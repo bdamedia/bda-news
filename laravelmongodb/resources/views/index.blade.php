@@ -766,4 +766,14 @@
         </div><!-- Row end -->
     </div><!-- Container end -->
 </section><!-- Ad content two end -->--}}
+<script type="application/ld+json">
+{
+"@context" : "http://schema.org",
+"@type" : "WebSite",
+"name" : "{{ $page_name ?? '' }}",
+"alternateName" : "{{ $page_name }}",
+"dateModified": "",
+"url" : "/"
+}
+</script>
 @include('footer')
