@@ -135,7 +135,7 @@
                                             <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}"><img class="img-responsive" data-original="{{ $post->thumb_url }}" alt="" /></a>
                                         </div>
                                         <a class="post-cat" href="/{{ $data['category_array'][$post->category][1] }}">{{ $data['category_array'][$post->category][0] }}</a>
-                                        <div class="post-content">
+                                        <div class="post-content-new">
                                             <h2 class="post-title title-medium">
                                                 <a href="/{{ $data['category_array'][$post->category][1] }}/{{ $post->slug }}">{{ $post->title }}</a>
                                             </h2>
