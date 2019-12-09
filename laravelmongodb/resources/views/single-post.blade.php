@@ -56,7 +56,7 @@
                                 @php $ps++; @endphp
                             @endforeach
                         </div><!-- Entery content end -->
-                        <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
+                        <div class="post-block-style post-list clearfix">
 
                         @if($data['isMobile'])
                             <!-- /21689237362/thoisu247-postpage-endpost-mobile -->

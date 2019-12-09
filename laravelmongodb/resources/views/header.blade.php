@@ -287,17 +287,12 @@
 
                                 <div class="topnav">
                                     <div class="search-container searchform-wrap">
-                                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm...">
+                                        <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm.searchnameinput..">
                                         <button onclick="myFunction()" id="searchname"><i class="fa fa-search"></i></button>
                                     </div>
                                 </div>
 
-                                <!-- <div class="search-block" style="display: none;">
-                                     <div class="searchform-wrap">
-                                        <input type="text" id="searchnameinput" placeholder="Search">
-                                        <button id="searchname"><span class="fa fa-search"></span></button>
-                                    </div>
-                                </div> -->
+
 
                                 <!-- Site search end -->
 
