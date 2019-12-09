@@ -8,7 +8,7 @@ use Mail;
 use App\index;
 use Illuminate\Http\Request;
 use Jenssegers\Agent\Agent;
-
+use Alaouy\Youtube\Facades\Youtube;
 
 class IndexController extends Controller
 {
@@ -58,6 +58,9 @@ class IndexController extends Controller
 
             $data['cname'] = 'thoi-su';
             $data['page_name'] = 'Tin tức, hình ảnh mới nhật cập nhật 24H!';
+            $videoList = Youtube::getPopularVideos('us');
+            $data['videos'] = $videoList;
+
             return view('index')->with($data);
         }
 

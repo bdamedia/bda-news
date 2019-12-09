@@ -635,15 +635,22 @@
 <section class="block-wrapper video-block">
     <div class="container">
         <div class="row">
+           {{-- {{ print_r($videos) }}
+--}}
             <div class="video-tab clearfix">
                 <h2 class="video-tab-title">Watch Now</h2>
                 <div class="col-md-7 pad-r-0">
                     <div class="tab-content">
-                        <div class="tab-pane active animated fadeIn" id="video1">
+                        @php $s=1; @endphp
+                        @foreach ($videos as $video)
+                            @if($s == 1)
+
+                        <div class="tab-pane active animated fadeIn" id="video{{ $s }}">
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
-                                    <img class="img-responsive" data-original="images/news/video/video4.jpg" alt="" />
-                                    <a class="popup" href="https://www.youtube.com/embed/XhveHKJWnOQ?autoplay=1&amp;loop=1">
+
+                                    <img class="img-responsive" src="{{ $video->snippet->thumbnails->standard->url }}" data-original="{{ $video->snippet->thumbnails->standard->url }}" alt="" />
+                                    <a class="popup" href="https://www.youtube.com/embed/{{ $video->id }}?autoplay=1&amp;loop=1">
                                         <div class="video-icon">
                                             <i class="fa fa-play"></i>
                                         </div>
@@ -652,17 +659,17 @@
                                 <div class="post-content">
                                     <a class="post-cat" href="#">Video</a>
                                     <h2 class="post-title">
-                                        <a href="#">Is Running Good for You, Health Benefits of Morning Running</a>
+                                        <a href="#">{{ $video->snippet->title }}</a>
                                     </h2>
                                 </div><!-- Post content end -->
                             </div><!-- Post Overaly Article end -->
                         </div><!--Tab pane 1 end-->
-
-                        <div class="tab-pane animated fadeIn" id="video2">
+                        @else
+                        <div class="tab-pane animated fadeIn" id="video{{ $s }}">
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
-                                    <img class="img-responsive" data-original="images/news/video/video3.jpg" alt="" />
-                                    <a class="popup" href="https://www.youtube.com/embed/wJF5NXygL4k?autoplay=1&amp;loop=1">
+                                    <img class="img-responsive" src="{{ $video->snippet->thumbnails->high->url }}" data-original="{{ $video->snippet->thumbnails->high->url }}" alt="" />
+                                    <a class="popup" href="https://www.youtube.com/embed/{{ $video->id }}?autoplay=1&amp;loop=1">
                                         <div class="video-icon">
                                             <i class="fa fa-play"></i>
                                         </div>
@@ -671,13 +678,13 @@
                                 <div class="post-content">
                                     <a class="post-cat" href="#">Video</a>
                                     <h2 class="post-title title-medium">
-                                        <a href="#">Breeze through 17 locations in Europe in this breathtaking video</a>
+                                        <a href="#">{{ $video->snippet->title }}</a>
                                     </h2>
                                 </div><!-- Post content end -->
                             </div><!-- Post Overaly Article 2 end -->
                         </div><!--Tab pane 2 end-->
-
-                        <div class="tab-pane animated fadeIn" id="video3">
+                        @endif
+                        {{--<div class="tab-pane animated fadeIn" id="video3">
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
                                     <img class="img-responsive" data-original="images/news/video/video2.jpg" alt="" />
@@ -694,23 +701,31 @@
                                     </h2>
                                 </div><!-- Post content end -->
                             </div><!-- Post Overaly Article 2 end -->
-                        </div><!--Tab pane 2 end-->
-
-
+                        </div><!--Tab pane 2 end-->--}}
+                            @php $s++; @endphp
+                        @endforeach
                     </div><!-- Tab content end -->
                 </div><!--Tab col end -->
 
-                <div class="col-md-5 pad-l-0">
+                <div style="height: 499px;overflow-y: scroll;" class="col-md-5 pad-l-0">
                     <ul class="nav nav-tabs">
+                        @php $s=1; @endphp
+                        @foreach ($videos as $video)
+                            @if($s == 1)
                         <li class="active">
-                            <a class="animated fadeIn" href="#video1" data-toggle="tab">
+                            @else
+                                <li class="">
+                                @endif
+                            <a class="animated fadeIn" href="#video{{ $s }}" data-toggle="tab">
                                 <div class="post-thumb">
-                                    <img class="img-responsive" data-original="images/news/video/video4.jpg" alt="" />
+                                    <img class="img-responsive" src="{{ $video->snippet->thumbnails->high->url }}" data-original="{{ $video->snippet->thumbnails->high->url }}" alt="" />
                                 </div><!-- Post thumb end -->
-                                <h3>Is Running Good for You, Health Benefits of Morning Running</h3>
+                                <h3>{{ $video->snippet->title }}</h3>
                             </a>
                         </li>
-                        <li>
+                                @php $s++; @endphp
+                                @endforeach
+                       {{-- <li>
                             <a class="animated fadeIn" href="#video2" data-toggle="tab">
                                 <div class="post-thumb">
                                     <img class="img-responsive" data-original="images/news/video/video3.jpg" alt="" />
@@ -725,7 +740,7 @@
                                 </div><!-- Post thumb end -->
                                 <h3>TG G6 will have dual 13-megapixel cameras on the back</h3>
                             </a>
-                        </li>
+                        </li>--}}
                     </ul>
                 </div><!--Tab nav col end -->
             </div><!-- Video tab end -->

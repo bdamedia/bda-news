@@ -163,6 +163,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Jenssegers\Mongodb\MongodbServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
+        Alaouy\Youtube\YoutubeServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -229,6 +230,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
+        'Youtube' => Alaouy\Youtube\Facades\Youtube::class,
+
 
     ],
 
