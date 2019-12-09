@@ -41,10 +41,12 @@
                             {{--{{ print_r($post['content']) }}--}}
                             @foreach ($post['content'] as $content)
                                <p> {{ $content ?? '' }} </p>
-                            @if($count == $ps)
+                                @if($data['isMobile'])
+                                @if($count == $ps)
                                     <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
                                         Ads 123
                                     </div><!-- 1st Post list end -->
+                                @endif
                                 @endif
                                 @php $ps++; @endphp
                             @endforeach
