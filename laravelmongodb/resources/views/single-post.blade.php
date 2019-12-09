@@ -21,7 +21,7 @@
 								<span class="post-author">
 									By <a href="#">{{ $data['authors'][array_rand($data['authors'])] }}</a>
 								</span>
-                            <span class="post-date"><i class="fa fa-clock-o"></i>{{--{{ $post['date']['$date']->toDateTime()->format('M d, Y') }}--}}</span>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>{{ $date }}</span>
                             <!--span class="post-hits"><i class="fa fa-eye"></i> 21</span>
                             <span class="post-comment"><i class="fa fa-comments-o"></i>
 								<a href="#" class="comments-link"><span>01</span></a></span-->
