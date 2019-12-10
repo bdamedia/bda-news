@@ -105,7 +105,7 @@
         var newValue = '';
         $('body').on('click','#searchname',function(){
             if (newValue.length > 1){
-                window.location.href = '/search/values/' + newValue;
+                window.location.href = '/searchmobile/values/' + newValue;
             }
         });
 
