@@ -266,7 +266,7 @@
                     </div><!-- Site Navbar inner end -->
                 </nav><!--/ Navigation end -->
 
-                <div class="topnav" style="display: none">
+                <div class="topnav">
                     <div class="search-container searchform-wrap">
                         <input type="text" value="" name="searchnameinput" id="searchnameinput" placeholder="Nhập nội dung cần tìm..." />
                         <button style="display: none;" onclick="myFunction()" id="searchname"><i class="fa fa-search"></i></button>
