@@ -47,8 +47,14 @@
                         @endforeach
 
                             @if($data['isMobile'])
-                                <div style="width: 300px;height: 400px" class="col-md-6 col-sm-6">
-                                    ads
+                                <div style="width: 330px;height: 400px;margin: 0 auto;text-align: center;" class="col-md-6 col-sm-6">
+                                    <!-- /21689237362/thoisu247-postpage-innerpost-mobile -->
+                                    <div id='div-gpt-ad-1575892083273-0' style='width: 300px; height: 300px;'>
+                                        <script>
+                                            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892083273-0'); });
+                                        </script>
+                                    </div>
+
                                 </div><!-- Col 1 end -->
                             @endif
                     </div><!-- Row end -->

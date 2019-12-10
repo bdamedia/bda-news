@@ -67,6 +67,8 @@ class NewsController extends Controller
         $data['meta_desc'] = collect($cat)->first()->desc;
         $data['og_image'] = collect($cat)->first()->thumb_url;
         if ($request->ajax()) {
+            $page = $request->input('page');
+            $data['no'] = $page;
             $view = view('data',$data)->render();
             return response()->json(['html'=>$view]);
         }
@@ -111,13 +113,13 @@ class NewsController extends Controller
         $searchDate = $request->input('date');
         $searchContant = $request->input('content_type');
         $searchCategory = $request->input('category');
-        
+
         $data['random_home_posts'] = News::where('title','like',"%$seachVAlue%")
             ->orWhere('date', $searchDate)
             ->orWhere('category', $searchCategory)
             ->orWhere('slug', $seachType)
             ->orderBy('date', 'desc')->paginate(10);
-       
+
         if ($request->ajax()) {
             $view = view('mobileSearchData',$data)->render();
             return response()->json(['html'=>$view]);
