@@ -104,6 +104,30 @@ class NewsController extends Controller
         return view('search')->with($data);
     }
 
+
+    public function getsearchmobilevalue(Request $request, $slug){
+        $seachVAlue = last(request()->segments());
+        $seachType = $request->input('type');
+        $searchDate = $request->input('date');
+        $searchContant = $request->input('content_type');
+        $searchCategory = $request->input('category');
+        
+        $data['random_home_posts'] = News::where('title','like',"%$seachVAlue%")
+            ->orWhere('date', $searchDate)
+            ->orWhere('category', $searchCategory)
+            ->orWhere('slug', $seachType)
+            ->orderBy('date', 'desc')->paginate(10);
+       
+        if ($request->ajax()) {
+            $view = view('mobileSearchData',$data)->render();
+            return response()->json(['html'=>$view]);
+        }
+        $data['sum_records'] = count($data['random_home_posts']);
+        $data['search_text'] = $seachVAlue;
+        return view('mobileSearch')->with($data);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

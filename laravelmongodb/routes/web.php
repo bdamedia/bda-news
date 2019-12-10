@@ -48,3 +48,5 @@ Route::post('/top/page/form/create', 'IndexController@store');
 //Route::get('news/category/{id}', 'NewsController@getnewsbycategory');
 
 Route::get('search/values/{text}', 'NewsController@getsearchvalue');
+
+Route::get('searchmobile/values/{text}', 'NewsController@getsearchmobilevalue');
