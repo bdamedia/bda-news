@@ -23,8 +23,13 @@
         </div><!-- Post Block style end -->
     </div><!-- Col 1 end -->
 @endforeach
-@if($data['isMobile'])
-<div style="width: 300px;height: 400px" class="col-md-6 col-sm-6">
-    ads
+@if($data['isMobile'] && $no == 2 )
+<div style="width: 351px;height: 500px;text-align: center;margin: 0 auto;" class="col-md-6 col-sm-6">
+    <!-- /21689237362/thoisu247-postpage-endpost-mobile -->
+    <div id='div-gpt-ad-1575892048752-0' style=''>
+        <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892048752-0'); });
+        </script>
+    </div>
 </div><!-- Col 1 end -->
 @endif

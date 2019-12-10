@@ -32,6 +32,8 @@ class IndexController extends Controller
             $data['page_name'] = 'Thời sự 247 - Tin tức, hình ảnh mới nhật cập nhật 24H!';
 
             if ($request->ajax()) {
+                $page = $request->input('page');
+                $data['no'] = $page;
                 $view = view('mobileData',$data)->render();
                 return response()->json(['html'=>$view]);
             }

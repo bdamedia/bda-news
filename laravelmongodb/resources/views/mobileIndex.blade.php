@@ -38,9 +38,17 @@
                     </div><!-- 1st Post list end -->
                         @php $p=1; @endphp
                     @endforeach
-                    <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
-                            Ads
-                    </div><!-- 1st Post list end -->
+                    @if($data['isMobile'])
+                        <div style="width: 330px;height: 400px;margin: 0 auto;text-align: center;" class="col-md-6 col-sm-6">
+                            <!-- /21689237362/thoisu247-postpage-innerpost-mobile -->
+                            <div id='div-gpt-ad-1575892083273-0' style='width: 300px; height: 300px;'>
+                                <script>
+                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892083273-0'); });
+                                </script>
+                            </div>
+
+                        </div><!-- Col 1 end -->
+                    @endif
                 </div><!-- Block Technology end -->
                {{-- @endforeach--}}
                 <div class="ajax-load text-center" style="display:none">
@@ -91,7 +99,7 @@
             });
     }
 
-   
+
         var x = document.getElementById("searchnameinput");
         x.style.display = "none";
         function myFunction() {
@@ -125,11 +133,11 @@
                 container.hide();
             }
         });
-    
+
 
     $(document).ready(function () {
 
-        
+
         var keyword = $('#searchnameinput').val();
         if (keyword != '') {
             keyword = keyword.trim();
@@ -173,7 +181,7 @@
             while (keyword.indexOf(" ") >= 0) {
                 keyword = keyword.replace(" ", "-");
             }
-            
+
            // url = "/" + keyword + "-tim-kiem.html";
            var urlNew = window.location.href.split('?')
            //alert(urlNew[0]);

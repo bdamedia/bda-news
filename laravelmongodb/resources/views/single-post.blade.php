@@ -43,7 +43,7 @@
                                <p> {{ $content ?? '' }} </p>
                                 @if($data['isMobile'])
                                 @if($count == $ps)
-                                    <div style="width: 300px;height: 400px" class="post-block-style post-list clearfix">
+                                    <div style="width: 300px;height: 400px;margin: 0 auto;" class="post-block-style post-list clearfix">
                                         <!-- /21689237362/thoisu247-postpage-innerpost-mobile -->
                                         <div id='div-gpt-ad-1575892083273-0' style='width: 300px; height: 300px;'>
                                             <script>
@@ -60,7 +60,7 @@
 
                         @if($data['isMobile'])
                             <!-- /21689237362/thoisu247-postpage-endpost-mobile -->
-                                <div id='div-gpt-ad-1575892048752-0' style='width: 320px; height: 480px;'>
+                                <div id='div-gpt-ad-1575892048752-0' style='width: 320px; height: 480px;margin: 0 auto;text-align: center;'>
                                     <script>
                                         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1575892048752-0'); });
                                     </script>

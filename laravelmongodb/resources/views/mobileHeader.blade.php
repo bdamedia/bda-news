@@ -176,13 +176,18 @@
         .menu {cursor: pointer; background: #ffffff; width:100%;}
         .menu a,.menu1 a{ color:#fff; padding: 10px; cursor: pointer;}
         h3.block-title-mobile{
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             color: #0097D2;
+            margin-top: 12px;
         }
 
         h3.block-title-mobile span{
             text-transform: uppercase;
             font-size: 18px;
+        }
+        section, .section-padding {
+            padding: 2px 0;
+            position: relative;
         }
     </style>
     <!-- Google Tag Manager -->
