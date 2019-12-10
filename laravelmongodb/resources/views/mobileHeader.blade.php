@@ -196,15 +196,14 @@
     <script>
         window.googletag = window.googletag || {cmd: []};
         googletag.cmd.push(function() {
-            googletag.defineSlot('/21689237362/thoisu247-footer', [728, 90], 'div-gpt-ad-1575528682755-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-header', [728, 90], 'div-gpt-ad-1575528738501-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-sidebar', [300, 300], 'div-gpt-ad-1575528797111-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-postpage-endpost-desktop', [[728, 90], [970, 250]], 'div-gpt-ad-1575885246511-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-postpage-endpost-mobile', [[336, 280], [320, 480], [300, 300]], 'div-gpt-ad-1575885322013-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-postpage-innerpost-mobile', [[300, 300], [320, 480], [336, 280]], 'div-gpt-ad-1575885395800-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-sidebar', [[300, 300], [300, 600]], 'div-gpt-ad-1575885464627-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu-sidebar2-desktop', [[300, 300], [300, 600]], 'div-gpt-ad-1575885503911-0').addService(googletag.pubads());
-            googletag.defineSlot('/21689237362/thoisu247-sidebar3-desktop', [[300, 300], [300, 600]], 'div-gpt-ad-1575885544142-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-footer', [970, 250], 'div-gpt-ad-1575891936435-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-header', [970, 250], 'div-gpt-ad-1575891986270-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-postpage-endpost-desktop', [970, 250], 'div-gpt-ad-1575892015830-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-postpage-endpost-mobile', [320, 480], 'div-gpt-ad-1575892048752-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-postpage-innerpost-mobile', [300, 300], 'div-gpt-ad-1575892083273-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-sidebar', [300, 600], 'div-gpt-ad-1575892118048-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu-sidebar2-desktop', [300, 600], 'div-gpt-ad-1575892145031-0').addService(googletag.pubads());
+            googletag.defineSlot('/21689237362/thoisu247-sidebar3-desktop', [300, 600], 'div-gpt-ad-1575892179919-0').addService(googletag.pubads());
 
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
