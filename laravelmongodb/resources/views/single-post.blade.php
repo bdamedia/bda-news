@@ -37,9 +37,11 @@
                                 $ps=1;
 
                                  $count = round(count($post['content']) / 2);
+                                 $contentsSchema = '';
                             @endphp
                             {{--{{ print_r($post['content']) }}--}}
                             @foreach ($post['content'] as $content)
+                                @php $contentsSchema .= $content;  @endphp
                                <p> {{ $content ?? '' }} </p>
                                 @if($data['isMobile'])
                                 @if($count == $ps)
@@ -198,8 +200,9 @@
   "image": [
     "{{ $post->thumb_url }}"
    ],
-  "datePublished": "{{ $post->date->toDateTime()->format('M d, Y')  }}",
-  "dateModified": "{{ $post->date->toDateTime()->format('M d, Y')  }}",
+  "articleBody": "{{ $contentsSchema }}",
+  "datePublished": "{{ $post->date->toDateTime()->format(DATE_ATOM) }}",
+  "dateModified": "{{ $post->date->toDateTime()->format(DATE_ATOM)  }}",
   "author": {
     "@type": "Person",
     "name": "{{ $data['authors'][array_rand($data['authors'])] }}"
@@ -212,7 +215,11 @@
       "url": "{{ URL::asset('images/logos/logo.png') }}"
     }
   },
-  "description": "{{ $post->desc }}"
+  "description": "{{ $post->desc }}",
+  "contentLocation": {
+    "@type": "AdministrativeArea",
+    "name": "{{ $post->location ?? 'Vietnam' }}"
+  }
 }
 
 </script>
