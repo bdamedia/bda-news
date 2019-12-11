@@ -287,12 +287,12 @@
                                 <!-- Search end -->
 
 
-                                <div class="topnav">
+                                <!-- <div class="topnav">
                                     <div class="search-container searchform-wrap">
                                         <input type="text" id="searchnameinput" placeholder="Nhập nội dung cần tìm.searchnameinput..">
                                         <button onclick="myFunction()" id="searchname"><i class="fa fa-search"></i></button>
                                     </div>
-                                </div>
+                                </div> -->
 
 
 
