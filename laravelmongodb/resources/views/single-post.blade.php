@@ -217,7 +217,7 @@
   },
   "description": "{{ $post->desc }}",
   "contentLocation": {
-    "@type": "AdministrativeArea",
+    "@type": "Place",
     "name": "{{ $post->location ?? 'Vietnam' }}"
   }
 }
