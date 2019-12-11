@@ -218,7 +218,7 @@
   "description": "{{ $post->desc }}",
   "contentLocation": {
     "@type": "Place",
-    "name": "{{ $post->location ?? 'Vietnam' }}"
+    "name": "@php if($post->location) { echo $post->location; }else{ echo "Vietnam"; } @endphp"
   }
 }
 
