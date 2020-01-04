@@ -649,12 +649,11 @@
                         @php $s=1; @endphp
                         @foreach ($videos as $video)
                             @if($s == 1)
-
                         <div class="tab-pane active animated fadeIn" id="video{{ $s }}">
                             <div class="post-overaly-style clearfix">
                                 <div class="post-thumb">
 
-                                    <img class="img-responsive" src="{{ $video->snippet->thumbnails->standard->url }}" data-original="{{ $video->snippet->thumbnails->standard->url }}" alt="" />
+                                    <img class="img-responsive" src="{{ $video->snippet->thumbnails->default->url }}" data-original="{{ $video->snippet->thumbnails->default->url }}" alt="" />
                                     <a class="popup" href="https://www.youtube.com/embed/{{ $video->id }}?autoplay=1&amp;loop=1">
                                         <div class="video-icon">
                                             <i class="fa fa-play"></i>
