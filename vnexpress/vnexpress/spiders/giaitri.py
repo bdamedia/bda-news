@@ -7,8 +7,8 @@ import re
 
 client = MongoClient('localhost', 27017)
 # db = client.news
-db = client['newdb']
-#db.authenticate('mongoadmin', 'mongoadmin')
+db = client['news']
+db.authenticate('admin', 'admin')
 col = db['posts']
 
 
