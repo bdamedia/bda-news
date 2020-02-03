@@ -6,11 +6,12 @@ import pdb
 import re
 from furl import furl
 
-client = MongoClient('127.0.0.1', 27017)
+client = MongoClient('localhost', 27017)
 # db = client.news
-db = client['newdb']
-#db.authenticate('mongoadmin', 'mongoadmin')
+db = client['news']
+db.authenticate('admin', 'admin')
 col = db['posts']
+
 
 class Kinhdoanh(scrapy.Spider):
     name = "kinhdoanh"

@@ -5,11 +5,12 @@ import scrapy
 import pdb
 import re
 
-client = MongoClient('127.0.0.1', 27017)
+client = MongoClient('localhost', 27017)
 # db = client.news
-db = client['newdb']
-#db.authenticate('mongoadmin', 'mongoadmin')
+db = client['news']
+db.authenticate('admin', 'admin')
 col = db['posts']
+
 
 class Thethao(scrapy.Spider):
     name = "thethao"
